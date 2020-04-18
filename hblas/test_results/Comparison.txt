@@ -1,0 +1,8 @@
+Haskell	
+01:59:06 - 02:01:51
+163.78user 1.07system 2:45.17elapsed 99%CPU
+
+C
+15:09:30 - 15:09:30
+4.16user 0.27system 0:04.46elapsed 99%CPU
+

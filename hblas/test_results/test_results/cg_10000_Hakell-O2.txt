@@ -1,0 +1,6 @@
+Test suite cg: RUNNING...
+10000
+10000
+Matrix size: 10000X10000: 175.654459556s
+Test suite cg: PASS
+Test suite logged to: dist/test/hblas-0.0.0.0-cg.log

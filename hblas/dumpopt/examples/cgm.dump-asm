@@ -1,0 +1,6269 @@
+
+==================== Asm code ====================
+2019-03-24 08:15:14.85601 UTC
+
+.data
+.align 3
+.align 0
+.globl __stginit_main:Main
+__stginit_main:Main:
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.866898 UTC
+
+.const_data
+.align 3
+.align 0
+Sai5_srt:
+	.quad	GHC.Integer.Type.shiftLInteger_closure
+	.quad	Main.$w$sround4dp_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.867242 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.$w$sround4dp_closure
+Main.$w$sround4dp_closure:
+	.quad	Main.$w$sround4dp_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.870861 UTC
+
+.text
+.align 3
+Main.$w$sround4dp_info_dsp:
+.align 3
+	.quad	Sai5_srt-(Main.$w$sround4dp_info)+0
+	.quad	4294967303
+	.quad	0
+	.quad	12884901902
+.globl Main.$w$sround4dp_info
+Main.$w$sround4dp_info:
+_cahl:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cahm
+_cahn:
+	mulsd _naia(%rip),%xmm1
+	subq $8,%rsp
+	movsd %xmm1,%xmm0
+	movl $1,%eax
+	call rintDouble
+	addq $8,%rsp
+	leaq block_cahr_info(%rip),%rax
+	movq %rax,-8(%rbp)
+	movsd %xmm0,%xmm1
+	addq $-8,%rbp
+	jmp GHC.Integer.Type.decodeDoubleInteger_info
+_cai3:
+	leaq block_cahP_info(%rip),%rax
+	movq %rax,-8(%rbp)
+	movq %r14,%rax
+	movq %rbx,%r14
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	jmp GHC.Integer.Type.integerToInt_info
+.align 3
+	.quad	65
+	.quad	30
+block_cahP_info:
+_cahP:
+	movq 8(%rbp),%rcx
+	negq %rcx
+	sarq %cl,%rbx
+	cvtsi2sdq %rbx,%xmm1
+	divsd _naih(%rip),%xmm1
+	addq $16,%rbp
+	jmp *(%rbp)
+.align 3
+	.quad	Sai5_srt-(block_cahr_info)+0
+	.quad	0
+	.quad	4294967326
+block_cahr_info:
+_cahr:
+	testq %r14,%r14
+	jl _cai3
+_cahL:
+	leaq block_cahB_info(%rip),%rax
+	movq %rax,(%rbp)
+	movq %r14,%rsi
+	movq %rbx,%r14
+	jmp GHC.Integer.Type.shiftLInteger_info
+.align 3
+	.quad	0
+	.quad	30
+block_cahF_info:
+_cahF:
+	divsd _naie(%rip),%xmm1
+	addq $8,%rbp
+	jmp *(%rbp)
+.align 3
+	.quad	0
+	.quad	30
+block_cahB_info:
+_cahB:
+	leaq block_cahF_info(%rip),%rax
+	movq %rax,(%rbp)
+	movq %rbx,%r14
+	jmp GHC.Integer.Type.doubleFromInteger_info
+_cahm:
+	leaq Main.$w$sround4dp_closure(%rip),%rbx
+	jmp *-8(%r13)
+	.long  Main.$w$sround4dp_info - Main.$w$sround4dp_info_dsp
+.const
+.align 3
+.align 3
+_naia:
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	136
+	.byte	195
+	.byte	64
+.const
+.align 3
+.align 3
+_naie:
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	136
+	.byte	195
+	.byte	64
+.const
+.align 3
+.align 3
+_naih:
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	136
+	.byte	195
+	.byte	64
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.871585 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.round4dp2_closure
+Main.round4dp2_closure:
+	.quad	GHC.Integer.Type.S#_con_info
+	.quad	10000
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.87207 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.repeatNTimes2_closure
+Main.repeatNTimes2_closure:
+	.quad	GHC.Integer.Type.S#_con_info
+	.quad	1
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.873954 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.round4dp1_closure
+Main.round4dp1_closure:
+	.quad	GHC.Real.:%_con_info
+	.quad	Main.round4dp2_closure+1
+	.quad	Main.repeatNTimes2_closure+1
+	.quad	3
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.877088 UTC
+
+.const_data
+.align 3
+.align 0
+Sajv_srt:
+	.quad	GHC.Real.$fIntegralInteger_closure
+	.quad	Main.$wround4dp_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.877563 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.$wround4dp_closure
+Main.$wround4dp_closure:
+	.quad	Main.$wround4dp_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.87815 UTC
+
+.text
+.align 3
+sat_sa8B_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+sat_sa8B_info:
+_caiE:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caiF
+_caiG:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq Main.round4dp1_closure+1(%rip),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Real.fromRational_info
+_caiF:
+	jmp *-16(%r13)
+	.long  sat_sa8B_info - sat_sa8B_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.879176 UTC
+
+.text
+.align 3
+sat_sa8x_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+sat_sa8x_info:
+_caj5:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caj6
+_caj7:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq Main.round4dp1_closure+1(%rip),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Real.fromRational_info
+_caj6:
+	jmp *-16(%r13)
+	.long  sat_sa8x_info - sat_sa8x_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.880347 UTC
+
+.text
+.align 3
+sat_sa8y_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+sat_sa8y_info:
+_caj8:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caj9
+_caja:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _cajc
+_cajb:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rbx
+	leaq sat_sa8x_info(%rip),%rdx
+	movq %rdx,-16(%r12)
+	movq %rcx,(%r12)
+	movq %rbx,%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-40(%rbp)
+	movq %rax,-32(%rbp)
+	leaq -16(%r12),%rax
+	movq %rax,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Num.*_info
+_cajc:
+	movq $24,904(%r13)
+_caj9:
+	jmp *-16(%r13)
+	.long  sat_sa8y_info - sat_sa8y_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.881426 UTC
+
+.text
+.align 3
+sat_sa8z_info_dsp:
+.align 3
+	.quad	Sajv_srt-(sat_sa8z_info)+0
+	.quad	4
+	.quad	4294967311
+sat_sa8z_info:
+_cajd:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caje
+_cajf:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _cajh
+_cajg:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rbx
+	leaq sat_sa8y_info(%rip),%rsi
+	movq %rsi,-32(%r12)
+	movq %rcx,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %rbx,(%r12)
+	movq %rax,%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rax
+	movq %rax,-40(%rbp)
+	leaq GHC.Real.$fIntegralInteger_closure(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq -32(%r12),%rax
+	movq %rax,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Real.round_info
+_cajh:
+	movq $40,904(%r13)
+_caje:
+	jmp *-16(%r13)
+	.long  sat_sa8z_info - sat_sa8z_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.882778 UTC
+
+.text
+.align 3
+sat_sa8A_info_dsp:
+.align 3
+	.quad	Sajv_srt-(sat_sa8A_info)+0
+	.quad	3
+	.quad	4294967311
+sat_sa8A_info:
+_caji:
+	leaq -48(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cajj
+_cajk:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caiL_info(%rip),%rax
+	movq %rax,-48(%rbp)
+	movq 16(%rbx),%rax
+	movq %rax,%r14
+	movq %rax,-40(%rbp)
+	movq 24(%rbx),%rax
+	movq %rax,-32(%rbp)
+	movq 32(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-48,%rbp
+	jmp GHC.Real.$p1RealFrac_info
+_cajo:
+	movq $48,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	Sajv_srt-(block_caiP_info)+0
+	.quad	3
+	.quad	4294967326
+block_caiP_info:
+_caiP:
+	addq $48,%r12
+	cmpq 856(%r13),%r12
+	ja _cajo
+_cajn:
+	leaq sat_sa8z_info(%rip),%rax
+	movq %rax,-40(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,-24(%r12)
+	movq 16(%rbp),%rax
+	movq %rax,-16(%r12)
+	movq 24(%rbp),%rax
+	movq %rax,-8(%r12)
+	movq %rbx,(%r12)
+	movq %rbx,%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,16(%rbp)
+	leaq -40(%r12),%rax
+	movq %rax,24(%rbp)
+	addq $16,%rbp
+	jmp GHC.Num.fromInteger_info
+_cajj:
+	jmp *-16(%r13)
+.align 3
+	.quad	Sajv_srt-(block_caiL_info)+0
+	.quad	3
+	.quad	4294967326
+block_caiL_info:
+_caiL:
+	leaq block_caiP_info(%rip),%rax
+	movq %rax,(%rbp)
+	movq %rbx,%r14
+	jmp GHC.Real.$p1Real_info
+	.long  sat_sa8A_info - sat_sa8A_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.884479 UTC
+
+.text
+.align 3
+Main.$wround4dp_info_dsp:
+.align 3
+	.quad	Sajv_srt-(Main.$wround4dp_info)+0
+	.quad	8589934607
+	.quad	0
+	.quad	12884901902
+.globl Main.$wround4dp_info
+Main.$wround4dp_info:
+_cajp:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cajq
+_cajr:
+	leaq block_caiw_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	movq %r14,%rax
+	movq %rax,-16(%rbp)
+	movq %rsi,-8(%rbp)
+	addq $-24,%rbp
+	jmp GHC.Real.$p2RealFrac_info
+_caju:
+	movq $64,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	Sajv_srt-(block_caiw_info)+0
+	.quad	2
+	.quad	4294967326
+block_caiw_info:
+_caiw:
+	addq $64,%r12
+	cmpq 856(%r13),%r12
+	ja _caju
+_cajt:
+	leaq sat_sa8B_info(%rip),%rax
+	movq %rax,-56(%r12)
+	movq %rbx,-40(%r12)
+	leaq sat_sa8A_info(%rip),%rax
+	movq %rax,-32(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,-16(%r12)
+	movq 16(%rbp),%rax
+	movq %rax,-8(%r12)
+	movq %rbx,(%r12)
+	movq %rbx,%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rax
+	movq %rax,(%rbp)
+	leaq -32(%r12),%rax
+	movq %rax,8(%rbp)
+	leaq -56(%r12),%rax
+	movq %rax,16(%rbp)
+	jmp GHC.Real./_info
+_cajq:
+	leaq Main.$wround4dp_closure(%rip),%rbx
+	jmp *-8(%r13)
+	.long  Main.$wround4dp_info - Main.$wround4dp_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.885554 UTC
+
+.const_data
+.align 3
+.align 0
+Sakv_srt:
+	.quad	Main.$wround4dp_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.886246 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.round4dp_closure
+Main.round4dp_closure:
+	.quad	Main.round4dp_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.887568 UTC
+
+.text
+.align 3
+Main.round4dp_info_dsp:
+.align 3
+	.quad	Sakv_srt-(Main.round4dp_info)+0
+	.quad	25769803802
+	.quad	0
+	.quad	4294967310
+.globl Main.round4dp_info
+Main.round4dp_info:
+_caks:
+	movq %rsi,%rax
+	movq (%rbp),%rsi
+	movq %rax,%r14
+	addq $8,%rbp
+	jmp Main.$wround4dp_info
+	.long  Main.round4dp_info - Main.round4dp_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.888914 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.repeatNTimes1_closure
+Main.repeatNTimes1_closure:
+	.quad	GHC.Integer.Type.S#_con_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.892079 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.repeatNTimes_closure
+Main.repeatNTimes_closure:
+	.quad	Main.repeatNTimes_info
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.892978 UTC
+
+.text
+.align 3
+lvl14_sa8N_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+lvl14_sa8N_info:
+_cakK:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cakL
+_cakM:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq Main.repeatNTimes2_closure+1(%rip),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Num.fromInteger_info
+_cakL:
+	jmp *-16(%r13)
+	.long  lvl14_sa8N_info - lvl14_sa8N_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.893669 UTC
+
+.text
+.align 3
+lvl15_sa8O_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+lvl15_sa8O_info:
+_cakR:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cakS
+_cakT:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq GHC.Tuple.()_closure+1(%rip),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Base.return_info
+_cakS:
+	jmp *-16(%r13)
+	.long  lvl15_sa8O_info - lvl15_sa8O_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.894807 UTC
+
+.text
+.align 3
+lvl16_sa8P_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+lvl16_sa8P_info:
+_cakY:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cakZ
+_cal0:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq Main.repeatNTimes1_closure+1(%rip),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Num.fromInteger_info
+_cakZ:
+	jmp *-16(%r13)
+	.long  lvl16_sa8P_info - lvl16_sa8P_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.896598 UTC
+
+.text
+.align 3
+sat_sa8U_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+sat_sa8U_info:
+_cali:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _calj
+_calk:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 32(%rbx),%rax
+	movq %rax,-32(%rbp)
+	movq 24(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Num.-_info
+_calj:
+	jmp *-16(%r13)
+	.long  sat_sa8U_info - sat_sa8U_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.897691 UTC
+
+.text
+.align 3
+sat_sa8V_info_dsp:
+.align 3
+	.quad	5
+	.quad	15
+sat_sa8V_info:
+_call:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _calm
+_caln:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _calp
+_calo:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rsi
+	movq 48(%rbx),%rbx
+	leaq sat_sa8U_info(%rip),%rdi
+	movq %rdi,-32(%r12)
+	movq %rax,-16(%r12)
+	movq %rcx,-8(%r12)
+	movq %rsi,(%r12)
+	movq %rbx,%rsi
+	leaq -32(%r12),%r14
+	movq %rdx,%rbx
+	addq $-16,%rbp
+	jmp repeatNTimes3_sa8Q_info
+_calp:
+	movq $40,904(%r13)
+_calm:
+	jmp *-16(%r13)
+	.long  sat_sa8V_info - sat_sa8V_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.89936 UTC
+
+.text
+.align 3
+repeatNTimes3_sa8Q_info_dsp:
+.align 3
+	.quad	8589934607
+	.quad	6
+	.quad	8
+repeatNTimes3_sa8Q_info:
+_calu:
+	leaq -88(%rbp),%rax
+	cmpq %r15,%rax
+	jb _calv
+_calw:
+	leaq block_cal6_info(%rip),%rax
+	movq %rax,-64(%rbp)
+	movq %r14,%rax
+	movq 22(%rbx),%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rcx
+	movq %rcx,-88(%rbp)
+	movq %rax,-80(%rbp)
+	movq 46(%rbx),%rcx
+	movq %rcx,-72(%rbp)
+	movq 6(%rbx),%rcx
+	movq %rcx,-56(%rbp)
+	movq 14(%rbx),%rcx
+	movq %rcx,-48(%rbp)
+	movq 30(%rbx),%rcx
+	movq %rcx,-40(%rbp)
+	movq 38(%rbx),%rcx
+	movq %rcx,-32(%rbp)
+	movq %rbx,-24(%rbp)
+	movq %rax,-16(%rbp)
+	movq %rsi,-8(%rbp)
+	addq $-88,%rbp
+	jmp GHC.Classes.==_info
+_calz:
+	movq $56,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	7
+	.quad	30
+block_cal6_info:
+_cal6:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	jne _cals
+_calr:
+	addq $56,%r12
+	cmpq 856(%r13),%r12
+	ja _calz
+_caly:
+	leaq sat_sa8V_info(%rip),%rax
+	movq %rax,-48(%r12)
+	movq 16(%rbp),%rax
+	movq %rax,-32(%r12)
+	movq 24(%rbp),%rax
+	movq %rax,-24(%r12)
+	movq 40(%rbp),%rax
+	movq %rax,-16(%r12)
+	movq 48(%rbp),%rax
+	movq %rax,-8(%r12)
+	movq 56(%rbp),%rax
+	movq %rax,(%r12)
+	movq 8(%rbp),%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rbx
+	movq %rbx,40(%rbp)
+	movq %rax,48(%rbp)
+	leaq -48(%r12),%rax
+	movq %rax,56(%rbp)
+	addq $40,%rbp
+	jmp GHC.Base.>>_info
+_calv:
+	jmp *-8(%r13)
+_cals:
+	movq 32(%rbp),%rbx
+	addq $64,%rbp
+	jmp stg_ap_0_fast
+	.long  repeatNTimes3_sa8Q_info - repeatNTimes3_sa8Q_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.900962 UTC
+
+.text
+.align 3
+Main.repeatNTimes_info_dsp:
+.align 3
+	.quad	21474836505
+	.quad	0
+	.quad	14
+.globl Main.repeatNTimes_info
+Main.repeatNTimes_info:
+_calD:
+	addq $128,%r12
+	cmpq 856(%r13),%r12
+	ja _calH
+_calG:
+	leaq lvl14_sa8N_info(%rip),%rax
+	movq %rax,-120(%r12)
+	movq %rsi,-104(%r12)
+	leaq lvl15_sa8O_info(%rip),%rax
+	movq %rax,-96(%r12)
+	movq %r14,-80(%r12)
+	leaq lvl16_sa8P_info(%rip),%rax
+	movq %rax,-72(%r12)
+	movq %rsi,-56(%r12)
+	leaq repeatNTimes3_sa8Q_info(%rip),%rax
+	movq %rax,-48(%r12)
+	movq %r14,-40(%r12)
+	movq %rsi,-32(%r12)
+	movq %rdi,-24(%r12)
+	leaq -120(%r12),%rax
+	movq %rax,-16(%r12)
+	leaq -96(%r12),%rax
+	movq %rax,-8(%r12)
+	leaq -72(%r12),%rax
+	movq %rax,(%r12)
+	movq %r9,%rsi
+	movq %r8,%r14
+	leaq -46(%r12),%rbx
+	jmp repeatNTimes3_sa8Q_info
+_calH:
+	movq $128,904(%r13)
+	leaq Main.repeatNTimes_closure(%rip),%rbx
+	jmp *-8(%r13)
+	.long  Main.repeatNTimes_info - Main.repeatNTimes_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.901822 UTC
+
+.data
+.align 3
+.align 0
+minus1_ra7S_closure:
+	.quad	GHC.Types.D#_con_info
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	240
+	.byte	191
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.902469 UTC
+
+.const_data
+.align 3
+.align 0
+SamR_srt:
+	.quad	GHC.Float.$fFloatingDouble_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.903155 UTC
+
+.data
+.align 3
+.align 0
+lvl1_ra7T_closure:
+	.quad	lvl1_ra7T_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.905543 UTC
+
+.text
+.align 3
+lvl1_ra7T_info_dsp:
+.align 3
+	.quad	SamR_srt-(lvl1_ra7T_info)+0
+	.quad	0
+	.quad	4294967317
+lvl1_ra7T_info:
+_camO:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _camP
+_camQ:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _camN
+_camM:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	leaq GHC.Float.$fFloatingDouble_closure(%rip),%r14
+	addq $-16,%rbp
+	jmp HBLAS.Level1.$wnrm2_info
+_camP:
+	jmp *-16(%r13)
+_camN:
+	jmp *(%rbx)
+	.long  lvl1_ra7T_info - lvl1_ra7T_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.926771 UTC
+
+.const_data
+.align 3
+.align 0
+SayB_srt:
+	.quad	HBLAS.Level1.axpy'_closure
+	.quad	HBLAS.Level2.$wgemv'_closure
+	.quad	Data.Vector.Mutable.uninitialised_closure
+	.quad	lvl1_ra7T_closure
+	.quad	Main.$w$sconjugateGradient_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.927186 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.$w$sconjugateGradient_closure
+Main.$w$sconjugateGradient_closure:
+	.quad	Main.$w$sconjugateGradient_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.927696 UTC
+
+.text
+.align 3
+.globl Main.$w$sconjugateGradient_slow
+Main.$w$sconjugateGradient_slow:
+_can0:
+	movq 32(%rbp),%r9
+	movq 24(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 8(%rbp),%rsi
+	movq (%rbp),%r14
+	addq $40,%rbp
+	jmp Main.$w$sconjugateGradient_info
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.930079 UTC
+
+.text
+.align 3
+r_sa92_info_dsp:
+.align 3
+	.quad	SayB_srt-(r_sa92_info)+0
+	.quad	3
+	.quad	12884901903
+r_sa92_info:
+_canW:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cao0
+_cao1:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_canT_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 24(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 16(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _canT
+_canU:
+	jmp *(%rbx)
+_cao0:
+	jmp *-16(%r13)
+.align 3
+	.quad	SayB_srt-(block_canZ_info)+0
+	.quad	2
+	.quad	4294967326
+block_canZ_info:
+_canZ:
+	movq 8(%rbp),%r9
+	movq 16(%rbp),%r8
+	movq %rbx,%rdi
+	leaq minus1_ra7S_closure+1(%rip),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $24,%rbp
+	jmp HBLAS.Level1.axpy'_info
+.align 3
+	.quad	SayB_srt-(block_canT_info)+0
+	.quad	2
+	.quad	12884901918
+block_canT_info:
+_canT:
+	leaq block_canZ_info(%rip),%rax
+	movq %rax,(%rbp)
+	movq 16(%rbp),%r9
+	movq 7(%rbx),%r8
+	movq 23(%rbx),%rdi
+	movq 15(%rbx),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	jmp HBLAS.Level2.$wgemv'_info
+	.long  r_sa92_info - r_sa92_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.931287 UTC
+
+.text
+.align 3
+sat_sa9s_info_dsp:
+.align 3
+	.quad	8589934593
+	.quad	15
+sat_sa9s_info:
+_caow:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caoH
+_caoI:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	leaq 32(%rbx),%rcx
+	movq 24(%rbx),%rbx
+	addq (%rcx),%rbx
+	movq 24(%rax,%rbx,8),%rax
+	leaq block_caoy_info(%rip),%rbx
+	movq %rbx,-24(%rbp)
+	movq %rax,%rbx
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _caoy
+_caoz:
+	jmp *(%rbx)
+_caoL:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	0
+	.quad	30
+block_caoy_info:
+_caoy:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _caoL
+_caoK:
+	movsd 7(%rbx),%xmm0
+	mulsd _nayU(%rip),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $8,%rbp
+	jmp *(%rbp)
+_caoH:
+	jmp *-16(%r13)
+	.long  sat_sa9s_info - sat_sa9s_info_dsp
+.const
+.align 3
+.align 3
+_nayU:
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	240
+	.byte	191
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.933704 UTC
+
+.text
+.align 3
+y_sa98_info_dsp:
+.align 3
+	.quad	SayB_srt-(y_sa98_info)+16
+	.quad	1
+	.quad	4294967312
+y_sa98_info:
+_caoM:
+	leaq -72(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caoN
+_caoO:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_cao9_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	movq 16(%rbx),%rbx
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _cao9
+_caoa:
+	jmp *(%rbx)
+_caoW:
+	movq stg_MUT_ARR_PTRS_FROZEN0_info@GOTPCREL(%rip),%rax
+	movq %rax,(%rbx)
+	leaq Data.Vector.Vector_con_info(%rip),%rax
+	movq %rax,-32(%r12)
+	movq %rbx,-24(%r12)
+	movq $0,-16(%r12)
+	movq %rsi,-8(%r12)
+	leaq -31(%r12),%rax
+	addq $-8,%r12
+	movq %rax,%rbx
+	andq $-8,%rbx
+	addq $32,%rbp
+	jmp *(%rbx)
+_caoT:
+	movq $40,904(%r13)
+	leaq block_caoj_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	movq %rdi,-16(%rbp)
+	movq %rsi,-8(%rbp)
+	movq %rbx,(%rbp)
+	addq $-24,%rbp
+	jmp *stg_gc_noregs@GOTPCREL(%rip)
+_caoN:
+	jmp *-16(%r13)
+.align 3
+	.quad	323
+	.quad	30
+block_caoe_info:
+_caoe:
+	movq 24(%rbp),%rax
+	movq 8(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	xorl %esi,%esi
+	xorl %edi,%edi
+_caoi:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _caoT
+_caoS:
+	cmpq %rcx,%rdi
+	jge _caoW
+_caoV:
+	leaq sat_sa9s_info(%rip),%r8
+	movq %r8,-32(%r12)
+	movq %rdx,-16(%r12)
+	movq %rax,-8(%r12)
+	movq %rdi,(%r12)
+	leaq -32(%r12),%r8
+	movq %r8,24(%rbx,%rsi,8)
+	movq stg_MUT_ARR_PTRS_DIRTY_info@GOTPCREL(%rip),%r8
+	movq %r8,(%rbx)
+	leaq 24(%rbx),%r8
+	movq %rsi,%r9
+	shrq $7,%r9
+	movq 8(%rbx),%r10
+	shlq $3,%r10
+	addq %r9,%r10
+	movb $1,(%r8,%r10,1)
+	incq %rsi
+	incq %rdi
+	jmp _caoi
+.align 3
+	.quad	2758
+	.quad	30
+block_caoj_info:
+_caoj:
+	movq 48(%rbp),%rax
+	movq 32(%rbp),%rbx
+	movq 40(%rbp),%rcx
+	movq 24(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	addq $24,%rbp
+_nazf:
+	movq %rsi,64(%rsp)
+	movq %rdi,%rsi
+	movq 64(%rsp),%rdi
+	movq %rbx,72(%rsp)
+	movq %rdx,%rbx
+	movq %rcx,%rdx
+	movq 72(%rsp),%rcx
+	jmp _caoi
+.align 3
+	.quad	SayB_srt-(block_cao9_info)+16
+	.quad	0
+	.quad	4294967326
+block_cao9_info:
+_cao9:
+	leaq block_caoe_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	leaq Data.Vector.Mutable.uninitialised_closure(%rip),%r14
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq %rdx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movq %rcx,(%rbp)
+	addq $-24,%rbp
+	jmp stg_newArray#
+	.long  y_sa98_info - y_sa98_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.936347 UTC
+
+.text
+.align 3
+z_sa9D_info_dsp:
+.align 3
+	.quad	SayB_srt-(z_sa9D_info)+8
+	.quad	2
+	.quad	4294967314
+z_sa9D_info:
+_capd:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cape
+_capf:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_capa_info(%rip),%rax
+	movq %rax,-32(%rbp)
+	movq 24(%rbx),%rax
+	movq 16(%rbx),%rbx
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _capa
+_capb:
+	jmp *(%rbx)
+_cape:
+	jmp *-16(%r13)
+.align 3
+	.quad	SayB_srt-(block_capa_info)+8
+	.quad	1
+	.quad	4294967326
+block_capa_info:
+_capa:
+	movq 8(%rbp),%r9
+	movq 7(%rbx),%r8
+	movq 23(%rbx),%rdi
+	movq 15(%rbx),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $16,%rbp
+	jmp HBLAS.Level2.$wgemv'_info
+	.long  z_sa9D_info - z_sa9D_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.940144 UTC
+
+.text
+.align 3
+s_sa9I_info_dsp:
+.align 3
+	.quad	2
+	.quad	18
+s_sa9I_info:
+_capo:
+	leaq -104(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caps
+_capt:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_capl_info(%rip),%rax
+	movq %rax,-32(%rbp)
+	movq 24(%rbx),%rax
+	movq 16(%rbx),%rbx
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _capl
+_capm:
+	jmp *(%rbx)
+_caqj:
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $32,%rbp
+	jmp *(%rbp)
+_caqe:
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $32,%rbp
+	jmp *(%rbp)
+.align 3
+	.quad	28489
+	.quad	30
+block_capV_info:
+_capV:
+	movq 16(%rbp),%rax
+	movq 48(%rbp),%rcx
+	addq 24(%rbp),%rcx
+	movq 24(%rax,%rcx,8),%rax
+	leaq block_caq3_info(%rip),%rcx
+	movq %rcx,-8(%rbp)
+	movsd 7(%rbx),%xmm0
+	movq %rax,%rbx
+	movsd %xmm0,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _caq3
+_caq7:
+	jmp *(%rbx)
+.align 3
+	.quad	387
+	.quad	30
+block_capr_info:
+_capr:
+	movq 24(%rbp),%rax
+	movq 16(%rbp),%rcx
+	movq 8(%rbp),%rdx
+	movq 7(%rbx),%rsi
+	movq 15(%rbx),%rdi
+	movq 23(%rbx),%rbx
+	xorpd %xmm0,%xmm0
+	xorl %r8d,%r8d
+	xorl %r9d,%r9d
+_capC:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _capH
+_capG:
+	cmpq %rcx,%r8
+	jge _caqj
+_caqg:
+	cmpq %rbx,%r9
+	jge _caqe
+_caq5:
+	addq $-16,%r12
+	addq %r8,%rax
+	movq 24(%rdx,%rax,8),%rax
+	leaq block_capV_info(%rip),%rcx
+	movq %rcx,-48(%rbp)
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %r9,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movsd %xmm0,-8(%rbp)
+	movq %rdi,(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _capV
+_capW:
+	jmp *(%rbx)
+.align 3
+	.quad	28489
+	.quad	30
+block_capD_info:
+_capD:
+	movq 72(%rbp),%rax
+	movq 64(%rbp),%rbx
+	movq 56(%rbp),%rcx
+	movq 48(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	movq 24(%rbp),%r8
+	movq 32(%rbp),%r9
+	movsd 40(%rbp),%xmm0
+	addq $48,%rbp
+_nazH:
+	movq %r8,64(%rsp)
+	movq %r9,%r8
+	movq 64(%rsp),%r9
+	movq %rbx,72(%rsp)
+	movq %rsi,%rbx
+	movq %rdi,%rsi
+	movq %rdx,%rdi
+	movq %rcx,%rdx
+	movq 72(%rsp),%rcx
+	jmp _capC
+.align 3
+	.quad	57034
+	.quad	30
+block_caq3_info:
+_caq3:
+	movq 80(%rbp),%rax
+	movq 72(%rbp),%rcx
+	movq 64(%rbp),%rdx
+	movq 56(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	movq 24(%rbp),%r8
+	addq $7,%rbx
+	movsd 8(%rbp),%xmm0
+	mulsd (%rbx),%xmm0
+	movsd 48(%rbp),%xmm1
+	addsd %xmm0,%xmm1
+	movq 40(%rbp),%rbx
+	incq %rbx
+	movq 32(%rbp),%r9
+	incq %r9
+	addq $56,%rbp
+_nazI:
+	movsd %xmm1,%xmm0
+	movq %rsi,80(%rsp)
+	movq %r8,%rsi
+	movq %rbx,%r8
+	movq %rdi,%rbx
+	movq 80(%rsp),%rdi
+	jmp _capC
+_capH:
+	movq $16,904(%r13)
+	leaq block_capD_info(%rip),%rax
+	movq %rax,-48(%rbp)
+	movq %rbx,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %r9,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movsd %xmm0,-8(%rbp)
+	movq %rdi,(%rbp)
+	addq $-48,%rbp
+	jmp *stg_gc_noregs@GOTPCREL(%rip)
+.align 3
+	.quad	1
+	.quad	30
+block_capl_info:
+_capl:
+	leaq block_capr_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 8(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,8(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _capr
+_capv:
+	jmp *(%rbx)
+_caps:
+	jmp *-16(%r13)
+	.long  s_sa9I_info - s_sa9I_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.944303 UTC
+
+.text
+.align 3
+t_saad_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+t_saad_info:
+_caqB:
+	leaq -112(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caqF
+_caqG:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caqy_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 24(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caqy
+_caqz:
+	jmp *(%rbx)
+_carQ:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	65
+	.quad	30
+block_carE_info:
+_carE:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _carQ
+_carP:
+	leaq 7(%rbx),%rax
+	movsd 8(%rbp),%xmm0
+	divsd (%rax),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $16,%rbp
+	jmp *(%rbp)
+_carN:
+	leaq block_carE_info(%rip),%rbx
+	movq %rbx,24(%rbp)
+	movq %rax,%rbx
+	movsd %xmm0,32(%rbp)
+	addq $24,%rbp
+	testb $7,%bl
+	jne _carE
+_carF:
+	jmp *(%rbx)
+_carA:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	65
+	.quad	30
+block_caro_info:
+_caro:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _carA
+_carz:
+	leaq 7(%rbx),%rax
+	movsd 8(%rbp),%xmm0
+	divsd (%rax),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $16,%rbp
+	jmp *(%rbp)
+_carx:
+	leaq block_caro_info(%rip),%rbx
+	movq %rbx,24(%rbp)
+	movq %rax,%rbx
+	movsd %xmm0,32(%rbp)
+	addq $24,%rbp
+	testb $7,%bl
+	jne _caro
+_carp:
+	jmp *(%rbx)
+.align 3
+	.quad	28490
+	.quad	30
+block_car6_info:
+_car6:
+	movq 16(%rbp),%rax
+	movq 48(%rbp),%rcx
+	addq 24(%rbp),%rcx
+	movq 24(%rax,%rcx,8),%rax
+	leaq block_care_info(%rip),%rcx
+	movq %rcx,-8(%rbp)
+	movsd 7(%rbx),%xmm0
+	movq %rax,%rbx
+	movsd %xmm0,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _care
+_cari:
+	jmp *(%rbx)
+.align 3
+	.quad	388
+	.quad	30
+block_caqE_info:
+_caqE:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	movq 7(%rbx),%rdi
+	movq 15(%rbx),%r8
+	movq 23(%rbx),%rbx
+	xorpd %xmm0,%xmm0
+	xorl %r9d,%r9d
+	xorl %r10d,%r10d
+_caqP:
+	cmpq %rdx,%r9
+	jge _carN
+_carC:
+	cmpq %rbx,%r10
+	jge _carx
+_carg:
+	addq %r9,%rcx
+	movq 24(%rsi,%rcx,8),%rax
+	leaq block_car6_info(%rip),%rcx
+	movq %rcx,-48(%rbp)
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,-40(%rbp)
+	movq %rdi,-32(%rbp)
+	movq %r10,-24(%rbp)
+	movq %r9,-16(%rbp)
+	movsd %xmm0,-8(%rbp)
+	movq %r8,(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _car6
+_car7:
+	jmp *(%rbx)
+.align 3
+	.quad	57035
+	.quad	30
+block_care_info:
+_care:
+	movq 88(%rbp),%rax
+	movq 80(%rbp),%rcx
+	movq 72(%rbp),%rdx
+	movq 64(%rbp),%rsi
+	movq 56(%rbp),%rdi
+	movq 16(%rbp),%r8
+	movq 24(%rbp),%r9
+	addq $7,%rbx
+	movsd 8(%rbp),%xmm0
+	mulsd (%rbx),%xmm0
+	movsd 48(%rbp),%xmm1
+	addsd %xmm0,%xmm1
+	movq 40(%rbp),%rbx
+	incq %rbx
+	movq 32(%rbp),%r10
+	incq %r10
+	addq $56,%rbp
+_naAa:
+	movsd %xmm1,%xmm0
+	movq %rdi,64(%rsp)
+	movq %r9,%rdi
+	movq %rbx,%r9
+	movq %r8,%rbx
+	movq 64(%rsp),%r8
+	jmp _caqP
+.align 3
+	.quad	2
+	.quad	30
+block_caqy_info:
+_caqy:
+	leaq block_caqE_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 8(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,8(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _caqE
+_caqI:
+	jmp *(%rbx)
+_caqF:
+	jmp *-16(%r13)
+	.long  t_saad_info - t_saad_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.945985 UTC
+
+.text
+.align 3
+sat_sadv_info_dsp:
+.align 3
+	.quad	SayB_srt-(sat_sadv_info)+0
+	.quad	4
+	.quad	4294967311
+sat_sadv_info:
+_cas4:
+	movq 16(%rbx),%r9
+	movq 24(%rbx),%r8
+	movq 32(%rbx),%rdi
+	movq 40(%rbx),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	jmp HBLAS.Level1.axpy'_info
+	.long  sat_sadv_info - sat_sadv_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.946859 UTC
+
+.text
+.align 3
+sat_sab5_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+sat_sab5_info:
+_casg:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _casn
+_caso:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_casd_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	movq 16(%rbx),%rbx
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _casd
+_case:
+	jmp *(%rbx)
+_casr:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	0
+	.quad	30
+block_casd_info:
+_casd:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _casr
+_casq:
+	movsd 7(%rbx),%xmm0
+	mulsd _naAh(%rip),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $8,%rbp
+	jmp *(%rbp)
+_casn:
+	jmp *-16(%r13)
+	.long  sat_sab5_info - sat_sab5_info_dsp
+.const
+.align 3
+.align 3
+_naAh:
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	240
+	.byte	191
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.947602 UTC
+
+.text
+.align 3
+rr_sab1_info_dsp:
+.align 3
+	.quad	SayB_srt-(rr_sab1_info)+0
+	.quad	4
+	.quad	4294967311
+rr_sab1_info:
+_cass:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cast
+_casu:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _casw
+_casv:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rbx
+	leaq sat_sab5_info(%rip),%rsi
+	movq %rsi,-16(%r12)
+	movq %rbx,(%r12)
+	movq %rax,%r9
+	movq %rcx,%r8
+	movq %rdx,%rdi
+	leaq -16(%r12),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $-16,%rbp
+	jmp HBLAS.Level1.axpy'_info
+_casw:
+	movq $24,904(%r13)
+_cast:
+	jmp *-16(%r13)
+	.long  rr_sab1_info - rr_sab1_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.95036 UTC
+
+.text
+.align 3
+ds_sabi_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+ds_sabi_info:
+_casN:
+	leaq -112(%rbp),%rax
+	cmpq %r15,%rax
+	jb _casR
+_casS:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_casK_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _casK
+_casL:
+	jmp *(%rbx)
+_cau2:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	65
+	.quad	30
+block_catQ_info:
+_catQ:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _cau2
+_cau1:
+	leaq 7(%rbx),%rax
+	movsd 8(%rbp),%xmm0
+	divsd (%rax),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $16,%rbp
+	jmp *(%rbp)
+_catZ:
+	leaq block_catQ_info(%rip),%rbx
+	movq %rbx,24(%rbp)
+	movq %rax,%rbx
+	movsd %xmm0,32(%rbp)
+	addq $24,%rbp
+	testb $7,%bl
+	jne _catQ
+_catR:
+	jmp *(%rbx)
+_catM:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	65
+	.quad	30
+block_catA_info:
+_catA:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _catM
+_catL:
+	leaq 7(%rbx),%rax
+	movsd 8(%rbp),%xmm0
+	divsd (%rax),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $16,%rbp
+	jmp *(%rbp)
+_catJ:
+	leaq block_catA_info(%rip),%rbx
+	movq %rbx,24(%rbp)
+	movq %rax,%rbx
+	movsd %xmm0,32(%rbp)
+	addq $24,%rbp
+	testb $7,%bl
+	jne _catA
+_catB:
+	jmp *(%rbx)
+.align 3
+	.quad	28490
+	.quad	30
+block_cati_info:
+_cati:
+	movq 16(%rbp),%rax
+	movq 48(%rbp),%rcx
+	addq 24(%rbp),%rcx
+	movq 24(%rax,%rcx,8),%rax
+	leaq block_catq_info(%rip),%rcx
+	movq %rcx,-8(%rbp)
+	movsd 7(%rbx),%xmm0
+	movq %rax,%rbx
+	movsd %xmm0,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _catq
+_catu:
+	jmp *(%rbx)
+.align 3
+	.quad	388
+	.quad	30
+block_casQ_info:
+_casQ:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	movq 7(%rbx),%rdi
+	movq 15(%rbx),%r8
+	movq 23(%rbx),%rbx
+	xorpd %xmm0,%xmm0
+	xorl %r9d,%r9d
+	xorl %r10d,%r10d
+_cat1:
+	cmpq %rdx,%r9
+	jge _catZ
+_catO:
+	cmpq %rbx,%r10
+	jge _catJ
+_cats:
+	addq %r9,%rcx
+	movq 24(%rsi,%rcx,8),%rax
+	leaq block_cati_info(%rip),%rcx
+	movq %rcx,-48(%rbp)
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,-40(%rbp)
+	movq %rdi,-32(%rbp)
+	movq %r10,-24(%rbp)
+	movq %r9,-16(%rbp)
+	movsd %xmm0,-8(%rbp)
+	movq %r8,(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _cati
+_catj:
+	jmp *(%rbx)
+.align 3
+	.quad	57035
+	.quad	30
+block_catq_info:
+_catq:
+	movq 88(%rbp),%rax
+	movq 80(%rbp),%rcx
+	movq 72(%rbp),%rdx
+	movq 64(%rbp),%rsi
+	movq 56(%rbp),%rdi
+	movq 16(%rbp),%r8
+	movq 24(%rbp),%r9
+	addq $7,%rbx
+	movsd 8(%rbp),%xmm0
+	mulsd (%rbx),%xmm0
+	movsd 48(%rbp),%xmm1
+	addsd %xmm0,%xmm1
+	movq 40(%rbp),%rbx
+	incq %rbx
+	movq 32(%rbp),%r10
+	incq %r10
+	addq $56,%rbp
+_naAR:
+	movsd %xmm1,%xmm0
+	movq %rdi,64(%rsp)
+	movq %r9,%rdi
+	movq %rbx,%r9
+	movq %r8,%rbx
+	movq 64(%rsp),%r8
+	jmp _cat1
+.align 3
+	.quad	2
+	.quad	30
+block_casK_info:
+_casK:
+	leaq block_casQ_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 8(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,8(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _casQ
+_casU:
+	jmp *(%rbx)
+_casR:
+	jmp *-16(%r13)
+	.long  ds_sabi_info - ds_sabi_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.952152 UTC
+
+.text
+.align 3
+sat_sac7_info_dsp:
+.align 3
+	.quad	8589934594
+	.quad	15
+sat_sac7_info:
+_cauv:
+	leaq -48(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cauK
+_cauL:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caus_info(%rip),%rax
+	movq %rax,-48(%rbp)
+	movq 16(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 40(%rbx),%rdx
+	movq 24(%rbx),%rbx
+	movq %rcx,-40(%rbp)
+	movq %rax,-32(%rbp)
+	movq %rdx,-24(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _caus
+_caut:
+	jmp *(%rbx)
+_cauP:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	65
+	.quad	30
+block_cauB_info:
+_cauB:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _cauP
+_cauO:
+	leaq 7(%rbx),%rax
+	movsd 8(%rbp),%xmm0
+	mulsd (%rax),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $16,%rbp
+	jmp *(%rbp)
+_cauK:
+	jmp *-16(%r13)
+.align 3
+	.quad	323
+	.quad	30
+block_caus_info:
+_caus:
+	movq 16(%rbp),%rax
+	movq 8(%rbp),%rcx
+	addq 24(%rbp),%rcx
+	movq 24(%rax,%rcx,8),%rax
+	leaq block_cauB_info(%rip),%rcx
+	movq %rcx,16(%rbp)
+	movsd 7(%rbx),%xmm0
+	movq %rax,%rbx
+	movsd %xmm0,24(%rbp)
+	addq $16,%rbp
+	testb $7,%bl
+	jne _cauB
+_cauC:
+	jmp *(%rbx)
+	.long  sat_sac7_info - sat_sac7_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.954261 UTC
+
+.text
+.align 3
+yy_saba_info_dsp:
+.align 3
+	.quad	SayB_srt-(yy_saba_info)+0
+	.quad	5
+	.quad	21474836495
+yy_saba_info:
+_cauQ:
+	leaq -96(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cauR
+_cauS:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_casz_info(%rip),%rax
+	movq %rax,-56(%rbp)
+	movq 16(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 40(%rbx),%rdx
+	movq 48(%rbx),%rsi
+	movq 24(%rbx),%rbx
+	movq %rax,-48(%rbp)
+	movq %rcx,-40(%rbp)
+	movq %rdx,-32(%rbp)
+	movq %rsi,-24(%rbp)
+	addq $-56,%rbp
+	testb $7,%bl
+	jne _casz
+_casA:
+	jmp *(%rbx)
+_cav2:
+	movq stg_MUT_ARR_PTRS_FROZEN0_info@GOTPCREL(%rip),%rdx
+	movq %rdx,(%rbx)
+	leaq Data.Vector.Vector_con_info(%rip),%rdx
+	movq %rdx,-40(%r12)
+	movq %rbx,-32(%r12)
+	movq $0,-24(%r12)
+	movq %r9,-16(%r12)
+	leaq -39(%r12),%rbx
+	addq $-16,%r12
+	movq %rcx,%r9
+	movq %rbx,%r8
+	movq %rax,%rdi
+	leaq minus1_ra7S_closure+1(%rip),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $64,%rbp
+	jmp HBLAS.Level1.axpy'_info
+_cauZ:
+	movq $48,904(%r13)
+	leaq block_cauh_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %r9,-8(%rbp)
+	movq %r10,(%rbp)
+	movq %rbx,40(%rbp)
+	movq %r8,48(%rbp)
+	addq $-16,%rbp
+	jmp *stg_gc_noregs@GOTPCREL(%rip)
+_cauW:
+	movq $40,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+_cauR:
+	jmp *-16(%r13)
+.align 3
+	.quad	SayB_srt-(block_casE_info)+0
+	.quad	327
+	.quad	4294967326
+block_casE_info:
+_casE:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _cauW
+_cauV:
+	leaq ds_sabi_info(%rip),%rax
+	movq %rax,-32(%r12)
+	movq 40(%rbp),%rax
+	movq %rax,-16(%r12)
+	movq 48(%rbp),%rax
+	movq %rax,-8(%r12)
+	movq 56(%rbp),%rax
+	movq %rax,(%r12)
+	movq 32(%rbp),%rcx
+	movq 24(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	leaq -32(%r12),%r8
+	xorl %r9d,%r9d
+	xorl %r10d,%r10d
+_caug:
+	addq $48,%r12
+	cmpq 856(%r13),%r12
+	ja _cauZ
+_cauY:
+	cmpq %rsi,%r10
+	jge _cav2
+_cav1:
+	leaq sat_sac7_info(%rip),%r11
+	movq %r11,-40(%r12)
+	movq %rdi,-24(%r12)
+	movq %r8,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %r10,(%r12)
+	leaq -40(%r12),%r11
+	movq %r11,24(%rbx,%r9,8)
+	movq stg_MUT_ARR_PTRS_DIRTY_info@GOTPCREL(%rip),%r11
+	movq %r11,(%rbx)
+	leaq 24(%rbx),%r11
+	movq %r9,%r14
+	shrq $7,%r14
+	movq %r8,72(%rsp)
+	movq 8(%rbx),%r8
+	shlq $3,%r8
+	addq %r14,%r8
+	movb $1,(%r11,%r8,1)
+	incq %r9
+	incq %r10
+_naBo:
+	movq 72(%rsp),%r8
+	jmp _caug
+.align 3
+	.quad	SayB_srt-(block_cauh_info)+0
+	.quad	1481
+	.quad	4294967326
+block_cauh_info:
+_cauh:
+	movq 64(%rbp),%rax
+	movq 48(%rbp),%rbx
+	movq 72(%rbp),%rcx
+	movq 40(%rbp),%rdx
+	movq 24(%rbp),%rsi
+	movq 32(%rbp),%rdi
+	movq 56(%rbp),%r8
+	movq 16(%rbp),%r9
+	movq 8(%rbp),%r10
+	addq $16,%rbp
+_naBn:
+	movq %r9,64(%rsp)
+	movq %r10,%r9
+	movq 64(%rsp),%r10
+	movq %rax,72(%rsp)
+	movq %rcx,%rax
+	movq %rbx,%rcx
+	movq %r8,%rbx
+	movq 72(%rsp),%r8
+	jmp _caug
+.align 3
+	.quad	SayB_srt-(block_casz_info)+0
+	.quad	4
+	.quad	21474836510
+block_casz_info:
+_casz:
+	leaq block_casE_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	leaq Data.Vector.Mutable.uninitialised_closure(%rip),%r14
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq %rdx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movq %rcx,(%rbp)
+	addq $-24,%rbp
+	jmp stg_newArray#
+	.long  yy_saba_info - yy_saba_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.956301 UTC
+
+.text
+.align 3
+zz_saci_info_dsp:
+.align 3
+	.quad	SayB_srt-(zz_saci_info)+8
+	.quad	2
+	.quad	4294967314
+zz_saci_info:
+_cavj:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cavk
+_cavl:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_cavg_info(%rip),%rax
+	movq %rax,-32(%rbp)
+	movq 24(%rbx),%rax
+	movq 16(%rbx),%rbx
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _cavg
+_cavh:
+	jmp *(%rbx)
+_cavk:
+	jmp *-16(%r13)
+.align 3
+	.quad	SayB_srt-(block_cavg_info)+8
+	.quad	1
+	.quad	4294967326
+block_cavg_info:
+_cavg:
+	movq 8(%rbp),%r9
+	movq 7(%rbx),%r8
+	movq 23(%rbx),%rdi
+	movq 15(%rbx),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $16,%rbp
+	jmp HBLAS.Level2.$wgemv'_info
+	.long  zz_saci_info - zz_saci_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.958416 UTC
+
+.text
+.align 3
+ss_sacn_info_dsp:
+.align 3
+	.quad	2
+	.quad	18
+ss_sacn_info:
+_cavu:
+	leaq -104(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cavy
+_cavz:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_cavr_info(%rip),%rax
+	movq %rax,-32(%rbp)
+	movq 24(%rbx),%rax
+	movq 16(%rbx),%rbx
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _cavr
+_cavs:
+	jmp *(%rbx)
+_cawp:
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $32,%rbp
+	jmp *(%rbp)
+_cawk:
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $32,%rbp
+	jmp *(%rbp)
+.align 3
+	.quad	28489
+	.quad	30
+block_caw1_info:
+_caw1:
+	movq 16(%rbp),%rax
+	movq 48(%rbp),%rcx
+	addq 24(%rbp),%rcx
+	movq 24(%rax,%rcx,8),%rax
+	leaq block_caw9_info(%rip),%rcx
+	movq %rcx,-8(%rbp)
+	movsd 7(%rbx),%xmm0
+	movq %rax,%rbx
+	movsd %xmm0,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _caw9
+_cawd:
+	jmp *(%rbx)
+.align 3
+	.quad	387
+	.quad	30
+block_cavx_info:
+_cavx:
+	movq 24(%rbp),%rax
+	movq 16(%rbp),%rcx
+	movq 8(%rbp),%rdx
+	movq 7(%rbx),%rsi
+	movq 15(%rbx),%rdi
+	movq 23(%rbx),%rbx
+	xorpd %xmm0,%xmm0
+	xorl %r8d,%r8d
+	xorl %r9d,%r9d
+_cavI:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _cavN
+_cavM:
+	cmpq %rcx,%r8
+	jge _cawp
+_cawm:
+	cmpq %rbx,%r9
+	jge _cawk
+_cawb:
+	addq $-16,%r12
+	addq %r8,%rax
+	movq 24(%rdx,%rax,8),%rax
+	leaq block_caw1_info(%rip),%rcx
+	movq %rcx,-48(%rbp)
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %r9,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movsd %xmm0,-8(%rbp)
+	movq %rdi,(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _caw1
+_caw2:
+	jmp *(%rbx)
+.align 3
+	.quad	28489
+	.quad	30
+block_cavJ_info:
+_cavJ:
+	movq 72(%rbp),%rax
+	movq 64(%rbp),%rbx
+	movq 56(%rbp),%rcx
+	movq 48(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	movq 24(%rbp),%r8
+	movq 32(%rbp),%r9
+	movsd 40(%rbp),%xmm0
+	addq $48,%rbp
+_naBQ:
+	movq %r8,64(%rsp)
+	movq %r9,%r8
+	movq 64(%rsp),%r9
+	movq %rbx,72(%rsp)
+	movq %rsi,%rbx
+	movq %rdi,%rsi
+	movq %rdx,%rdi
+	movq %rcx,%rdx
+	movq 72(%rsp),%rcx
+	jmp _cavI
+.align 3
+	.quad	57034
+	.quad	30
+block_caw9_info:
+_caw9:
+	movq 80(%rbp),%rax
+	movq 72(%rbp),%rcx
+	movq 64(%rbp),%rdx
+	movq 56(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	movq 24(%rbp),%r8
+	addq $7,%rbx
+	movsd 8(%rbp),%xmm0
+	mulsd (%rbx),%xmm0
+	movsd 48(%rbp),%xmm1
+	addsd %xmm0,%xmm1
+	movq 40(%rbp),%rbx
+	incq %rbx
+	movq 32(%rbp),%r9
+	incq %r9
+	addq $56,%rbp
+_naBR:
+	movsd %xmm1,%xmm0
+	movq %rsi,80(%rsp)
+	movq %r8,%rsi
+	movq %rbx,%r8
+	movq %rdi,%rbx
+	movq 80(%rsp),%rdi
+	jmp _cavI
+_cavN:
+	movq $16,904(%r13)
+	leaq block_cavJ_info(%rip),%rax
+	movq %rax,-48(%rbp)
+	movq %rbx,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %r9,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movsd %xmm0,-8(%rbp)
+	movq %rdi,(%rbp)
+	addq $-48,%rbp
+	jmp *stg_gc_noregs@GOTPCREL(%rip)
+.align 3
+	.quad	1
+	.quad	30
+block_cavr_info:
+_cavr:
+	leaq block_cavx_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 8(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,8(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _cavx
+_cavB:
+	jmp *(%rbx)
+_cavy:
+	jmp *-16(%r13)
+	.long  ss_sacn_info - ss_sacn_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.961986 UTC
+
+.text
+.align 3
+tt_sacS_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+tt_sacS_info:
+_cawH:
+	leaq -112(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cawL
+_cawM:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_cawE_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 24(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 16(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _cawE
+_cawF:
+	jmp *(%rbx)
+_caxW:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	65
+	.quad	30
+block_caxK_info:
+_caxK:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _caxW
+_caxV:
+	leaq 7(%rbx),%rax
+	movsd 8(%rbp),%xmm0
+	divsd (%rax),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $16,%rbp
+	jmp *(%rbp)
+_caxT:
+	leaq block_caxK_info(%rip),%rbx
+	movq %rbx,24(%rbp)
+	movq %rax,%rbx
+	movsd %xmm0,32(%rbp)
+	addq $24,%rbp
+	testb $7,%bl
+	jne _caxK
+_caxL:
+	jmp *(%rbx)
+_caxG:
+	movq $16,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	65
+	.quad	30
+block_caxu_info:
+_caxu:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _caxG
+_caxF:
+	leaq 7(%rbx),%rax
+	movsd 8(%rbp),%xmm0
+	divsd (%rax),%xmm0
+	leaq GHC.Types.D#_con_info(%rip),%rax
+	movq %rax,-8(%r12)
+	movsd %xmm0,(%r12)
+	leaq -7(%r12),%rbx
+	addq $16,%rbp
+	jmp *(%rbp)
+_caxD:
+	leaq block_caxu_info(%rip),%rbx
+	movq %rbx,24(%rbp)
+	movq %rax,%rbx
+	movsd %xmm0,32(%rbp)
+	addq $24,%rbp
+	testb $7,%bl
+	jne _caxu
+_caxv:
+	jmp *(%rbx)
+.align 3
+	.quad	28490
+	.quad	30
+block_caxc_info:
+_caxc:
+	movq 16(%rbp),%rax
+	movq 48(%rbp),%rcx
+	addq 24(%rbp),%rcx
+	movq 24(%rax,%rcx,8),%rax
+	leaq block_caxk_info(%rip),%rcx
+	movq %rcx,-8(%rbp)
+	movsd 7(%rbx),%xmm0
+	movq %rax,%rbx
+	movsd %xmm0,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _caxk
+_caxo:
+	jmp *(%rbx)
+.align 3
+	.quad	388
+	.quad	30
+block_cawK_info:
+_cawK:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	movq 7(%rbx),%rdi
+	movq 15(%rbx),%r8
+	movq 23(%rbx),%rbx
+	xorpd %xmm0,%xmm0
+	xorl %r9d,%r9d
+	xorl %r10d,%r10d
+_cawV:
+	cmpq %rdx,%r9
+	jge _caxT
+_caxI:
+	cmpq %rbx,%r10
+	jge _caxD
+_caxm:
+	addq %r9,%rcx
+	movq 24(%rsi,%rcx,8),%rax
+	leaq block_caxc_info(%rip),%rcx
+	movq %rcx,-48(%rbp)
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,-40(%rbp)
+	movq %rdi,-32(%rbp)
+	movq %r10,-24(%rbp)
+	movq %r9,-16(%rbp)
+	movsd %xmm0,-8(%rbp)
+	movq %r8,(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _caxc
+_caxd:
+	jmp *(%rbx)
+.align 3
+	.quad	57035
+	.quad	30
+block_caxk_info:
+_caxk:
+	movq 88(%rbp),%rax
+	movq 80(%rbp),%rcx
+	movq 72(%rbp),%rdx
+	movq 64(%rbp),%rsi
+	movq 56(%rbp),%rdi
+	movq 16(%rbp),%r8
+	movq 24(%rbp),%r9
+	addq $7,%rbx
+	movsd 8(%rbp),%xmm0
+	mulsd (%rbx),%xmm0
+	movsd 48(%rbp),%xmm1
+	addsd %xmm0,%xmm1
+	movq 40(%rbp),%rbx
+	incq %rbx
+	movq 32(%rbp),%r10
+	incq %r10
+	addq $56,%rbp
+_naCj:
+	movsd %xmm1,%xmm0
+	movq %rdi,64(%rsp)
+	movq %r9,%rdi
+	movq %rbx,%r9
+	movq %r8,%rbx
+	movq 64(%rsp),%r8
+	jmp _cawV
+.align 3
+	.quad	2
+	.quad	30
+block_cawE_info:
+_cawE:
+	leaq block_cawK_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 8(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,8(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _cawK
+_cawO:
+	jmp *(%rbx)
+_cawL:
+	jmp *-16(%r13)
+	.long  tt_sacS_info - tt_sacS_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.963677 UTC
+
+.text
+.align 3
+sat_sadu_info_dsp:
+.align 3
+	.quad	SayB_srt-(sat_sadu_info)+0
+	.quad	4
+	.quad	4294967311
+sat_sadu_info:
+_cayb:
+	movq 16(%rbx),%r9
+	movq 24(%rbx),%r8
+	movq 32(%rbx),%rdi
+	movq 40(%rbx),%rsi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	jmp HBLAS.Level1.axpy'_info
+	.long  sat_sadu_info - sat_sadu_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.96596 UTC
+
+.text
+.align 3
+Main.$w$sconjugateGradient_info_dsp:
+.align 3
+	.quad	Main.$w$sconjugateGradient_slow-(Main.$w$sconjugateGradient_info)+0
+	.quad	389
+	.quad	SayB_srt-(Main.$w$sconjugateGradient_info)+0
+	.quad	21474836480
+	.quad	0
+	.quad	133143986190
+.globl Main.$w$sconjugateGradient_info
+Main.$w$sconjugateGradient_info:
+_caye:
+	leaq -88(%rbp),%rax
+	cmpq %r15,%rax
+	jb _cayf
+_cayg:
+	addq $248,%r12
+	cmpq 856(%r13),%r12
+	ja _cayi
+_cayh:
+	leaq Data.Vector.Vector_con_info(%rip),%rax
+	movq %rax,-240(%r12)
+	movq %r8,-232(%r12)
+	movq %rsi,-224(%r12)
+	movq %rdi,-216(%r12)
+	leaq r_sa92_info(%rip),%rax
+	movq %rax,-208(%r12)
+	movq %r14,-192(%r12)
+	movq %r9,-184(%r12)
+	leaq -239(%r12),%rax
+	movq %rax,-176(%r12)
+	leaq y_sa98_info(%rip),%rbx
+	movq %rbx,-168(%r12)
+	leaq -208(%r12),%rbx
+	movq %rbx,-152(%r12)
+	leaq z_sa9D_info(%rip),%rcx
+	movq %rcx,-144(%r12)
+	movq %r14,-128(%r12)
+	leaq -168(%r12),%rcx
+	movq %rcx,-120(%r12)
+	leaq s_sa9I_info(%rip),%rdx
+	movq %rdx,-112(%r12)
+	movq %rcx,-96(%r12)
+	leaq -144(%r12),%rdx
+	movq %rdx,-88(%r12)
+	leaq t_saad_info(%rip),%rsi
+	movq %rsi,-80(%r12)
+	movq %rbx,-64(%r12)
+	movq %rcx,-56(%r12)
+	leaq -112(%r12),%rsi
+	movq %rsi,-48(%r12)
+	leaq sat_sadv_info(%rip),%r8
+	movq %r8,-40(%r12)
+	movq %r9,-24(%r12)
+	movq %rax,-16(%r12)
+	movq %rcx,-8(%r12)
+	leaq -80(%r12),%r8
+	movq %r8,(%r12)
+	leaq -40(%r12),%r10
+_naCU:
+	movq %r10,%r11
+	movq %rdi,%r10
+	movq %rdx,%rdi
+	movq %r14,%rdx
+	movq %rax,64(%rsp)
+	movq %r8,%rax
+	movq %rsi,%r8
+	movq %rcx,%rsi
+	movq %rbx,%rcx
+	movq %r9,%rbx
+	movq 64(%rsp),%r9
+_canj:
+	testq %r10,%r10
+	jne _cayl
+_cayy:
+	movq %r11,%rbx
+	andq $-8,%rbx
+	jmp *(%rbx)
+.align 3
+	.quad	SayB_srt-(block_canz_info)+0
+	.quad	33290
+	.quad	64424509470
+block_canz_info:
+_canz:
+	addq $208,%r12
+	cmpq 856(%r13),%r12
+	ja _cayt
+_cays:
+	movq 72(%rbp),%rax
+	movsd 7(%rbx),%xmm0
+	ucomisd _naCG(%rip),%xmm0
+	jp _cayv
+	jb _cayw
+_cayv:
+	leaq yy_saba_info(%rip),%rbx
+	movq %rbx,-200(%r12)
+	movq 24(%rbp),%rbx
+	movq %rbx,-184(%r12)
+	movq 40(%rbp),%rcx
+	movq %rcx,-176(%r12)
+	movq 48(%rbp),%rcx
+	movq %rcx,-168(%r12)
+	movq 56(%rbp),%rcx
+	movq %rcx,-160(%r12)
+	movq 64(%rbp),%rcx
+	movq %rcx,-152(%r12)
+	leaq zz_saci_info(%rip),%rdx
+	movq %rdx,-144(%r12)
+	movq 16(%rbp),%rdx
+	movq %rdx,-128(%r12)
+	leaq -200(%r12),%rsi
+	movq %rsi,-120(%r12)
+	leaq ss_sacn_info(%rip),%rdi
+	movq %rdi,-112(%r12)
+	movq %rsi,-96(%r12)
+	leaq -144(%r12),%rdi
+	movq %rdi,-88(%r12)
+	leaq tt_sacS_info(%rip),%r8
+	movq %r8,-80(%r12)
+	movq %rcx,-64(%r12)
+	movq %rsi,-56(%r12)
+	leaq -112(%r12),%r8
+	movq %r8,-48(%r12)
+	leaq sat_sadu_info(%rip),%r9
+	movq %r9,-40(%r12)
+	movq %rbx,-24(%r12)
+	movq %rax,-16(%r12)
+	movq %rsi,-8(%r12)
+	leaq -80(%r12),%rax
+	movq %rax,(%r12)
+	movq 8(%rbp),%r9
+	movq 80(%rbp),%r10
+	decq %r10
+	addq $88,%rbp
+	leaq -40(%r12),%r11
+	jmp _canj
+_cayx:
+	addq $-48,%r12
+	movq 8(%rbp),%rbx
+	addq $88,%rbp
+	jmp *(%rbp)
+_cayw:
+	addq $-208,%r12
+	movq %rax,%rbx
+	andq $-8,%rbx
+	addq $88,%rbp
+	jmp *(%rbx)
+_cayt:
+	movq $208,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	SayB_srt-(block_cano_info)+0
+	.quad	32778
+	.quad	64424509470
+block_cano_info:
+_cano:
+	addq $48,%r12
+	cmpq 856(%r13),%r12
+	ja _cayo
+_cayn:
+	movsd 7(%rbx),%xmm0
+	ucomisd _naCx(%rip),%xmm0
+	jp _cayq
+	jb _cayx
+_cayq:
+	leaq rr_sab1_info(%rip),%rax
+	movq %rax,-40(%r12)
+	movq 24(%rbp),%rax
+	movq %rax,-24(%r12)
+	movq 32(%rbp),%rax
+	movq %rax,-16(%r12)
+	movq 48(%rbp),%rax
+	movq %rax,-8(%r12)
+	movq 64(%rbp),%rax
+	movq %rax,(%r12)
+	leaq block_canz_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq -40(%r12),%rax
+	movq %rax,%r14
+	leaq lvl1_ra7T_closure(%rip),%rbx
+	movq %rax,64(%rbp)
+	jmp stg_ap_p_fast
+_cayo:
+	movq $48,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+_cayl:
+	leaq block_cano_info(%rip),%r14
+	movq %r14,-88(%rbp)
+	movq %rcx,%r14
+	movq %rbx,72(%rsp)
+	leaq lvl1_ra7T_closure(%rip),%rbx
+	movq %r9,-80(%rbp)
+	movq %rdx,-72(%rbp)
+	movq 72(%rsp),%rdx
+	movq %rdx,-64(%rbp)
+	movq %rcx,-56(%rbp)
+	movq %rsi,-48(%rbp)
+	movq %rdi,-40(%rbp)
+	movq %r8,-32(%rbp)
+	movq %rax,-24(%rbp)
+	movq %r11,-16(%rbp)
+	movq %r10,-8(%rbp)
+	addq $-88,%rbp
+	jmp stg_ap_p_fast
+_cayi:
+	movq $248,904(%r13)
+_cayf:
+	leaq Main.$w$sconjugateGradient_closure(%rip),%rbx
+	movq %r14,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %rdi,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movq %r9,-8(%rbp)
+	addq $-40,%rbp
+	jmp *-8(%r13)
+	.long  Main.$w$sconjugateGradient_info - Main.$w$sconjugateGradient_info_dsp
+.const
+.align 3
+.align 3
+_naCx:
+	.byte	187
+	.byte	189
+	.byte	215
+	.byte	217
+	.byte	223
+	.byte	124
+	.byte	219
+	.byte	61
+.const
+.align 3
+.align 3
+_naCG:
+	.byte	187
+	.byte	189
+	.byte	215
+	.byte	217
+	.byte	223
+	.byte	124
+	.byte	219
+	.byte	61
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.967585 UTC
+
+.data
+.align 3
+.align 0
+lvl2_ra7U_closure:
+	.quad	GHC.Integer.Type.S#_con_info
+	.quad	10000000000
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.968101 UTC
+
+.data
+.align 3
+.align 0
+lvl3_ra7V_closure:
+	.quad	GHC.Real.:%_con_info
+	.quad	Main.repeatNTimes2_closure+1
+	.quad	lvl2_ra7U_closure+1
+	.quad	3
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.98088 UTC
+
+.const_data
+.align 3
+.align 0
+SaJM_srt:
+	.quad	HBLAS.Level1.axpy'_closure
+	.quad	HBLAS.Level2.$wgemv'_closure
+	.quad	Data.Vector.Mutable.uninitialised_closure
+	.quad	Main.$wconjugateGradient_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:14.981226 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.$wconjugateGradient_closure
+Main.$wconjugateGradient_closure:
+	.quad	Main.$wconjugateGradient_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.060882 UTC
+
+.text
+.align 3
+.globl Main.$wconjugateGradient_slow
+Main.$wconjugateGradient_slow:
+_caD0:
+	movq 32(%rbp),%r9
+	movq 24(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 8(%rbp),%rsi
+	movq (%rbp),%r14
+	addq $40,%rbp
+	jmp Main.$wconjugateGradient_info
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.061456 UTC
+
+.text
+.align 3
+lvl14_sadE_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+lvl14_sadE_info:
+_caDV:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caDW
+_caDX:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	addq $-16,%rbp
+	jmp HBLAS.Level1.$wnrm2_info
+_caDW:
+	jmp *-16(%r13)
+	.long  lvl14_sadE_info - lvl14_sadE_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.062287 UTC
+
+.text
+.align 3
+$dNum_sadF_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+$dNum_sadF_info:
+_caE0:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caE1
+_caE2:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	addq $-16,%rbp
+	jmp GHC.Real.$p1Fractional_info
+_caE1:
+	jmp *-16(%r13)
+	.long  $dNum_sadF_info - $dNum_sadF_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.063645 UTC
+
+.text
+.align 3
+sat_sadH_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+sat_sadH_info:
+_caE9:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caEa
+_caEb:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq Main.repeatNTimes2_closure+1(%rip),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Num.fromInteger_info
+_caEa:
+	jmp *-16(%r13)
+	.long  sat_sadH_info - sat_sadH_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.064543 UTC
+
+.text
+.align 3
+minus2_sadG_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+minus2_sadG_info:
+_caEc:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caEd
+_caEe:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _caEg
+_caEf:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	leaq sat_sadH_info(%rip),%rbx
+	movq %rbx,-16(%r12)
+	movq %rax,(%r12)
+	movq %rax,%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq -16(%r12),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Num.negate_info
+_caEg:
+	movq $24,904(%r13)
+_caEd:
+	jmp *-16(%r13)
+	.long  minus2_sadG_info - minus2_sadG_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.065993 UTC
+
+.text
+.align 3
+$dFractional_sadJ_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+$dFractional_sadJ_info:
+_caEj:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caEk
+_caEl:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	addq $-16,%rbp
+	jmp GHC.Float.$p1Floating_info
+_caEk:
+	jmp *-16(%r13)
+	.long  $dFractional_sadJ_info - $dFractional_sadJ_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.066824 UTC
+
+.text
+.align 3
+r_sadK_info_dsp:
+.align 3
+	.quad	SaJM_srt-(r_sadK_info)+0
+	.quad	5
+	.quad	12884901903
+r_sadK_info:
+_caEr:
+	leaq -56(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caEv
+_caEw:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caEo_info(%rip),%rax
+	movq %rax,-56(%rbp)
+	movq 24(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 40(%rbx),%rdx
+	movq 48(%rbx),%rsi
+	movq 16(%rbx),%rbx
+	movq %rax,-48(%rbp)
+	movq %rcx,-40(%rbp)
+	movq %rdx,-32(%rbp)
+	movq %rsi,-24(%rbp)
+	addq $-56,%rbp
+	testb $7,%bl
+	jne _caEo
+_caEp:
+	jmp *(%rbx)
+_caEv:
+	jmp *-16(%r13)
+.align 3
+	.quad	SaJM_srt-(block_caEu_info)+0
+	.quad	4
+	.quad	4294967326
+block_caEu_info:
+_caEu:
+	movq 8(%rbp),%r9
+	movq 32(%rbp),%r8
+	movq %rbx,%rdi
+	movq 24(%rbp),%rsi
+	movq 16(%rbp),%r14
+	addq $40,%rbp
+	jmp HBLAS.Level1.axpy'_info
+.align 3
+	.quad	SaJM_srt-(block_caEo_info)+0
+	.quad	4
+	.quad	12884901918
+block_caEo_info:
+_caEo:
+	leaq block_caEu_info(%rip),%rax
+	movq %rax,(%rbp)
+	movq 32(%rbp),%r9
+	movq 7(%rbx),%r8
+	movq 23(%rbx),%rdi
+	movq 15(%rbx),%rsi
+	movq 16(%rbp),%r14
+	jmp HBLAS.Level2.$wgemv'_info
+	.long  r_sadK_info - r_sadK_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.068788 UTC
+
+.text
+.align 3
+f_sadY_info_dsp:
+.align 3
+	.quad	2
+	.quad	18
+f_sadY_info:
+_caEP:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caEQ
+_caER:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	movq 24(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Num.*_info
+_caEQ:
+	jmp *-16(%r13)
+	.long  f_sadY_info - f_sadY_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.069451 UTC
+
+.text
+.align 3
+sat_sae8_info_dsp:
+.align 3
+	.quad	8589934594
+	.quad	15
+sat_sae8_info:
+_caF8:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caF9
+_caFa:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	leaq 40(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	addq (%rcx),%rdx
+	movq 24(%rax,%rdx,8),%r14
+	movq 24(%rbx),%rbx
+	addq $-16,%rbp
+	jmp stg_ap_p_fast
+_caF9:
+	jmp *-16(%r13)
+	.long  sat_sae8_info - sat_sae8_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.072278 UTC
+
+.text
+.align 3
+y_sadQ_info_dsp:
+.align 3
+	.quad	SaJM_srt-(y_sadQ_info)+16
+	.quad	3
+	.quad	4294967311
+y_sadQ_info:
+_caFb:
+	leaq -80(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caFc
+_caFd:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caEE_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caEE
+_caEF:
+	jmp *(%rbx)
+_caFn:
+	movq stg_MUT_ARR_PTRS_FROZEN0_info@GOTPCREL(%rip),%rax
+	movq %rax,(%rbx)
+	leaq Data.Vector.Vector_con_info(%rip),%rax
+	movq %rax,-40(%r12)
+	movq %rbx,-32(%r12)
+	movq $0,-24(%r12)
+	movq %rdi,-16(%r12)
+	leaq -39(%r12),%rax
+	addq $-16,%r12
+	movq %rax,%rbx
+	andq $-8,%rbx
+	addq $48,%rbp
+	jmp *(%rbx)
+_caFk:
+	movq $48,904(%r13)
+	leaq block_caEV_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rdi,-8(%rbp)
+	movq %r8,(%rbp)
+	movq %rbx,32(%rbp)
+	movq %rsi,40(%rbp)
+	addq $-16,%rbp
+	jmp *stg_gc_noregs@GOTPCREL(%rip)
+_caFh:
+	movq $32,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+_caFc:
+	jmp *-16(%r13)
+.align 3
+	.quad	325
+	.quad	30
+block_caEJ_info:
+_caEJ:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _caFh
+_caFg:
+	leaq f_sadY_info(%rip),%rax
+	movq %rax,-24(%r12)
+	movq 32(%rbp),%rax
+	movq %rax,-8(%r12)
+	movq 40(%rbp),%rax
+	movq %rax,(%r12)
+	movq 24(%rbp),%rax
+	movq 8(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	leaq -24(%r12),%rsi
+	xorl %edi,%edi
+	xorl %r8d,%r8d
+_caEU:
+	addq $48,%r12
+	cmpq 856(%r13),%r12
+	ja _caFk
+_caFj:
+	cmpq %rcx,%r8
+	jge _caFn
+_caFm:
+	leaq sat_sae8_info(%rip),%r9
+	movq %r9,-40(%r12)
+	movq %rdx,-24(%r12)
+	movq %rsi,-16(%r12)
+	movq %rax,-8(%r12)
+	movq %r8,(%r12)
+	leaq -40(%r12),%r9
+	movq %r9,24(%rbx,%rdi,8)
+	movq stg_MUT_ARR_PTRS_DIRTY_info@GOTPCREL(%rip),%r9
+	movq %r9,(%rbx)
+	leaq 24(%rbx),%r9
+	movq %rdi,%r10
+	shrq $7,%r10
+	movq 8(%rbx),%r11
+	shlq $3,%r11
+	addq %r10,%r11
+	movb $1,(%r9,%r11,1)
+	incq %rdi
+	incq %r8
+	jmp _caEU
+.align 3
+	.quad	1479
+	.quad	30
+block_caEV_info:
+_caEV:
+	movq 56(%rbp),%rax
+	movq 40(%rbp),%rbx
+	movq 24(%rbp),%rcx
+	movq 32(%rbp),%rdx
+	movq 48(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	movq 8(%rbp),%r8
+	addq $16,%rbp
+_naKU:
+	movq %rdi,64(%rsp)
+	movq %r8,%rdi
+	movq 64(%rsp),%r8
+	movq %rax,72(%rsp)
+	movq %rbx,%rax
+	movq %rsi,%rbx
+	movq 72(%rsp),%rsi
+	jmp _caEU
+.align 3
+	.quad	SaJM_srt-(block_caEE_info)+16
+	.quad	2
+	.quad	4294967326
+block_caEE_info:
+_caEE:
+	leaq block_caEJ_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	leaq Data.Vector.Mutable.uninitialised_closure(%rip),%r14
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq %rdx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movq %rcx,(%rbp)
+	addq $-24,%rbp
+	jmp stg_newArray#
+	.long  y_sadQ_info - y_sadQ_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.074113 UTC
+
+.text
+.align 3
+z_saej_info_dsp:
+.align 3
+	.quad	SaJM_srt-(z_saej_info)+8
+	.quad	3
+	.quad	4294967311
+z_saej_info:
+_caFE:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caFF
+_caFG:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caFB_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 24(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 16(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caFB
+_caFC:
+	jmp *(%rbx)
+_caFF:
+	jmp *-16(%r13)
+.align 3
+	.quad	SaJM_srt-(block_caFB_info)+8
+	.quad	2
+	.quad	4294967326
+block_caFB_info:
+_caFB:
+	movq 16(%rbp),%r9
+	movq 7(%rbx),%r8
+	movq 23(%rbx),%rdi
+	movq 15(%rbx),%rsi
+	movq 8(%rbp),%r14
+	addq $24,%rbp
+	jmp HBLAS.Level2.$wgemv'_info
+	.long  z_saej_info - z_saej_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.074968 UTC
+
+.text
+.align 3
+s_saeo_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+s_saeo_info:
+_caFP:
+	leaq -56(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caFT
+_caFU:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caFM_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 24(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caFM
+_caFN:
+	jmp *(%rbx)
+.align 3
+	.quad	2
+	.quad	30
+block_caFM_info:
+_caFM:
+	leaq block_caFS_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 16(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,16(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _caFS
+_caFW:
+	jmp *(%rbx)
+_caFT:
+	jmp *-16(%r13)
+.align 3
+	.quad	644
+	.quad	30
+block_caFS_info:
+_caFS:
+	movq 15(%rbx),%r9
+	movq 8(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 32(%rbp),%rsi
+	movq 24(%rbp),%r14
+	movq 23(%rbx),%rax
+	movq %rax,24(%rbp)
+	movq 7(%rbx),%rax
+	movq %rax,32(%rbp)
+	addq $24,%rbp
+	jmp HBLAS.Level1.$wdot_info
+	.long  s_saeo_info - s_saeo_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.075863 UTC
+
+.text
+.align 3
+sat_saeG_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+sat_saeG_info:
+_caGa:
+	leaq -56(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caGe
+_caGf:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caG7_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caG7
+_caG8:
+	jmp *(%rbx)
+.align 3
+	.quad	2
+	.quad	30
+block_caG7_info:
+_caG7:
+	leaq block_caGd_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 16(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,16(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _caGd
+_caGh:
+	jmp *(%rbx)
+_caGe:
+	jmp *-16(%r13)
+.align 3
+	.quad	644
+	.quad	30
+block_caGd_info:
+_caGd:
+	movq 15(%rbx),%r9
+	movq 8(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 32(%rbp),%rsi
+	movq 24(%rbp),%r14
+	movq 23(%rbx),%rax
+	movq %rax,24(%rbp)
+	movq 7(%rbx),%rax
+	movq %rax,32(%rbp)
+	addq $24,%rbp
+	jmp HBLAS.Level1.$wdot_info
+	.long  sat_saeG_info - sat_saeG_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.076735 UTC
+
+.text
+.align 3
+t_saex_info_dsp:
+.align 3
+	.quad	5
+	.quad	15
+t_saex_info:
+_caGm:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caGn
+_caGo:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _caGq
+_caGp:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rsi
+	movq 48(%rbx),%rbx
+	leaq sat_saeG_info(%rip),%rdi
+	movq %rdi,-32(%r12)
+	movq %rax,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %rsi,(%r12)
+	movq %rcx,%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rax
+	movq %rax,-40(%rbp)
+	leaq -32(%r12),%rax
+	movq %rax,-32(%rbp)
+	movq %rbx,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Real./_info
+_caGq:
+	movq $40,904(%r13)
+_caGn:
+	jmp *-16(%r13)
+	.long  t_saex_info - t_saex_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.077371 UTC
+
+.text
+.align 3
+tol_saeH_info_dsp:
+.align 3
+	.quad	1
+	.quad	16
+tol_saeH_info:
+_caGt:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caGu
+_caGv:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq lvl3_ra7V_closure+1(%rip),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Real.fromRational_info
+_caGu:
+	jmp *-16(%r13)
+	.long  tol_saeH_info - tol_saeH_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.079343 UTC
+
+.text
+.align 3
+sat_sag0_info_dsp:
+.align 3
+	.quad	SaJM_srt-(sat_sag0_info)+0
+	.quad	5
+	.quad	4294967311
+sat_sag0_info:
+_caGy:
+	movq 16(%rbx),%r9
+	movq 32(%rbx),%r8
+	movq 40(%rbx),%rdi
+	movq 48(%rbx),%rsi
+	movq 24(%rbx),%r14
+	jmp HBLAS.Level1.axpy'_info
+	.long  sat_sag0_info - sat_sag0_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.080569 UTC
+
+.text
+.align 3
+sat_saeU_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+sat_saeU_info:
+_caGH:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caGI
+_caGJ:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 24(%rbx),%rax
+	movq %rax,-32(%rbp)
+	movq 32(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Num.*_info
+_caGI:
+	jmp *-16(%r13)
+	.long  sat_saeU_info - sat_saeU_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.081368 UTC
+
+.text
+.align 3
+rr_saeT_info_dsp:
+.align 3
+	.quad	SaJM_srt-(rr_saeT_info)+0
+	.quad	6
+	.quad	4294967311
+rr_saeT_info:
+_caGK:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caGL
+_caGM:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _caGO
+_caGN:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rsi
+	movq 48(%rbx),%rdi
+	movq 56(%rbx),%rbx
+	leaq sat_saeU_info(%rip),%r8
+	movq %r8,-32(%r12)
+	movq %rcx,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %rbx,(%r12)
+	movq %rax,%r9
+	movq %rsi,%r8
+	leaq -32(%r12),%rsi
+	movq %rcx,%r14
+	addq $-16,%rbp
+	jmp HBLAS.Level1.axpy'_info
+_caGO:
+	movq $40,904(%r13)
+_caGL:
+	jmp *-16(%r13)
+	.long  rr_saeT_info - rr_saeT_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.082926 UTC
+
+.text
+.align 3
+sat_safe_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+sat_safe_info:
+_caHd:
+	leaq -56(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caHh
+_caHi:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caHa_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caHa
+_caHb:
+	jmp *(%rbx)
+.align 3
+	.quad	2
+	.quad	30
+block_caHa_info:
+_caHa:
+	leaq block_caHg_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 16(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,16(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _caHg
+_caHk:
+	jmp *(%rbx)
+_caHh:
+	jmp *-16(%r13)
+.align 3
+	.quad	644
+	.quad	30
+block_caHg_info:
+_caHg:
+	movq 15(%rbx),%r9
+	movq 8(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 32(%rbp),%rsi
+	movq 24(%rbp),%r14
+	movq 23(%rbx),%rax
+	movq %rax,24(%rbp)
+	movq 7(%rbx),%rax
+	movq %rax,32(%rbp)
+	addq $24,%rbp
+	jmp HBLAS.Level1.$wdot_info
+	.long  sat_safe_info - sat_safe_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.083738 UTC
+
+.text
+.align 3
+sat_saff_info_dsp:
+.align 3
+	.quad	5
+	.quad	15
+sat_saff_info:
+_caHp:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caHq
+_caHr:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _caHt
+_caHs:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rsi
+	movq 48(%rbx),%rbx
+	leaq sat_safe_info(%rip),%rdi
+	movq %rdi,-32(%r12)
+	movq %rax,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %rbx,(%r12)
+	movq %rcx,%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rax
+	movq %rax,-40(%rbp)
+	leaq -32(%r12),%rax
+	movq %rax,-32(%rbp)
+	movq %rsi,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Real./_info
+_caHt:
+	movq $40,904(%r13)
+_caHq:
+	jmp *-16(%r13)
+	.long  sat_saff_info - sat_saff_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.084637 UTC
+
+.text
+.align 3
+f_saf5_info_dsp:
+.align 3
+	.quad	5
+	.quad	15
+f_saf5_info:
+_caHu:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caHv
+_caHw:
+	addq $56,%r12
+	cmpq 856(%r13),%r12
+	ja _caHy
+_caHx:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rsi
+	movq 48(%rbx),%rbx
+	leaq sat_saff_info(%rip),%rdi
+	movq %rdi,-48(%r12)
+	movq %rax,-32(%r12)
+	movq %rcx,-24(%r12)
+	movq %rdx,-16(%r12)
+	movq %rsi,-8(%r12)
+	movq %rbx,(%r12)
+	movq %rax,%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-32(%rbp)
+	leaq -48(%r12),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Num.*_info
+_caHy:
+	movq $56,904(%r13)
+_caHv:
+	jmp *-16(%r13)
+	.long  f_saf5_info - f_saf5_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.086069 UTC
+
+.text
+.align 3
+sat_safp_info_dsp:
+.align 3
+	.quad	8589934594
+	.quad	15
+sat_safp_info:
+_caHP:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caHQ
+_caHR:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	leaq 40(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	addq (%rcx),%rdx
+	movq 24(%rax,%rdx,8),%r14
+	movq 24(%rbx),%rbx
+	addq $-16,%rbp
+	jmp stg_ap_p_fast
+_caHQ:
+	jmp *-16(%r13)
+	.long  sat_safp_info - sat_safp_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.087761 UTC
+
+.text
+.align 3
+yy_saeX_info_dsp:
+.align 3
+	.quad	SaJM_srt-(yy_saeX_info)+0
+	.quad	8
+	.quad	21474836495
+yy_saeX_info:
+_caHS:
+	leaq -112(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caHT
+_caHU:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caGR_info(%rip),%rax
+	movq %rax,-80(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rsi
+	movq 56(%rbx),%rdi
+	movq 64(%rbx),%r8
+	movq 72(%rbx),%r9
+	movq 48(%rbx),%rbx
+	movq %rax,-72(%rbp)
+	movq %rcx,-64(%rbp)
+	movq %rdx,-56(%rbp)
+	movq %rsi,-48(%rbp)
+	movq %rdi,-40(%rbp)
+	movq %r8,-32(%rbp)
+	movq %r9,-24(%rbp)
+	addq $-80,%rbp
+	testb $7,%bl
+	jne _caGR
+_caGS:
+	jmp *(%rbx)
+_caI4:
+	movq stg_MUT_ARR_PTRS_FROZEN0_info@GOTPCREL(%rip),%rdi
+	movq %rdi,(%rbx)
+	leaq Data.Vector.Vector_con_info(%rip),%rdi
+	movq %rdi,-40(%r12)
+	movq %rbx,-32(%r12)
+	movq $0,-24(%r12)
+	movq %r11,-16(%r12)
+	leaq -39(%r12),%rbx
+	addq $-16,%r12
+	movq %rdx,%r9
+	movq %rbx,%r8
+	movq %rcx,%rdi
+	movq %rax,%r14
+	addq $88,%rbp
+	jmp HBLAS.Level1.axpy'_info
+_caI1:
+	movq $48,904(%r13)
+	leaq block_caHC_info(%rip),%rax
+	movq %rax,-8(%rbp)
+	movq %r11,(%rbp)
+	movq %r14,56(%rbp)
+	movq %rbx,64(%rbp)
+	movq %r10,72(%rbp)
+	addq $-8,%rbp
+	jmp *stg_gc_noregs@GOTPCREL(%rip)
+_caHY:
+	movq $56,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+_caHT:
+	jmp *-16(%r13)
+.align 3
+	.quad	SaJM_srt-(block_caGW_info)+0
+	.quad	330
+	.quad	4294967326
+block_caGW_info:
+_caGW:
+	addq $56,%r12
+	cmpq 856(%r13),%r12
+	ja _caHY
+_caHX:
+	leaq f_saf5_info(%rip),%rax
+	movq %rax,-48(%r12)
+	movq 40(%rbp),%rax
+	movq %rax,-32(%r12)
+	movq 56(%rbp),%rcx
+	movq %rcx,-24(%r12)
+	movq 64(%rbp),%rcx
+	movq %rcx,-16(%r12)
+	movq 72(%rbp),%rcx
+	movq %rcx,-8(%r12)
+	movq 80(%rbp),%rcx
+	movq %rcx,(%r12)
+	movq 32(%rbp),%rdx
+	movq 48(%rbp),%rsi
+	movq 24(%rbp),%rdi
+	movq 8(%rbp),%r8
+	movq 16(%rbp),%r9
+	leaq -48(%r12),%r10
+	xorl %r11d,%r11d
+	xorl %r14d,%r14d
+_caHB:
+	addq $48,%r12
+	cmpq 856(%r13),%r12
+	ja _caI1
+_caI0:
+	cmpq %r8,%r14
+	jge _caI4
+_caI3:
+	movq %r10,72(%rsp)
+	leaq sat_safp_info(%rip),%r10
+	movq %r10,-40(%r12)
+	movq %r9,-24(%r12)
+	movq 72(%rsp),%r10
+	movq %r10,-16(%r12)
+	movq %rdi,-8(%r12)
+	movq %r14,(%r12)
+	leaq -40(%r12),%r10
+	movq %r10,24(%rbx,%r11,8)
+	movq stg_MUT_ARR_PTRS_DIRTY_info@GOTPCREL(%rip),%r10
+	movq %r10,(%rbx)
+	leaq 24(%rbx),%r10
+	movq %r10,80(%rsp)
+	movq %r11,%r10
+	shrq $7,%r10
+	movq %r10,88(%rsp)
+	movq 8(%rbx),%r10
+	shlq $3,%r10
+	movq %rdx,96(%rsp)
+	movq 88(%rsp),%rdx
+	addq %rdx,%r10
+	movq 80(%rsp),%rdx
+	movb $1,(%rdx,%r10,1)
+	incq %r11
+	incq %r14
+_naMw:
+	movq 96(%rsp),%rdx
+	movq 72(%rsp),%r10
+	jmp _caHB
+.align 3
+	.quad	SaJM_srt-(block_caHC_info)+0
+	.quad	8907
+	.quad	4294967326
+block_caHC_info:
+_caHC:
+	movq 80(%rbp),%rax
+	movq 40(%rbp),%rbx
+	movq 48(%rbp),%rcx
+	movq 56(%rbp),%rdx
+	movq 88(%rbp),%rsi
+	movq 32(%rbp),%rdi
+	movq 16(%rbp),%r8
+	movq 24(%rbp),%r9
+	movq 72(%rbp),%r10
+	movq 64(%rbp),%r11
+	movq 8(%rbp),%r14
+	addq $8,%rbp
+_naMv:
+	movq %r11,64(%rsp)
+	movq %r14,%r11
+	movq 64(%rsp),%r14
+	movq %rax,72(%rsp)
+	movq %rcx,%rax
+	movq %rsi,%rcx
+	movq %rdx,%rsi
+	movq %rbx,%rdx
+	movq %r10,%rbx
+	movq 72(%rsp),%r10
+	jmp _caHB
+.align 3
+	.quad	SaJM_srt-(block_caGR_info)+0
+	.quad	7
+	.quad	21474836510
+block_caGR_info:
+_caGR:
+	leaq block_caGW_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	leaq Data.Vector.Mutable.uninitialised_closure(%rip),%r14
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq %rdx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movq %rcx,(%rbp)
+	addq $-24,%rbp
+	jmp stg_newArray#
+	.long  yy_saeX_info - yy_saeX_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.089891 UTC
+
+.text
+.align 3
+zz_safA_info_dsp:
+.align 3
+	.quad	SaJM_srt-(zz_safA_info)+8
+	.quad	3
+	.quad	4294967311
+zz_safA_info:
+_caIl:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caIm
+_caIn:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caIi_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 24(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 16(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caIi
+_caIj:
+	jmp *(%rbx)
+_caIm:
+	jmp *-16(%r13)
+.align 3
+	.quad	SaJM_srt-(block_caIi_info)+8
+	.quad	2
+	.quad	4294967326
+block_caIi_info:
+_caIi:
+	movq 16(%rbp),%r9
+	movq 7(%rbx),%r8
+	movq 23(%rbx),%rdi
+	movq 15(%rbx),%rsi
+	movq 8(%rbp),%r14
+	addq $24,%rbp
+	jmp HBLAS.Level2.$wgemv'_info
+	.long  zz_safA_info - zz_safA_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.09136 UTC
+
+.text
+.align 3
+ss_safF_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+ss_safF_info:
+_caIw:
+	leaq -56(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caIA
+_caIB:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caIt_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 24(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caIt
+_caIu:
+	jmp *(%rbx)
+.align 3
+	.quad	2
+	.quad	30
+block_caIt_info:
+_caIt:
+	leaq block_caIz_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 16(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,16(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _caIz
+_caID:
+	jmp *(%rbx)
+_caIA:
+	jmp *-16(%r13)
+.align 3
+	.quad	644
+	.quad	30
+block_caIz_info:
+_caIz:
+	movq 15(%rbx),%r9
+	movq 8(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 32(%rbp),%rsi
+	movq 24(%rbp),%r14
+	movq 23(%rbx),%rax
+	movq %rax,24(%rbp)
+	movq 7(%rbx),%rax
+	movq %rax,32(%rbp)
+	addq $24,%rbp
+	jmp HBLAS.Level1.$wdot_info
+	.long  ss_safF_info - ss_safF_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.09296 UTC
+
+.text
+.align 3
+sat_safX_info_dsp:
+.align 3
+	.quad	3
+	.quad	15
+sat_safX_info:
+_caIR:
+	leaq -56(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caIV
+_caIW:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caIO_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	movq 16(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 24(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _caIO
+_caIP:
+	jmp *(%rbx)
+.align 3
+	.quad	2
+	.quad	30
+block_caIO_info:
+_caIO:
+	leaq block_caIU_info(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rcx
+	movq 23(%rbx),%rbx
+	movq %rbx,%rdx
+	movq 16(%rbp),%rbx
+	movq %rax,-8(%rbp)
+	movq %rdx,(%rbp)
+	movq %rcx,16(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _caIU
+_caIY:
+	jmp *(%rbx)
+_caIV:
+	jmp *-16(%r13)
+.align 3
+	.quad	644
+	.quad	30
+block_caIU_info:
+_caIU:
+	movq 15(%rbx),%r9
+	movq 8(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 32(%rbp),%rsi
+	movq 24(%rbp),%r14
+	movq 23(%rbx),%rax
+	movq %rax,24(%rbp)
+	movq 7(%rbx),%rax
+	movq %rax,32(%rbp)
+	addq $24,%rbp
+	jmp HBLAS.Level1.$wdot_info
+	.long  sat_safX_info - sat_safX_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.094369 UTC
+
+.text
+.align 3
+tt_safO_info_dsp:
+.align 3
+	.quad	5
+	.quad	15
+tt_safO_info:
+_caJ3:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caJ4
+_caJ5:
+	addq $40,%r12
+	cmpq 856(%r13),%r12
+	ja _caJ7
+_caJ6:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rsi
+	movq 48(%rbx),%rbx
+	leaq sat_safX_info(%rip),%rdi
+	movq %rdi,-32(%r12)
+	movq %rax,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %rsi,(%r12)
+	movq %rcx,%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rax
+	movq %rax,-40(%rbp)
+	leaq -32(%r12),%rax
+	movq %rax,-32(%rbp)
+	movq %rbx,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Real./_info
+_caJ7:
+	movq $40,904(%r13)
+_caJ4:
+	jmp *-16(%r13)
+	.long  tt_safO_info - tt_safO_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.095431 UTC
+
+.text
+.align 3
+sat_safZ_info_dsp:
+.align 3
+	.quad	SaJM_srt-(sat_safZ_info)+0
+	.quad	5
+	.quad	4294967311
+sat_safZ_info:
+_caJb:
+	movq 16(%rbx),%r9
+	movq 32(%rbx),%r8
+	movq 40(%rbx),%rdi
+	movq 48(%rbx),%rsi
+	movq 24(%rbx),%r14
+	jmp HBLAS.Level1.axpy'_info
+	.long  sat_safZ_info - sat_safZ_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.099131 UTC
+
+.text
+.align 3
+Main.$wconjugateGradient_info_dsp:
+.align 3
+	.quad	Main.$wconjugateGradient_slow-(Main.$wconjugateGradient_info)+0
+	.quad	3080
+	.quad	SaJM_srt-(Main.$wconjugateGradient_info)+0
+	.quad	34359738368
+	.quad	0
+	.quad	64424509454
+.globl Main.$wconjugateGradient_info
+Main.$wconjugateGradient_info:
+_caJe:
+	leaq -136(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caJf
+_caJg:
+	addq $440,%r12
+	cmpq 856(%r13),%r12
+	ja _caJi
+_caJh:
+	leaq lvl14_sadE_info(%rip),%rax
+	movq %rax,-432(%r12)
+	movq %rdi,-416(%r12)
+	leaq $dNum_sadF_info(%rip),%rax
+	movq %rax,-408(%r12)
+	movq %r14,-392(%r12)
+	leaq minus2_sadG_info(%rip),%rax
+	movq %rax,-384(%r12)
+	leaq -408(%r12),%rax
+	movq %rax,-368(%r12)
+	leaq Data.Vector.Vector_con_info(%rip),%rbx
+	movq %rbx,-360(%r12)
+	movq 8(%rbp),%rbx
+	movq %rbx,-352(%r12)
+	movq %r9,-344(%r12)
+	movq (%rbp),%rbx
+	movq %rbx,-336(%r12)
+	leaq $dFractional_sadJ_info(%rip),%rcx
+	movq %rcx,-328(%r12)
+	movq %rdi,-312(%r12)
+	leaq r_sadK_info(%rip),%rcx
+	movq %rcx,-304(%r12)
+	movq %r8,-288(%r12)
+	movq 16(%rbp),%rcx
+	movq %rcx,-280(%r12)
+	movq %rax,-272(%r12)
+	leaq -384(%r12),%rdx
+	movq %rdx,-264(%r12)
+	leaq -359(%r12),%rdi
+	movq %rdi,-256(%r12)
+	leaq y_sadQ_info(%rip),%r9
+	movq %r9,-248(%r12)
+	movq %rax,-232(%r12)
+	movq %rdx,-224(%r12)
+	leaq -304(%r12),%r9
+	movq %r9,-216(%r12)
+	leaq z_saej_info(%rip),%r10
+	movq %r10,-208(%r12)
+	movq %r8,-192(%r12)
+	movq %rax,-184(%r12)
+	leaq -248(%r12),%r10
+	movq %r10,-176(%r12)
+	leaq s_saeo_info(%rip),%r11
+	movq %r11,-168(%r12)
+	movq %rax,-152(%r12)
+	movq %r10,-144(%r12)
+	leaq -208(%r12),%r11
+	movq %r11,-136(%r12)
+	leaq t_saex_info(%rip),%r14
+	movq %r14,-128(%r12)
+	movq %rax,-112(%r12)
+	leaq -328(%r12),%r14
+	movq %r14,-104(%r12)
+	movq %r9,-96(%r12)
+	movq %r10,-88(%r12)
+	movq %rax,72(%rsp)
+	leaq -168(%r12),%rax
+	movq %rax,-80(%r12)
+	movq %rdx,80(%rsp)
+	leaq tol_saeH_info(%rip),%rdx
+	movq %rdx,-72(%r12)
+	movq %r14,-56(%r12)
+	leaq sat_sag0_info(%rip),%rdx
+	movq %rdx,-48(%r12)
+	movq %rcx,-32(%r12)
+	movq 72(%rsp),%rcx
+	movq %rcx,-24(%r12)
+	movq %rdi,-16(%r12)
+	movq %r10,-8(%r12)
+	leaq -128(%r12),%rdx
+	movq %rdx,(%r12)
+	leaq -432(%r12),%rcx
+	movq %rcx,64(%rsp)
+	leaq -72(%r12),%rcx
+	movq %rdi,88(%rsp)
+	leaq -48(%r12),%rdi
+_naNO:
+	movq %r14,96(%rsp)
+	movq %rdi,%r14
+	movq %r9,%rdi
+	movq %r10,%r9
+	movq %r11,%r10
+	movq %rax,%r11
+	movq %rdx,%rax
+	movq %rbx,%rdx
+	movq %rcx,%rbx
+	movq %rsi,%rcx
+	movq 96(%rsp),%rsi
+_caDt:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _caJl
+_caJk:
+	testq %rdx,%rdx
+	jne _caJn
+_caJG:
+	addq $-32,%r12
+	movq %r14,%rbx
+	andq $-8,%rbx
+	addq $24,%rbp
+	jmp *(%rbx)
+.align 3
+	.quad	SaJM_srt-(block_caDG_info)+0
+	.quad	266256
+	.quad	30064771102
+block_caDG_info:
+_caDG:
+	movq 96(%rbp),%rax
+	movq %rbx,%rcx
+	andl $7,%ecx
+	cmpq $1,%rcx
+	jne _caJB
+_caJu:
+	addq $272,%r12
+	cmpq 856(%r13),%r12
+	ja _caJx
+_caJw:
+	leaq yy_saeX_info(%rip),%rbx
+	movq %rbx,-264(%r12)
+	movq 128(%rbp),%rbx
+	movq %rbx,-248(%r12)
+	movq 112(%rbp),%rcx
+	movq %rcx,-240(%r12)
+	movq 8(%rbp),%rdx
+	movq %rdx,-232(%r12)
+	movq 24(%rbp),%rsi
+	movq %rsi,-224(%r12)
+	movq 64(%rbp),%rdi
+	movq %rdi,-216(%r12)
+	movq 72(%rbp),%rdi
+	movq %rdi,-208(%r12)
+	movq 80(%rbp),%rdi
+	movq %rdi,-200(%r12)
+	movq 88(%rbp),%rdi
+	movq %rdi,-192(%r12)
+	leaq zz_safA_info(%rip),%r8
+	movq %r8,-184(%r12)
+	movq 48(%rbp),%r8
+	movq %r8,-168(%r12)
+	movq %rcx,-160(%r12)
+	leaq -264(%r12),%r9
+	movq %r9,-152(%r12)
+	leaq ss_safF_info(%rip),%r10
+	movq %r10,-144(%r12)
+	movq %rcx,-128(%r12)
+	movq %r9,-120(%r12)
+	leaq -184(%r12),%r10
+	movq %r10,-112(%r12)
+	leaq tt_safO_info(%rip),%r11
+	movq %r11,-104(%r12)
+	movq %rcx,-88(%r12)
+	movq %rsi,-80(%r12)
+	movq %rdi,-72(%r12)
+	movq %r9,-64(%r12)
+	leaq -144(%r12),%r11
+	movq %r11,-56(%r12)
+	leaq sat_safZ_info(%rip),%r14
+	movq %r14,-48(%r12)
+	movq %rbx,-32(%r12)
+	movq %rcx,-24(%r12)
+	movq %rax,-16(%r12)
+	movq %r9,-8(%r12)
+	leaq -104(%r12),%rax
+	movq %rax,(%r12)
+	movq 120(%rbp),%rbx
+	movq 16(%rbp),%r14
+	movq %rbx,64(%rsp)
+	movq 32(%rbp),%rbx
+	movq %rcx,72(%rsp)
+	movq 40(%rbp),%rcx
+	movq %rdx,80(%rsp)
+	movq 104(%rbp),%rdx
+	decq %rdx
+	addq $112,%rbp
+	movq %r14,88(%rsp)
+	leaq -48(%r12),%r14
+	jmp _caDt
+.align 3
+	.quad	SaJM_srt-(block_caDu_info)+0
+	.quad	4112
+	.quad	30064771102
+block_caDu_info:
+_caDu:
+	movq 120(%rbp),%rax
+	movq 112(%rbp),%rbx
+	movq 8(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 24(%rbp),%rsi
+	movq 32(%rbp),%rdi
+	movq 40(%rbp),%r8
+	movq 48(%rbp),%r9
+	movq 56(%rbp),%r10
+	movq 64(%rbp),%r11
+	movq 72(%rbp),%r14
+	movq %rax,64(%rsp)
+	movq 80(%rbp),%rax
+	movq %rbx,72(%rsp)
+	movq 88(%rbp),%rbx
+	movq %rcx,80(%rsp)
+	movq 96(%rbp),%rcx
+	movq %rdx,88(%rsp)
+	movq 104(%rbp),%rdx
+	addq $112,%rbp
+_naNP:
+	movq %r8,104(%rsp)
+	movq %r9,%r8
+	movq %r14,%r9
+	movq %rdx,%r14
+	movq %r10,%rdx
+	movq %rax,%r10
+	movq %rcx,%rax
+	movq 104(%rsp),%rcx
+	movq %rdi,112(%rsp)
+	movq %r11,%rdi
+	movq %rbx,%r11
+	movq 112(%rsp),%rbx
+	jmp _caDt
+_caJF:
+	movq 16(%rbp),%rbx
+	addq $136,%rbp
+	jmp *(%rbp)
+_caJB:
+	movq %rax,%rbx
+	andq $-8,%rbx
+	addq $136,%rbp
+	jmp *(%rbx)
+_caJx:
+	movq $272,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+_caJs:
+	movq $96,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	SaJM_srt-(block_caDz_info)+0
+	.quad	262160
+	.quad	30064771102
+block_caDz_info:
+_caDz:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	jne _caJF
+_caJp:
+	addq $96,%r12
+	cmpq 856(%r13),%r12
+	ja _caJs
+_caJr:
+	leaq rr_saeT_info(%rip),%rax
+	movq %rax,-88(%r12)
+	movq 128(%rbp),%rax
+	movq %rax,-72(%r12)
+	movq 112(%rbp),%rax
+	movq %rax,-64(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,-56(%r12)
+	movq 56(%rbp),%rax
+	movq %rax,-48(%r12)
+	movq 72(%rbp),%rax
+	movq %rax,-40(%r12)
+	movq 88(%rbp),%rax
+	movq %rax,-32(%r12)
+	leaq stg_ap_2_upd_info(%rip),%rax
+	movq %rax,-24(%r12)
+	movq 120(%rbp),%rax
+	movq %rax,-8(%r12)
+	leaq -88(%r12),%rax
+	movq %rax,(%r12)
+	leaq block_caDG_info(%rip),%rbx
+	movq %rbx,(%rbp)
+	movq 40(%rbp),%r14
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-24(%rbp)
+	leaq -24(%r12),%rbx
+	movq %rbx,-16(%rbp)
+	movq 32(%rbp),%rbx
+	movq %rbx,-8(%rbp)
+	movq %rax,88(%rbp)
+	addq $-24,%rbp
+	jmp GHC.Classes.<_info
+_caJn:
+	movq %rsi,96(%rsp)
+	leaq stg_ap_2_upd_info(%rip),%rsi
+	movq %rsi,-24(%r12)
+	movq 64(%rsp),%rsi
+	movq %rsi,-8(%r12)
+	movq %rdi,(%r12)
+	leaq block_caDz_info(%rip),%rsi
+	movq %rsi,-112(%rbp)
+	movq %r14,%rsi
+	movq %rcx,%r14
+	movq %rbx,112(%rsp)
+	movq stg_ap_pp_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-136(%rbp)
+	leaq -24(%r12),%rbx
+	movq %rbx,-128(%rbp)
+	movq 112(%rsp),%rbx
+	movq %rbx,-120(%rbp)
+	movq 80(%rsp),%rbx
+	movq %rbx,-104(%rbp)
+	movq 88(%rsp),%rbx
+	movq %rbx,-96(%rbp)
+	movq 96(%rsp),%rbx
+	movq %rbx,-88(%rbp)
+	movq 112(%rsp),%rbx
+	movq %rbx,-80(%rbp)
+	movq %rcx,-72(%rbp)
+	movq %r8,-64(%rbp)
+	movq %rdi,-56(%rbp)
+	movq %r9,-48(%rbp)
+	movq %r10,-40(%rbp)
+	movq %r11,-32(%rbp)
+	movq %rax,-24(%rbp)
+	movq %rsi,-16(%rbp)
+	movq %rdx,-8(%rbp)
+	movq 72(%rsp),%rax
+	movq %rax,(%rbp)
+	movq 64(%rsp),%rax
+	movq %rax,8(%rbp)
+	addq $-136,%rbp
+	jmp GHC.Classes.<_info
+_caJl:
+	movq $32,904(%r13)
+	movq %rsi,96(%rsp)
+	leaq block_caDu_info(%rip),%rsi
+	movq %rsi,-112(%rbp)
+	movq 80(%rsp),%rsi
+	movq %rsi,-104(%rbp)
+	movq 88(%rsp),%rsi
+	movq %rsi,-96(%rbp)
+	movq 96(%rsp),%rsi
+	movq %rsi,-88(%rbp)
+	movq %rbx,-80(%rbp)
+	movq %rcx,-72(%rbp)
+	movq %r8,-64(%rbp)
+	movq %rdx,-56(%rbp)
+	movq %rdi,-48(%rbp)
+	movq %r9,-40(%rbp)
+	movq %r10,-32(%rbp)
+	movq %r11,-24(%rbp)
+	movq %rax,-16(%rbp)
+	movq %r14,-8(%rbp)
+	movq 72(%rsp),%rax
+	movq %rax,(%rbp)
+	movq 64(%rsp),%rax
+	movq %rax,8(%rbp)
+	addq $-112,%rbp
+	jmp *stg_gc_noregs@GOTPCREL(%rip)
+_caJi:
+	movq $440,904(%r13)
+_caJf:
+	leaq Main.$wconjugateGradient_closure(%rip),%rbx
+	movq %r14,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %rdi,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movq %r9,-8(%rbp)
+	addq $-40,%rbp
+	jmp *-8(%r13)
+	.long  Main.$wconjugateGradient_info - Main.$wconjugateGradient_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.10536 UTC
+
+.const_data
+.align 3
+.align 0
+SaO4_srt:
+	.quad	Main.$wconjugateGradient_closure
+	.quad	Main.conjugateGradient_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.105802 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.conjugateGradient_closure
+Main.conjugateGradient_closure:
+	.quad	Main.conjugateGradient_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.106801 UTC
+
+.text
+.align 3
+.globl Main.conjugateGradient_slow
+Main.conjugateGradient_slow:
+_caNR:
+	movq 32(%rbp),%r9
+	movq 24(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 8(%rbp),%rsi
+	movq (%rbp),%r14
+	addq $40,%rbp
+	jmp Main.conjugateGradient_info
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.108325 UTC
+
+.text
+.align 3
+Main.conjugateGradient_info_dsp:
+.align 3
+	.quad	Main.conjugateGradient_slow-(Main.conjugateGradient_info)+0
+	.quad	7
+	.quad	SaO4_srt-(Main.conjugateGradient_info)+0
+	.quad	30064771072
+	.quad	0
+	.quad	12884901902
+.globl Main.conjugateGradient_info
+Main.conjugateGradient_info:
+_caNY:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caNZ
+_caO0:
+	leaq block_caNV_info(%rip),%rax
+	movq %rax,-32(%rbp)
+	movq (%rbp),%rbx
+	movq %rdi,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movq %r9,-8(%rbp)
+	movq %rsi,(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _caNV
+_caNW:
+	jmp *(%rbx)
+_caNZ:
+	leaq Main.conjugateGradient_closure(%rip),%rbx
+	movq %r14,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %rdi,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movq %r9,-8(%rbp)
+	addq $-40,%rbp
+	jmp *-8(%r13)
+.align 3
+	.quad	SaO4_srt-(block_caNV_info)+0
+	.quad	5
+	.quad	4294967326
+block_caNV_info:
+_caNV:
+	movq 15(%rbx),%r9
+	movq 24(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 8(%rbp),%rsi
+	movq 32(%rbp),%r14
+	movq 23(%rbx),%rax
+	movq %rax,24(%rbp)
+	movq 7(%rbx),%rax
+	movq %rax,32(%rbp)
+	addq $24,%rbp
+	jmp Main.$wconjugateGradient_info
+	.long  Main.conjugateGradient_info - Main.conjugateGradient_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.109221 UTC
+
+.section	__TEXT,__cstring,cstring_literals
+.align 1
+.align 0
+.globl Main.$trModule4_bytes
+Main.$trModule4_bytes:
+	.asciz "main"
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.109863 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.$trModule3_closure
+Main.$trModule3_closure:
+	.quad	GHC.Types.TrNameS_con_info
+	.quad	Main.$trModule4_bytes
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.110885 UTC
+
+.section	__TEXT,__cstring,cstring_literals
+.align 1
+.align 0
+.globl Main.$trModule2_bytes
+Main.$trModule2_bytes:
+	.asciz "Main"
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.112076 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.$trModule1_closure
+Main.$trModule1_closure:
+	.quad	GHC.Types.TrNameS_con_info
+	.quad	Main.$trModule2_bytes
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.113194 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.$trModule_closure
+Main.$trModule_closure:
+	.quad	GHC.Types.Module_con_info
+	.quad	Main.$trModule3_closure+1
+	.quad	Main.$trModule1_closure+1
+	.quad	3
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.114673 UTC
+
+.const_data
+.align 3
+.align 0
+SaOy_srt:
+	.quad	HBLAS.IO.Vector.$wcreateSymSq_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.116036 UTC
+
+.data
+.align 3
+.align 0
+symSq_ra7W_closure:
+	.quad	symSq_ra7W_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.117592 UTC
+
+.text
+.align 3
+symSq_ra7W_info_dsp:
+.align 3
+	.quad	SaOy_srt-(symSq_ra7W_info)+0
+	.quad	0
+	.quad	4294967317
+symSq_ra7W_info:
+_caOv:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caOw
+_caOx:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _caOu
+_caOt:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $1000,%edi
+	xorl %esi,%esi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $-16,%rbp
+	jmp HBLAS.IO.Vector.$wcreateSymSq_info
+_caOw:
+	jmp *-16(%r13)
+_caOu:
+	jmp *(%rbx)
+	.long  symSq_ra7W_info - symSq_ra7W_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.118562 UTC
+
+.const_data
+.align 3
+.align 0
+SaOP_srt:
+	.quad	HBLAS.IO.Vector.$wcreateVecX'_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.119322 UTC
+
+.data
+.align 3
+.align 0
+vecX_ra7X_closure:
+	.quad	vecX_ra7X_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.121026 UTC
+
+.text
+.align 3
+vecX_ra7X_info_dsp:
+.align 3
+	.quad	SaOP_srt-(vecX_ra7X_info)+0
+	.quad	0
+	.quad	4294967317
+vecX_ra7X_info:
+_caOM:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caON
+_caOO:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _caOL
+_caOK:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $1000,%esi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $-16,%rbp
+	jmp HBLAS.IO.Vector.$wcreateVecX'_info
+_caON:
+	jmp *-16(%r13)
+_caOL:
+	jmp *(%rbx)
+	.long  vecX_ra7X_info - vecX_ra7X_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.122361 UTC
+
+.const_data
+.align 3
+.align 0
+SaPb_srt:
+	.quad	GHC.Float.$fShowDouble2_closure
+	.quad	Main.$w$sround4dp_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.12269 UTC
+
+.data
+.align 3
+.align 0
+lvl4_ra7Y_closure:
+	.quad	lvl4_ra7Y_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.124381 UTC
+
+.text
+.align 3
+lvl4_ra7Y_info_dsp:
+.align 3
+	.quad	SaPb_srt-(lvl4_ra7Y_info)+0
+	.quad	0
+	.quad	12884901909
+lvl4_ra7Y_info:
+_caP5:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caP6
+_caP7:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _caP2
+_caP1:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	leaq block_caP3_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	movsd _naPi(%rip),%xmm1
+	addq $-24,%rbp
+	jmp Main.$w$sround4dp_info
+_caP6:
+	jmp *-16(%r13)
+.align 3
+	.quad	SaPb_srt-(block_caP3_info)+0
+	.quad	0
+	.quad	4294967326
+block_caP3_info:
+_caP3:
+	leaq GHC.Float.minExpt_closure(%rip),%rsi
+	leaq GHC.Float.$fShowDouble2_closure+1(%rip),%r14
+	movq stg_ap_p_info@GOTPCREL(%rip),%rax
+	movq %rax,-8(%rbp)
+	leaq GHC.Types.[]_closure+1(%rip),%rax
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	jmp GHC.Float.$w$sshowSignedFloat_info
+_caP2:
+	jmp *(%rbx)
+	.long  lvl4_ra7Y_info - lvl4_ra7Y_info_dsp
+.const
+.align 3
+.align 3
+_naPi:
+	.byte	24
+	.byte	45
+	.byte	68
+	.byte	84
+	.byte	251
+	.byte	33
+	.byte	9
+	.byte	64
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.12546 UTC
+
+.section	__TEXT,__cstring,cstring_literals
+.align 1
+.align 0
+lvl5_ra7Z_bytes:
+	.asciz "Matrix size "
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.126578 UTC
+
+.section	__TEXT,__cstring,cstring_literals
+.align 1
+.align 0
+lvl6_ra80_bytes:
+	.asciz "X"
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.128048 UTC
+
+.section	__TEXT,__cstring,cstring_literals
+.align 1
+.align 0
+lvl7_ra81_bytes:
+	.asciz ": "
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.129102 UTC
+
+.data
+.align 3
+.align 0
+lvl8_ra82_closure:
+	.quad	GHC.Integer.Type.S#_con_info
+	.quad	1000000000000000000
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.130106 UTC
+
+.const_data
+.align 3
+.align 0
+SaPE_srt:
+	.quad	HBLAS.IO.Vector.$wcreateVec0_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.130883 UTC
+
+.data
+.align 3
+.align 0
+lvl9_ra83_closure:
+	.quad	lvl9_ra83_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.132727 UTC
+
+.text
+.align 3
+lvl9_ra83_info_dsp:
+.align 3
+	.quad	SaPE_srt-(lvl9_ra83_info)+0
+	.quad	0
+	.quad	4294967317
+lvl9_ra83_info:
+_caPB:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caPC
+_caPD:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _caPA
+_caPz:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $1000,%esi
+	leaq GHC.Float.$fNumDouble_closure(%rip),%r14
+	addq $-16,%rbp
+	jmp HBLAS.IO.Vector.$wcreateVec0_info
+_caPC:
+	jmp *-16(%r13)
+_caPA:
+	jmp *(%rbx)
+	.long  lvl9_ra83_info - lvl9_ra83_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.133713 UTC
+
+.const_data
+.align 3
+.align 0
+SaQ7_srt:
+	.quad	symSq_ra7W_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.13499 UTC
+
+.data
+.align 3
+.align 0
+lvl10_ra84_closure:
+	.quad	lvl10_ra84_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.1368 UTC
+
+.text
+.align 3
+lvl10_ra84_info_dsp:
+.align 3
+	.quad	SaQ7_srt-(lvl10_ra84_info)+0
+	.quad	0
+	.quad	4294967317
+lvl10_ra84_info:
+_caPV:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caQ1
+_caQ2:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _caPR
+_caPQ:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	leaq block_caPS_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	leaq symSq_ra7W_closure(%rip),%rbx
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _caPS
+_caPT:
+	jmp *(%rbx)
+_caQ6:
+	movq $24,904(%r13)
+	jmp *stg_gc_pp@GOTPCREL(%rip)
+.align 3
+	.quad	0
+	.quad	30
+block_caPY_info:
+_caPY:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _caQ6
+_caQ5:
+	leaq :_con_info(%rip),%rax
+	movq %rax,-16(%r12)
+	movq %rbx,-8(%r12)
+	movq %r14,(%r12)
+	leaq -14(%r12),%rbx
+	addq $8,%rbp
+	jmp *(%rbp)
+_caQ1:
+	jmp *-16(%r13)
+.align 3
+	.quad	0
+	.quad	30
+block_caPS_info:
+_caPS:
+	leaq block_caPY_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq GHC.Types.[]_closure+1(%rip),%rdi
+	movq 23(%rbx),%rsi
+	xorl %r14d,%r14d
+	jmp GHC.Show.$wshowSignedInt_info
+_caPR:
+	jmp *(%rbx)
+	.long  lvl10_ra84_info - lvl10_ra84_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.138045 UTC
+
+.const_data
+.align 3
+.align 0
+SaQD_srt:
+	.quad	vecX_ra7X_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.138429 UTC
+
+.data
+.align 3
+.align 0
+lvl11_ra85_closure:
+	.quad	lvl11_ra85_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.13991 UTC
+
+.text
+.align 3
+lvl11_ra85_info_dsp:
+.align 3
+	.quad	SaQD_srt-(lvl11_ra85_info)+0
+	.quad	0
+	.quad	4294967317
+lvl11_ra85_info:
+_caQr:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caQx
+_caQy:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _caQn
+_caQm:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	leaq block_caQo_info(%rip),%rax
+	movq %rax,-24(%rbp)
+	leaq vecX_ra7X_closure(%rip),%rbx
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _caQo
+_caQp:
+	jmp *(%rbx)
+_caQC:
+	movq $24,904(%r13)
+	jmp *stg_gc_pp@GOTPCREL(%rip)
+.align 3
+	.quad	0
+	.quad	30
+block_caQu_info:
+_caQu:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _caQC
+_caQB:
+	leaq :_con_info(%rip),%rax
+	movq %rax,-16(%r12)
+	movq %rbx,-8(%r12)
+	movq %r14,(%r12)
+	leaq -14(%r12),%rbx
+	addq $8,%rbp
+	jmp *(%rbp)
+_caQx:
+	jmp *-16(%r13)
+.align 3
+	.quad	0
+	.quad	30
+block_caQo_info:
+_caQo:
+	leaq block_caQu_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq GHC.Types.[]_closure+1(%rip),%rdi
+	movq 23(%rbx),%rsi
+	xorl %r14d,%r14d
+	jmp GHC.Show.$wshowSignedInt_info
+_caQn:
+	jmp *(%rbx)
+	.long  lvl11_ra85_info - lvl11_ra85_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.140509 UTC
+
+.section	__TEXT,__cstring,cstring_literals
+.align 1
+.align 0
+lvl12_ra86_bytes:
+	.asciz "\nConjugate Gradient Method: "
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.142045 UTC
+
+.data
+.align 3
+.align 0
+lvl13_ra87_closure:
+	.quad	lvl13_ra87_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.142861 UTC
+
+.text
+.align 3
+lvl13_ra87_info_dsp:
+.align 3
+	.quad	0
+	.quad	21
+lvl13_ra87_info:
+_caQW:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caQX
+_caQY:
+	subq $8,%rsp
+	movq %r13,%rax
+	movq %rbx,%rsi
+	movq %rax,%rdi
+	xorl %eax,%eax
+	call newCAF
+	addq $8,%rsp
+	testq %rax,%rax
+	je _caQV
+_caQU:
+	movq stg_bh_upd_frame_info@GOTPCREL(%rip),%rbx
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	leaq lvl12_ra86_bytes(%rip),%r14
+	addq $-16,%rbp
+	jmp GHC.CString.unpackCString#_info
+_caQX:
+	jmp *-16(%r13)
+_caQV:
+	jmp *(%rbx)
+	.long  lvl13_ra87_info - lvl13_ra87_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.146677 UTC
+
+.const_data
+.align 3
+.align 0
+SaTj_srt:
+	.quad	GHC.Integer.Type.timesInteger_closure
+	.quad	GHC.Integer.Type.minusInteger_closure
+	.quad	GHC.Integer.Type.divInteger_closure
+	.quad	Data.Time.Clock.POSIX.$wutcTimeToPOSIXSeconds_closure
+	.quad	Data.Time.Clock.Internal.NominalDiffTime.$fShowNominalDiffTime3_closure
+	.quad	Data.Fixed.showFixed_closure
+	.quad	Main.$w$sconjugateGradient_closure
+	.quad	Data.Time.Clock.POSIX.getCurrentTime1_closure
+	.quad	GHC.IO.Handle.Text.hPutStr2_closure
+	.quad	GHC.IO.Handle.FD.stdout_closure
+	.quad	symSq_ra7W_closure
+	.quad	vecX_ra7X_closure
+	.quad	lvl4_ra7Y_closure
+	.quad	lvl9_ra83_closure
+	.quad	lvl10_ra84_closure
+	.quad	lvl11_ra85_closure
+	.quad	Main.main1_closure
+	.quad	lvl13_ra87_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.147078 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.main1_closure
+Main.main1_closure:
+	.quad	Main.main1_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.148234 UTC
+
+.text
+.align 3
+sat_sah6_info_dsp:
+.align 3
+	.quad	SaTj_srt-(sat_sah6_info)+0
+	.quad	2
+	.quad	270582939666
+sat_sah6_info:
+_caRW:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caSp
+_caSq:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caRT_info(%rip),%rax
+	movq %rax,-32(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rbx
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _caRT
+_caRU:
+	jmp *(%rbx)
+_caSp:
+	jmp *-16(%r13)
+.align 3
+	.quad	SaTj_srt-(block_caSo_info)+32
+	.quad	0
+	.quad	4294967326
+block_caSo_info:
+_caSo:
+	leaq Data.Time.Clock.Internal.NominalDiffTime.$fShowNominalDiffTime3_closure(%rip),%rsi
+	movq %rbx,%r14
+	addq $8,%rbp
+	jmp GHC.Base.++_info
+.align 3
+	.quad	SaTj_srt-(block_caSk_info)+32
+	.quad	0
+	.quad	12884901918
+block_caSk_info:
+_caSk:
+	leaq block_caSo_info(%rip),%rax
+	movq %rax,(%rbp)
+	movq %rbx,%rdi
+	leaq GHC.Types.True_closure+2(%rip),%rsi
+	leaq Data.Fixed.$fHasResolutionE12_$cresolution_closure+1(%rip),%r14
+	jmp Data.Fixed.showFixed_info
+.align 3
+	.quad	SaTj_srt-(block_caSg_info)+16
+	.quad	0
+	.quad	55834574878
+block_caSg_info:
+_caSg:
+	leaq block_caSk_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq Data.Fixed.$fHasResolutionE5_closure(%rip),%rsi
+	movq %rbx,%r14
+	jmp GHC.Integer.Type.divInteger_info
+.align 3
+	.quad	SaTj_srt-(block_caSc_info)+0
+	.quad	0
+	.quad	227633266718
+block_caSc_info:
+_caSc:
+	leaq block_caSg_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq lvl8_ra82_closure+1(%rip),%rsi
+	movq %rbx,%r14
+	jmp GHC.Integer.Type.timesInteger_info
+.align 3
+	.quad	SaTj_srt-(block_caS8_info)+0
+	.quad	1
+	.quad	236223201310
+block_caS8_info:
+_caS8:
+	movq 8(%rbp),%rax
+	leaq block_caSc_info(%rip),%rcx
+	movq %rcx,8(%rbp)
+	movq %rax,%rsi
+	movq %rbx,%r14
+	addq $8,%rbp
+	jmp GHC.Integer.Type.minusInteger_info
+.align 3
+	.quad	SaTj_srt-(block_caS4_info)+0
+	.quad	2
+	.quad	270582939678
+block_caS4_info:
+_caS4:
+	movq 8(%rbp),%rax
+	leaq block_caS8_info(%rip),%rcx
+	movq %rcx,8(%rbp)
+	movq %rax,%rsi
+	movq 16(%rbp),%r14
+	movq %rbx,16(%rbp)
+	addq $8,%rbp
+	jmp Data.Time.Clock.POSIX.$wutcTimeToPOSIXSeconds_info
+.align 3
+	.quad	SaTj_srt-(block_caRT_info)+0
+	.quad	1
+	.quad	270582939678
+block_caRT_info:
+_caRT:
+	leaq block_caRZ_info(%rip),%rax
+	movq %rax,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rbx
+	movq %rbx,%rcx
+	movq 8(%rbp),%rbx
+	movq %rcx,(%rbp)
+	movq %rax,8(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _caRZ
+_caS0:
+	jmp *(%rbx)
+.align 3
+	.quad	SaTj_srt-(block_caRZ_info)+0
+	.quad	2
+	.quad	270582939678
+block_caRZ_info:
+_caRZ:
+	leaq block_caS4_info(%rip),%rax
+	movq %rax,(%rbp)
+	movq 15(%rbx),%rsi
+	movq 7(%rbx),%r14
+	jmp Data.Time.Clock.POSIX.$wutcTimeToPOSIXSeconds_info
+	.long  sat_sah6_info - sat_sah6_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.149818 UTC
+
+.text
+.align 3
+sat_sah7_info_dsp:
+.align 3
+	.quad	SaTj_srt-(sat_sah7_info)+0
+	.quad	2
+	.quad	270582939666
+sat_sah7_info:
+_caSC:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _caSG
+_caSF:
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rbx
+	leaq sat_sah6_info(%rip),%rcx
+	movq %rcx,-24(%r12)
+	movq %rax,-8(%r12)
+	movq %rbx,(%r12)
+	leaq -24(%r12),%rsi
+	leaq lvl7_ra81_bytes(%rip),%r14
+	jmp GHC.CString.unpackAppendCString#_info
+_caSG:
+	movq $32,904(%r13)
+	jmp *-16(%r13)
+	.long  sat_sah7_info - sat_sah7_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.150493 UTC
+
+.text
+.align 3
+sat_sah8_info_dsp:
+.align 3
+	.quad	SaTj_srt-(sat_sah8_info)+0
+	.quad	4
+	.quad	270582939663
+sat_sah8_info:
+_caSI:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caSJ
+_caSK:
+	addq $56,%r12
+	cmpq 856(%r13),%r12
+	ja _caSM
+_caSL:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rbx
+	leaq sat_sah7_info(%rip),%rsi
+	movq %rsi,-48(%r12)
+	movq %rax,-32(%r12)
+	movq %rcx,-24(%r12)
+	leaq :_con_info(%rip),%rax
+	movq %rax,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %rbx,(%r12)
+	leaq -48(%r12),%rsi
+	leaq -14(%r12),%r14
+	addq $-16,%rbp
+	jmp GHC.Base.++_info
+_caSM:
+	movq $56,904(%r13)
+_caSJ:
+	jmp *-16(%r13)
+	.long  sat_sah8_info - sat_sah8_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.151086 UTC
+
+.text
+.align 3
+sat_sah9_info_dsp:
+.align 3
+	.quad	SaTj_srt-(sat_sah9_info)+0
+	.quad	4
+	.quad	270582939663
+sat_sah9_info:
+_caSN:
+	addq $48,%r12
+	cmpq 856(%r13),%r12
+	ja _caSR
+_caSQ:
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rbx
+	leaq sat_sah8_info(%rip),%rsi
+	movq %rsi,-40(%r12)
+	movq %rax,-24(%r12)
+	movq %rcx,-16(%r12)
+	movq %rdx,-8(%r12)
+	movq %rbx,(%r12)
+	leaq -40(%r12),%rsi
+	leaq lvl6_ra80_bytes(%rip),%r14
+	jmp GHC.CString.unpackAppendCString#_info
+_caSR:
+	movq $48,904(%r13)
+	jmp *-16(%r13)
+	.long  sat_sah9_info - sat_sah9_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.15277 UTC
+
+.text
+.align 3
+sat_saha_info_dsp:
+.align 3
+	.quad	SaTj_srt-(sat_saha_info)+0
+	.quad	2
+	.quad	270582939666
+sat_saha_info:
+_caST:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caSU
+_caSV:
+	movq stg_upd_frame_info@GOTPCREL(%rip),%rax
+	movq %rax,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	leaq block_caRB_info(%rip),%rax
+	movq %rax,-40(%rbp)
+	leaq GHC.Types.[]_closure+1(%rip),%rdi
+	movl $1000,%esi
+	xorl %r14d,%r14d
+	movq 16(%rbx),%rax
+	movq %rax,-32(%rbp)
+	movq 24(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Show.$wshowSignedInt_info
+_caSY:
+	movq $72,904(%r13)
+	jmp *stg_gc_pp@GOTPCREL(%rip)
+.align 3
+	.quad	SaTj_srt-(block_caRB_info)+0
+	.quad	2
+	.quad	270582939678
+block_caRB_info:
+_caRB:
+	addq $72,%r12
+	cmpq 856(%r13),%r12
+	ja _caSY
+_caSX:
+	leaq sat_sah9_info(%rip),%rax
+	movq %rax,-64(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,-48(%r12)
+	movq 16(%rbp),%rax
+	movq %rax,-40(%r12)
+	movq %rbx,-32(%r12)
+	movq %r14,-24(%r12)
+	leaq :_con_info(%rip),%rax
+	movq %rax,-16(%r12)
+	movq %rbx,-8(%r12)
+	movq %r14,(%r12)
+	leaq -64(%r12),%rsi
+	leaq -14(%r12),%r14
+	addq $24,%rbp
+	jmp GHC.Base.++_info
+_caSU:
+	jmp *-16(%r13)
+	.long  sat_saha_info - sat_saha_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.153554 UTC
+
+.text
+.align 3
+sat_sahb_info_dsp:
+.align 3
+	.quad	SaTj_srt-(sat_sahb_info)+0
+	.quad	2
+	.quad	270582939666
+sat_sahb_info:
+_caSZ:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _caT3
+_caT2:
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rbx
+	leaq sat_saha_info(%rip),%rcx
+	movq %rcx,-24(%r12)
+	movq %rax,-8(%r12)
+	movq %rbx,(%r12)
+	leaq -24(%r12),%rsi
+	leaq lvl5_ra7Z_bytes(%rip),%r14
+	jmp GHC.CString.unpackAppendCString#_info
+_caT3:
+	movq $32,904(%r13)
+	jmp *-16(%r13)
+	.long  sat_sahb_info - sat_sahb_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.156922 UTC
+
+.text
+.align 3
+Main.main1_info_dsp:
+.align 3
+	.quad	SaTj_srt-(Main.main1_info)+0
+	.quad	4294967299
+	.quad	0
+	.quad	1125895611875342
+.globl Main.main1_info
+Main.main1_info:
+_caT4:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _caT6
+_caT7:
+	leaq block_caRa_info(%rip),%rax
+	movq %rax,-8(%rbp)
+	leaq GHC.Types.True_closure+2(%rip),%rdi
+	leaq lvl13_ra87_closure(%rip),%rsi
+	leaq GHC.IO.Handle.FD.stdout_closure(%rip),%r14
+	addq $-8,%rbp
+	jmp GHC.IO.Handle.Text.hPutStr2_info
+_caTg:
+	movq $32,904(%r13)
+	jmp *stg_gc_unpt_r1@GOTPCREL(%rip)
+.align 3
+	.quad	SaTj_srt-(block_caRr_info)+0
+	.quad	1
+	.quad	21161303867422
+block_caRr_info:
+_caRr:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _caTg
+_caTf:
+	leaq sat_sahb_info(%rip),%rax
+	movq %rax,-24(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,-8(%r12)
+	movq %rbx,(%r12)
+	leaq block_caT5_info(%rip),%rax
+	movq %rax,8(%rbp)
+	leaq GHC.Types.True_closure+2(%rip),%rdi
+	leaq -24(%r12),%rsi
+	leaq GHC.IO.Handle.FD.stdout_closure(%rip),%r14
+	addq $8,%rbp
+	jmp GHC.IO.Handle.Text.hPutStr2_info
+_caT6:
+	leaq Main.main1_closure(%rip),%rbx
+	jmp *-8(%r13)
+.align 3
+	.quad	SaTj_srt-(block_caT5_info)+64
+	.quad	0
+	.quad	81604378654
+block_caT5_info:
+_caT5:
+	leaq GHC.Types.True_closure+2(%rip),%rdi
+	leaq lvl4_ra7Y_closure(%rip),%rsi
+	leaq GHC.IO.Handle.FD.stdout_closure(%rip),%r14
+	addq $8,%rbp
+	jmp GHC.IO.Handle.Text.hPutStr2_info
+.align 3
+	.quad	SaTj_srt-(block_caRn_info)+0
+	.quad	1
+	.quad	21711059681310
+block_caRn_info:
+_caRn:
+	leaq block_caRr_info(%rip),%rax
+	movq %rax,(%rbp)
+	jmp Data.Time.Clock.POSIX.getCurrentTime1_info
+.align 3
+	.quad	SaTj_srt-(block_caRg_info)+0
+	.quad	0
+	.quad	70364449210398
+block_caRg_info:
+_caRg:
+	leaq block_caRi_info(%rip),%rax
+	movq %rax,-8(%rbp)
+	movq %rbx,%rax
+	leaq vecX_ra7X_closure(%rip),%rbx
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _caRi
+_caRj:
+	jmp *(%rbx)
+.align 3
+	.quad	SaTj_srt-(block_caRi_info)+0
+	.quad	1
+	.quad	61568356188190
+block_caRi_info:
+_caRi:
+	leaq block_caRn_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq lvl9_ra83_closure(%rip),%r9
+	movq 7(%rbx),%r8
+	movq 23(%rbx),%rdi
+	movq 15(%rbx),%rsi
+	leaq symSq_ra7W_closure(%rip),%r14
+	jmp Main.$w$sconjugateGradient_info
+.align 3
+	.quad	SaTj_srt-(block_caRe_info)+0
+	.quad	0
+	.quad	70364449210398
+block_caRe_info:
+_caRe:
+	leaq block_caRg_info(%rip),%rax
+	movq %rax,(%rbp)
+	jmp Data.Time.Clock.POSIX.getCurrentTime1_info
+.align 3
+	.quad	SaTj_srt-(block_caRc_info)+0
+	.quad	0
+	.quad	140733193388062
+block_caRc_info:
+_caRc:
+	leaq block_caRe_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq GHC.Types.True_closure+2(%rip),%rdi
+	leaq lvl10_ra84_closure(%rip),%rsi
+	leaq GHC.IO.Handle.FD.stdout_closure(%rip),%r14
+	jmp GHC.IO.Handle.Text.hPutStr2_info
+.align 3
+	.quad	SaTj_srt-(block_caRa_info)+0
+	.quad	0
+	.quad	281470681743390
+block_caRa_info:
+_caRa:
+	leaq block_caRc_info(%rip),%rax
+	movq %rax,(%rbp)
+	leaq GHC.Types.True_closure+2(%rip),%rdi
+	leaq lvl11_ra85_closure(%rip),%rsi
+	leaq GHC.IO.Handle.FD.stdout_closure(%rip),%r14
+	jmp GHC.IO.Handle.Text.hPutStr2_info
+	.long  Main.main1_info - Main.main1_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.158109 UTC
+
+.const_data
+.align 3
+.align 0
+SaUi_srt:
+	.quad	Main.main1_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.158311 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.main_closure
+Main.main_closure:
+	.quad	Main.main_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.15982 UTC
+
+.text
+.align 3
+Main.main_info_dsp:
+.align 3
+	.quad	SaUi_srt-(Main.main_info)+0
+	.quad	4294967299
+	.quad	0
+	.quad	4294967310
+.globl Main.main_info
+Main.main_info:
+_caUf:
+	jmp Main.main1_info
+	.long  Main.main_info - Main.main_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.161094 UTC
+
+.const_data
+.align 3
+.align 0
+SaUu_srt:
+	.quad	GHC.TopHandler.runMainIO1_closure
+	.quad	Main.main1_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.161527 UTC
+
+.data
+.align 3
+.align 0
+.globl Main.main2_closure
+Main.main2_closure:
+	.quad	Main.main2_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.162805 UTC
+
+.text
+.align 3
+Main.main2_info_dsp:
+.align 3
+	.quad	SaUu_srt-(Main.main2_info)+0
+	.quad	4294967299
+	.quad	0
+	.quad	12884901902
+.globl Main.main2_info
+Main.main2_info:
+_caUr:
+	leaq Main.main1_closure+1(%rip),%r14
+	jmp GHC.TopHandler.runMainIO1_info
+	.long  Main.main2_info - Main.main2_info_dsp
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.164536 UTC
+
+.const_data
+.align 3
+.align 0
+SaUG_srt:
+	.quad	Main.main2_closure
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.165788 UTC
+
+.data
+.align 3
+.align 0
+.globl :Main.main_closure
+:Main.main_closure:
+	.quad	:Main.main_info
+	.quad	0
+
+
+==================== Asm code ====================
+2019-03-24 08:15:15.166965 UTC
+
+.text
+.align 3
+:Main.main_info_dsp:
+.align 3
+	.quad	SaUG_srt-(:Main.main_info)+0
+	.quad	4294967299
+	.quad	0
+	.quad	4294967310
+.globl :Main.main_info
+:Main.main_info:
+_caUD:
+	jmp Main.main2_info
+	.long  :Main.main_info - :Main.main_info_dsp

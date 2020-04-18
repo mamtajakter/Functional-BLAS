@@ -1,0 +1,73 @@
+Test suite performance: RUNNING...
+benchmarking COPY/10^8
+time                 3.351 ns   (3.342 ns .. 3.360 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.358 ns   (3.342 ns .. 3.420 ns)
+std dev              87.35 ps   (34.19 ps .. 186.2 ps)
+variance introduced by outliers: 45% (moderately inflated)
+
+benchmarking SWAP/10^8
+time                 3.412 ns   (3.401 ns .. 3.427 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 3.410 ns   (3.403 ns .. 3.432 ns)
+std dev              38.09 ps   (14.17 ps .. 77.87 ps)
+variance introduced by outliers: 13% (moderately inflated)
+
+benchmarking AXPY/10^8
+time                 15.21 s    (9.631 s .. 22.97 s)
+                     0.972 R²   (0.923 R² .. 1.000 R²)
+mean                 11.40 s    (9.250 s .. 13.50 s)
+std dev              2.447 s    (2.011 s .. 2.735 s)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking SCAL/10^8
+time                 11.92 s    (7.349 s .. 18.76 s)
+                     0.965 R²   (0.913 R² .. 1.000 R²)
+mean                 8.804 s    (6.994 s .. 10.56 s)
+std dev              2.066 s    (1.685 s .. 2.356 s)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking DOT/10^8
+time                 491.6 ms   (488.5 ms .. 495.3 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 494.0 ms   (492.8 ms .. 495.1 ms)
+std dev              1.296 ms   (1.105 ms .. 1.395 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking NRM2/10^8
+time                 11.03 s    (9.380 s .. 13.78 s)
+                     0.993 R²   (0.982 R² .. 1.000 R²)
+mean                 9.974 s    (8.101 s .. 10.68 s)
+std dev              1.272 s    (7.542 ms .. 1.639 s)
+variance introduced by outliers: 23% (moderately inflated)
+
+benchmarking ASUM/10^8
+time                 2.657 s    (1.695 s .. 4.083 s)
+                     0.969 R²   (0.921 R² .. 1.000 R²)
+mean                 2.058 s    (1.713 s .. 2.403 s)
+std dev              406.9 ms   (339.1 ms .. 457.8 ms)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking I_AMAX/10^8
+time                 9.499 s    (8.014 s .. 12.89 s)
+                     0.985 R²   (0.974 R² .. 1.000 R²)
+mean                 8.620 s    (7.203 s .. 9.401 s)
+std dev              1.370 s    (291.0 ms .. 1.804 s)
+variance introduced by outliers: 46% (moderately inflated)
+
+benchmarking ROT/10^8
+time                 28.14 ns   (27.92 ns .. 28.41 ns)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 28.19 ns   (27.93 ns .. 28.83 ns)
+std dev              1.249 ns   (691.5 ps .. 2.410 ns)
+variance introduced by outliers: 67% (severely inflated)
+
+benchmarking ROTM/10^8
+time                 7.980 ns   (7.908 ns .. 8.059 ns)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 7.997 ns   (7.939 ns .. 8.109 ns)
+std dev              271.5 ps   (184.3 ps .. 457.5 ps)
+variance introduced by outliers: 57% (severely inflated)
+
+Test suite performance: PASS
+Test suite logged to: dist/test/hblas-0.0.0.0-performance.log

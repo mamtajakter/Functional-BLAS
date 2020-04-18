@@ -1,0 +1,15 @@
+Test suite listVecCompare: RUNNING...
+
+Single Precision Vector
+COPY: 38932s microsecond
+SWAP: 0s microsecond
+AXPY: 81598s microsecond
+SCAL: 6977s microsecond
+DOT: 502971s microsecond
+NRM2: 10044s microsecond
+ASUM: 2520s microsecond
+I_AMAX: 31166s microsecond
+ROT: 2s microsecond
+ROTM: 0s microsecond
+Test suite listVecCompare: PASS
+Test suite logged to: dist/test/hblas-0.0.0.0-listVecCompare.log

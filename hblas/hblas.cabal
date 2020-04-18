@@ -1,0 +1,47 @@
+name:                hblas
+version:             0.0.0.0
+-- synopsis:
+-- github:              "https://bitbucket.org/mamtajakter/drpproject/src/reorganize/""
+description:         Haskell Implementation of BLAS
+license:             BSD3
+license-file:        LICENSE
+author:              Mamtaj Akter
+maintainer:          makter2@cs.uoregon.edu
+category:            Math
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  build-depends:       base,
+                       vector,
+                       ghc-prim,
+                       containers,
+                       time,
+                       matrix,
+                       parallel
+  hs-source-dirs:      haskell
+  Extensions:          CPP,
+                       DeriveDataTypeable
+  default-language:    Haskell2010
+  ghc-options:         -O2
+  exposed-modules:     HBLAS.Level1,
+                       HBLAS.Level2,
+                       HBLAS.IO.List,
+                       HBLAS.IO.Vector,
+                       HBLAS.Class
+
+
+
+test-suite tfqmr
+   ghc-options:         -O2
+                        -threaded
+                        -eventlog
+                        -rtsopts
+   type:                exitcode-stdio-1.0
+   default-language:    Haskell2010
+   main-is:             examples/tfqmr.hs
+   build-depends:       base,
+                        vector,
+                        hblas,
+                        time >= 1.6

@@ -1,0 +1,11 @@
+File Edit Options Buffers Tools Help                                            
+COPY: 3332
+SWAP: 44
+AXPY: 35
+SCAL: 13
+DOT: 19
+NRM2: 29
+ASUM: 25
+I_AMAX: 35
+ROT: 25
+ROTM: 17

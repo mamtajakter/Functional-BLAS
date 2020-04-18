@@ -1,0 +1,60 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-26 05:36:29.241724 UTC
+
+interface hblas-0.0.0.0-9LbZGQM6wW53wyAIAU2rOm:Data.Vector.Fusion.MultiStream.Monadic 8022
+  interface hash: 8a3d087d1d6249a0c825190a8525f661
+  ABI hash: 9458ccee8c45383e2625314aca097320
+  export-list hash: cfe9d8b7a9ea0b609bd8f8cd77418053
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c76ac447b132afdbefaf308e4035af45
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+f337d40cc8aab7479f51ed4c8aefc524
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Vector.Fusion.MultiStream.Monadic.$trModule3
+                   Data.Vector.Fusion.MultiStream.Monadic.$trModule1) -}
+8e4059057bb93fb662fafacb2ca72640
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.MultiStream.Monadic.$trModule2) -}
+227653a855932f17fc6060a9f0c8fa05
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Data.Vector.Fusion.MultiStream.Monadic"#) -}
+526dce1bb4117a82876c614bafc9f709
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.MultiStream.Monadic.$trModule4) -}
+67f4cf76df59fbf9bb6d65271db3719a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-9LbZGQM6wW53wyAIAU2rOm"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+Warn all {-# WARNING "Only useful with the LLVM back end" #-}
+trusted: safe
+require own pkg trusted: False
+

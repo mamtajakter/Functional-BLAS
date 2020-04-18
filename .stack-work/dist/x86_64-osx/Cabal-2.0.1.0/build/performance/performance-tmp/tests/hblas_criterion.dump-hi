@@ -1,0 +1,276 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-24 22:55:29.28026 UTC
+
+interface main:Main 8022
+  interface hash: 4abafcd2e981dc17bde9bd6674f08c4f
+  ABI hash: 7f969d315198bb5711edb17e37ae6309
+  export-list hash: 061db305af8e6ed8ce1cff637872b41a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 39cbb75afb0546d1fd313e70317c9a0b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.uncurry'
+  Main.vec1_10_1
+  Main.vec1_10_2
+  Main.vec1_10_3
+  Main.vec1_10_4
+  Main.vec1_10_5
+  Main.vec1_10_6
+  Main.vec1_10_7
+  Main.vec1_10_8
+  Main.vec2_10_1
+  Main.vec2_10_2
+  Main.vec2_10_3
+  Main.vec2_10_4
+  Main.vec2_10_5
+  Main.vec2_10_6
+  Main.vec2_10_7
+  Main.vec2_10_8
+module dependencies:
+package dependencies: Glob-0.9.2 Only-0.1 abstract-par-0.3.3
+                      aeson-1.2.4.0 ansi-terminal-0.8.0.4 ansi-wl-pprint-0.6.8.2
+                      array-0.5.2.0 attoparsec-0.13.2.2 base-4.10.1.0 base-compat-0.9.3
+                      base-orphans-0.7 binary-0.8.5.1 bytestring-0.10.8.2 cassava-0.5.1.0
+                      code-page-0.1.3 colour-2.3.4 containers-0.5.10.2 criterion-1.3.0.0
+                      deepseq-1.4.3.0 directory-1.3.0.2 dlist-0.8.0.4 exceptions-0.8.3
+                      filepath-1.4.1.2 ghc-boot-th-8.2.2 ghc-prim-0.5.1.1
+                      hashable-1.2.7.0 hblas-0.0.0.0 integer-gmp-1.0.1.0
+                      integer-logarithms-1.0.2.1 js-flot-0.8.3 js-jquery-3.3.1
+                      math-functions-0.2.1.0 microstache-1.0.1.1 monad-par-0.3.4.8
+                      monad-par-extras-0.3.3 mtl-2.2.2 mwc-random-0.13.6.0
+                      optparse-applicative-0.14.2.0 parsec-3.1.13.0 pretty-1.1.3.3
+                      primitive-0.6.3.0 process-1.6.1.0 random-1.1 scientific-0.3.6.2
+                      statistics-0.14.0.2 stm-2.4.5.0 tagged-0.8.5
+                      template-haskell-2.12.0.0 text-1.2.3.0 text-short-0.1.2
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.2.0
+                      unix-2.7.2.2 unordered-containers-0.2.9.0 uuid-types-1.0.3
+                      vector-0.12.0.1 vector-algorithms-0.7.0.1
+                      vector-binary-instances-0.2.4 vector-th-unbox-0.2.1.6
+orphans: stm-2.4.5.0:Control.Monad.STM
+         monad-par-0.3.4.8:Control.Monad.Par.Scheds.Trace
+         vector-binary-instances-0.2.4:Data.Vector.Binary
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Show
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         base-orphans-0.7:Data.Orphans vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         colour-2.3.4:Data.Colour time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: Only-0.1:Data.Tuple.Only
+                         aeson-1.2.4.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.10.1.0:Control.Applicative base-4.10.1.0:Data.Complex
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Compose
+                         base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         criterion-1.3.0.0:Criterion.Main.Options
+                         criterion-1.3.0.0:Criterion.Measurement
+                         criterion-1.3.0.0:Criterion.Report
+                         criterion-1.3.0.0:Criterion.Types dlist-0.8.0.4:Data.DList
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         math-functions-0.2.1.0:Numeric.RootFinding
+                         math-functions-0.2.1.0:Numeric.Sum
+                         microstache-1.0.1.1:Text.Microstache.Type
+                         mwc-random-0.13.6.0:System.Random.MWC
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         statistics-0.14.0.2:Statistics.Distribution.Normal
+                         statistics-0.14.0.2:Statistics.Math.RootFinding
+                         statistics-0.14.0.2:Statistics.Resampling
+                         statistics-0.14.0.2:Statistics.Types tagged-0.8.5:Data.Tagged
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         text-short-0.1.2:Data.Text.Short.Internal
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Data.Tuple 8fa1305aa5032ea35e2a54fa5f1e78f9
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  criterion-1.3.0.0:Criterion.Main e855a9b7bdae7cec5bc03cdf5ed20dda
+import  -/  criterion-1.3.0.0:Criterion.Types 2402c6a3e200d968901ea8b460497ce6
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  hblas-0.0.0.0:HBLAS.IO.List 551db35bf6b31123d18ea6a271867b81
+import  -/  hblas-0.0.0.0:HBLAS.IO.Vector bafc67185bb5ad0ab4c527110114bdf4
+import  -/  hblas-0.0.0.0:HBLAS.Level1 97cdd27488c3d928eab9ad784c805d90
+import  -/  vector-0.12.0.1:Data.Vector 05d09acb6f8f89c1df7193ef513155f3
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+45382869fccdc8575fe927b5bd9b3648
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+529073e95d7e97cca9b9c5c633464b51
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+5510fa2cfc7989247ee295903c8707a0
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+e814eeed95da82802aec8756d320e243
+  uncurry' :: (a -> b -> c -> d) -> (a, b, c) -> d
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><S,1*U(U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b @ c @ d (f :: a -> b -> c -> d) (ds :: (a, b, c)) ->
+                 case ds of wild { (,,) x1 y z -> f x1 y z }) -}
+69e6fff863248537285d8a2eef699438
+  vec1_10_1 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_11) -}
+a1296cecda48462465693c741a20204b
+  vec1_10_11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_1.csv"#) -}
+7fbb218bcbbaf7ae0d4a599c6e885db7
+  vec1_10_12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_2.csv"#) -}
+12a58a1145a28a98fcbac4d2d62fe3a2
+  vec1_10_13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_3.csv"#) -}
+9759e8b9ac135c9b9d2a10399426ab2f
+  vec1_10_14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_4.csv"#) -}
+818c223cb21d748c08c0c92bedc0c168
+  vec1_10_15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_5.csv"#) -}
+1e2ddd234a8529b1e6759ad633aad845
+  vec1_10_16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_6.csv"#) -}
+55283c9ffa3f16187a020fdc24f09dfd
+  vec1_10_17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_7.csv"#) -}
+842e1ab5266acbd564802d63b89a41f4
+  vec1_10_18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_8.csv"#) -}
+8a241be3c2953436274bc5c5dc6edbb5
+  vec1_10_2 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_12) -}
+d2e5c1c2f67dfad432743bd0d60ae079
+  vec1_10_3 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_13) -}
+dc2713739a22e8faf9dbc0cdb8e8e3ca
+  vec1_10_4 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_14) -}
+1313526971e56c5df16634392c069a47
+  vec1_10_5 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_15) -}
+06d527ce17aca23aa3e3f58f48a547e2
+  vec1_10_6 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_16) -}
+1e1c45c6ff824dd492924115b85eeb14
+  vec1_10_7 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_17) -}
+74b3b6e83a6839b073ccd282355f1fe6
+  vec1_10_8 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec1_10_18) -}
+dc3f1c3511adfad1c011a08a8c583c98
+  vec2_10_1 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_11) -}
+8a79925e9b537a481dd4e9e654ef9a5e
+  vec2_10_11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_1.csv"#) -}
+4920fb45d72c492a8feb45efb89470e9
+  vec2_10_12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_2.csv"#) -}
+45e55fcd49f974ea06c571a8812de6ad
+  vec2_10_13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_3.csv"#) -}
+aa84915b09252fbbe1bb4b204984d452
+  vec2_10_14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_4.csv"#) -}
+e8cb8a275b3647a0e389b858d30b234d
+  vec2_10_15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_5.csv"#) -}
+10fefdb21a464ac1990d57f01f61fb4e
+  vec2_10_16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_6.csv"#) -}
+7855a70a17d325ce112c3ac076b6b3fc
+  vec2_10_17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_7.csv"#) -}
+e1b0f92f5441f7169a3e73a526f1def7
+  vec2_10_18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_8.csv"#) -}
+37ec439f1b6c6ca241e4799c5b6ebfa0
+  vec2_10_2 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_12) -}
+758a09a2381e36c4723cb3e3076a9404
+  vec2_10_3 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_13) -}
+df34beb3da1fce808794514f978e56cd
+  vec2_10_4 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_14) -}
+3e3c8798326f8e6fc3eaae18567f615f
+  vec2_10_5 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_15) -}
+5aff068baa5d2368e43a0ee8219a1db5
+  vec2_10_6 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_16) -}
+59f2775b6f52ab937048c6a309231d83
+  vec2_10_7 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_17) -}
+af967ac22608aea7c4fe7bbed3be31a0
+  vec2_10_8 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec2_10_18) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

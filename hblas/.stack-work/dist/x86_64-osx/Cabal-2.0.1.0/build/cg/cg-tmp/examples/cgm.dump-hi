@@ -1,0 +1,1250 @@
+
+==================== FINAL INTERFACE ====================
+2020-04-11 04:42:56.519673 UTC
+
+interface main:Main 8022
+  interface hash: 198e1e3e5d55a51d3cfe2a6cd6c1442e
+  ABI hash: 3f8a978246b144505ce4a7343cb1c7fc
+  export-list hash: 8e90efd7e080fcee4ba75b0f2568af83
+  orphan hash: 81d7e287f516a59fca7aa8579c7e3342
+  flag hash: 6c02030d1beeff18d6ba98e5c46b9b40
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.conjugateGradient
+  Main.main
+  Main.repeatNTimes
+  Main.round4dp
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 hblas-0.0.0.0 integer-gmp-1.0.1.0 loop-0.3.0
+                      matrix-0.3.5.0 primitive-0.6.3.0 time-1.8.0.2 transformers-0.5.2.0
+                      vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array vector-0.12.0.1:Data.Vector
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Float 28e3bf9e258278ac8084e9cab43fd542
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.IO 525805ab19df5e4fe6d8de7dde9cb909
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  hblas-0.0.0.0:HBLAS.Class 4610295a6fba69f91f0316e9de344d57
+import  -/  hblas-0.0.0.0:HBLAS.IO.Vector 019d05467eb710a6625ea2ab3a9f1fa4
+import  -/  hblas-0.0.0.0:HBLAS.Level1 c721343fe773ce88d7ccfbf81ea94a57
+import  -/  hblas-0.0.0.0:HBLAS.Level2 1bead8235c63eeddde7bae93a9da51e6
+import  -/  time-1.8.0.2:Data.Time 94c4b97ca0ea17df29bc6210fb9e1b2b
+import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCDiff a07e012374f68f0eec645405302031bb
+import  -/  time-1.8.0.2:Data.Time.Clock.POSIX 9bbc4ffee03d887b4be58f486cb9ae4c
+import  -/  vector-0.12.0.1:Data.Vector 05d09acb6f8f89c1df7193ef513155f3
+6484f076ad0da272f0e6ca367be395a1
+  $s$wcreateSymSq ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector (Data.Vector.Vector GHC.Types.Double)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [~] -}
+0f5b045416509201914042f47685cb5a
+  $s$wcreateVecX ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Double
+  {- Arity: 3, Strictness: <S,U><L,U><S,U>, Inline: [~] -}
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+8454ff125d3a98e1591fc7497319bd35
+  $wround4dp :: GHC.Real.RealFrac n => n -> n
+  {- Arity: 2,
+     Strictness: <S(LS(LC(C(S))LL)LLLLL),U(1*U(1*U(A,A,1*C1(C1(U)),A,A,A,1*C1(U)),A,A),1*U(A,1*C1(C1(U)),A,C(U)),A,A,1*C1(C1(U)),A,A)><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n (w :: GHC.Real.RealFrac n) (w1 :: n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n = GHC.Real.$p2RealFrac @ n w
+                 } in
+                 GHC.Real./
+                   @ n
+                   $dFractional
+                   (let {
+                      $dReal :: GHC.Real.Real n = GHC.Real.$p1RealFrac @ n w
+                    } in
+                    let {
+                      $dNum :: GHC.Num.Num n = GHC.Real.$p1Real @ n $dReal
+                    } in
+                    GHC.Num.fromInteger
+                      @ n
+                      $dNum
+                      (GHC.Real.round
+                         @ n
+                         w
+                         @ GHC.Integer.Type.Integer
+                         GHC.Real.$fIntegralInteger
+                         (GHC.Num.*
+                            @ n
+                            $dNum
+                            w1
+                            (GHC.Real.fromRational @ n $dFractional Main.round4dp1))))
+                   (GHC.Real.fromRational @ n $dFractional Main.round4dp1)) -}
+34a21eca8136642c7097c2a5e01cdb90
+  conjugateGradient ::
+    (GHC.Num.Num n, GHC.Real.Fractional n, GHC.Classes.Ord n,
+     GHC.Float.Floating n) =>
+    Data.Vector.Vector (Data.Vector.Vector n)
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+  {- Arity: 7,
+     Strictness: <L,A><L,1*U(1*U(C(C1(U)),A,C(C(U)),1*C1(U),A,A,C(U)),A,A,A)><L,U(A,A,C(C1(U)),A,A,A,A,A)><L,U(U(U(C(C1(U)),A,C(C1(U)),A,A,A,C(U)),C(C1(U)),A,C(U)),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(LSL),1*U(U,U,U)><S,1*U(U,U,U)><S,1*U(U,U,U)>,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (7, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dFractional :: GHC.Real.Fractional n)
+                   ($dOrd :: GHC.Classes.Ord n)
+                   ($dFloating :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional1 :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 \ (a :: Data.Vector.Vector (Data.Vector.Vector n))
+                   (b :: Data.Vector.Vector n)
+                   (vec0 :: Data.Vector.Vector n) ->
+                 case a of a1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case b of b1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 case vec0 of vec1 { Data.Vector.Vector ipv6 ipv7 ipv8 ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.inplace
+                              @ (Data.Vector.Vector n)
+                              @ n
+                              @ Data.Vector.Vector
+                              (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                               Data.Vector.Fusion.Stream.Monadic.mapM
+                                 @ m
+                                 @ (Data.Vector.Vector n)
+                                 @ n
+                                 $dMonad
+                                 (let {
+                                    f1 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                                  } in
+                                  \ (x2 :: Data.Vector.Vector n) ->
+                                  f1
+                                    (case x2 of b2 { Data.Vector.Vector ipv9 ipv10 ipv11 ->
+                                     let {
+                                       f :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                                     } in
+                                     let {
+                                       f2 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                                     } in
+                                     (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                        @ Data.Vector.Fusion.Util.Id
+                                        @ n
+                                        @ n
+                                        @ Data.Vector.Vector
+                                        Data.Vector.Fusion.Util.$fMonadId
+                                        (\ (a2 :: n) (b3 :: n)[OneShot] -> f a2 b3)
+                                          `cast`
+                                        (<n>_R
+                                         ->_R <n>_R
+                                         ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                        (GHC.Num.fromInteger @ n $dNum1 0)
+                                        (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                           @ Data.Vector.Fusion.Util.Id
+                                           @ n
+                                           @ n
+                                           @ n
+                                           @ Data.Vector.Vector
+                                           Data.Vector.Fusion.Util.$fMonadId
+                                           (\ (a2 :: n) (b3 :: n)[OneShot] -> f2 a2 b3)
+                                             `cast`
+                                           (<n>_R
+                                            ->_R <n>_R
+                                            ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                           (Data.Vector.Generic.stream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              b1)
+                                           (Data.Vector.Generic.stream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              b2)))
+                                       `cast`
+                                     (Data.Vector.Fusion.Util.N:Id[0] <n>_R) })))
+                              (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ (Data.Vector.Vector n)
+                                 (Data.Vector.$fVectorVectora @ (Data.Vector.Vector n))
+                                 a1))) of ab { Data.Vector.Vector ipv9 ipv10 ipv11 ->
+                 case GHC.Num.negate
+                        @ n
+                        $dNum1
+                        (GHC.Num.fromInteger @ n $dNum1 1) of minus1 { DEFAULT ->
+                 case GHC.Num.fromInteger @ n $dNum1 1 of alpha2 { DEFAULT ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                              @ Data.Vector.Fusion.Util.Id
+                              @ n
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum1 b2 (GHC.Num.* @ n $dNum1 minus1 a2))
+                                `cast`
+                              (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 ab)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 vec1))) of xs { Data.Vector.Vector ipv12 ipv13 ipv14 ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                              @ Data.Vector.Fusion.Util.Id
+                              @ n
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum1 b2 (GHC.Num.* @ n $dNum1 alpha2 a2))
+                                `cast`
+                              (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 xs)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 b1))) of r { Data.Vector.Vector ipv15 ipv16 ipv17 ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.inplace
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                               let {
+                                 f :: n -> n = GHC.Num.* @ n $dNum1 minus1
+                               } in
+                               Data.Vector.Fusion.Stream.Monadic.mapM
+                                 @ m
+                                 @ n
+                                 @ n
+                                 $dMonad
+                                 (let {
+                                    f1 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                                  } in
+                                  \ (x2 :: n) -> f1 (f x2)))
+                              (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 r))) of y { Data.Vector.Vector ipv18 ipv19 ipv20 ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.inplace
+                              @ (Data.Vector.Vector n)
+                              @ n
+                              @ Data.Vector.Vector
+                              (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                               Data.Vector.Fusion.Stream.Monadic.mapM
+                                 @ m
+                                 @ (Data.Vector.Vector n)
+                                 @ n
+                                 $dMonad
+                                 (let {
+                                    f1 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                                  } in
+                                  \ (x2 :: Data.Vector.Vector n) ->
+                                  f1
+                                    (case x2 of b2 { Data.Vector.Vector ipv21 ipv22 ipv23 ->
+                                     let {
+                                       f :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                                     } in
+                                     let {
+                                       f2 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                                     } in
+                                     (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                        @ Data.Vector.Fusion.Util.Id
+                                        @ n
+                                        @ n
+                                        @ Data.Vector.Vector
+                                        Data.Vector.Fusion.Util.$fMonadId
+                                        (\ (a2 :: n) (b3 :: n)[OneShot] -> f a2 b3)
+                                          `cast`
+                                        (<n>_R
+                                         ->_R <n>_R
+                                         ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                        (GHC.Num.fromInteger @ n $dNum1 0)
+                                        (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                           @ Data.Vector.Fusion.Util.Id
+                                           @ n
+                                           @ n
+                                           @ n
+                                           @ Data.Vector.Vector
+                                           Data.Vector.Fusion.Util.$fMonadId
+                                           (\ (a2 :: n) (b3 :: n)[OneShot] -> f2 a2 b3)
+                                             `cast`
+                                           (<n>_R
+                                            ->_R <n>_R
+                                            ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                           (Data.Vector.Generic.stream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              y)
+                                           (Data.Vector.Generic.stream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              b2)))
+                                       `cast`
+                                     (Data.Vector.Fusion.Util.N:Id[0] <n>_R) })))
+                              (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ (Data.Vector.Vector n)
+                                 (Data.Vector.$fVectorVectora @ (Data.Vector.Vector n))
+                                 a1))) of z { Data.Vector.Vector ipv21 ipv22 ipv23 ->
+                 let {
+                   f :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                 } in
+                 let {
+                   f1 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                 } in
+                 case (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                         @ Data.Vector.Fusion.Util.Id
+                         @ n
+                         @ n
+                         @ Data.Vector.Vector
+                         Data.Vector.Fusion.Util.$fMonadId
+                         (\ (a2 :: n) (b2 :: n)[OneShot] -> f a2 b2)
+                           `cast`
+                         (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                         (GHC.Num.fromInteger @ n $dNum1 0)
+                         (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                            @ Data.Vector.Fusion.Util.Id
+                            @ n
+                            @ n
+                            @ n
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            (\ (a2 :: n) (b2 :: n)[OneShot] -> f1 a2 b2)
+                              `cast`
+                            (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                            (Data.Vector.Generic.stream
+                               @ Data.Vector.Vector
+                               @ n
+                               (Data.Vector.$fVectorVectora @ n)
+                               y)
+                            (Data.Vector.Generic.stream
+                               @ Data.Vector.Vector
+                               @ n
+                               (Data.Vector.$fVectorVectora @ n)
+                               z)))
+                        `cast`
+                      (Data.Vector.Fusion.Util.N:Id[0] <n>_R) of s { DEFAULT ->
+                 case GHC.Real./
+                        @ n
+                        $dFractional1
+                        (let {
+                           f2 :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                         } in
+                         let {
+                           f3 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                         } in
+                         (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                            @ Data.Vector.Fusion.Util.Id
+                            @ n
+                            @ n
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            (\ (a2 :: n) (b2 :: n)[OneShot] -> f2 a2 b2)
+                              `cast`
+                            (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                            (GHC.Num.fromInteger @ n $dNum1 0)
+                            (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                               @ Data.Vector.Fusion.Util.Id
+                               @ n
+                               @ n
+                               @ n
+                               @ Data.Vector.Vector
+                               Data.Vector.Fusion.Util.$fMonadId
+                               (\ (a2 :: n) (b2 :: n)[OneShot] -> f3 a2 b2)
+                                 `cast`
+                               (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                               (Data.Vector.Generic.stream
+                                  @ Data.Vector.Vector
+                                  @ n
+                                  (Data.Vector.$fVectorVectora @ n)
+                                  y)
+                               (Data.Vector.Generic.stream
+                                  @ Data.Vector.Vector
+                                  @ n
+                                  (Data.Vector.$fVectorVectora @ n)
+                                  r)))
+                           `cast`
+                         (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                        s of t { DEFAULT ->
+                 case GHC.Num.fromInteger @ n $dNum1 1 of alpha1 { DEFAULT ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                              @ Data.Vector.Fusion.Util.Id
+                              @ n
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum1 b2 (GHC.Num.* @ n $dNum1 t a2))
+                                `cast`
+                              (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 y)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 vec1))) of xs1 { Data.Vector.Vector ipv24 ipv25 ipv26 ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                              @ Data.Vector.Fusion.Util.Id
+                              @ n
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum1 b2 (GHC.Num.* @ n $dNum1 alpha1 a2))
+                                `cast`
+                              (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 xs1)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 b1))) of x2 { Data.Vector.Vector ipv27 ipv28 ipv29 ->
+                 case (Data.Vector.Fusion.Bundle.Monadic.length
+                         @ Data.Vector.Fusion.Util.Id
+                         @ Data.Vector.Vector
+                         @ n
+                         Data.Vector.Fusion.Util.$fMonadId
+                         (Data.Vector.Fusion.Bundle.Monadic.fromVector
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Vector.Vector
+                            @ n
+                            Data.Vector.Fusion.Util.$fMonadId
+                            (Data.Vector.$fVectorVectora @ n)
+                            b1))
+                        `cast`
+                      (Data.Vector.Fusion.Util.N:Id[0]
+                           <GHC.Types.Int>_R) of n1 { GHC.Types.I# ipv30 ->
+                 case GHC.Real.fromRational
+                        @ n
+                        $dFractional1
+                        (GHC.Real.:%
+                           @ GHC.Integer.Type.Integer
+                           1
+                           10000000000) of tol { DEFAULT ->
+                 letrec {
+                   cgm :: GHC.Types.Int
+                          -> (Data.Vector.Vector n, Data.Vector.Vector n,
+                              Data.Vector.Vector n, n, n, Data.Vector.Vector n)
+                          -> Data.Vector.Vector n
+                     <join 2> {- Arity: 2 -}
+                   = \ (ds :: GHC.Types.Int)
+                       (ds1 :: (Data.Vector.Vector n, Data.Vector.Vector n,
+                                Data.Vector.Vector n, n, n, Data.Vector.Vector n)) ->
+                     case GHC.Classes.eqInt ds (GHC.Types.I# 0#) of wild {
+                       GHC.Types.False
+                       -> case ds of ds2 { GHC.Types.I# ipv31 ->
+                          case ds1 of wild1 { (,,,,,) r' y' z' s' t' x' ->
+                          case r' of r'1 { Data.Vector.Vector ipv32 ipv33 ipv34 ->
+                          case y' of y'1 { Data.Vector.Vector ipv35 ipv36 ipv37 ->
+                          case z' of z'1 { Data.Vector.Vector ipv38 ipv39 ipv40 ->
+                          case s' of s'1 { DEFAULT ->
+                          case t' of t'1 { DEFAULT ->
+                          case x' of x'1 { Data.Vector.Vector ipv41 ipv42 ipv43 ->
+                          case GHC.Classes.<
+                                 @ n
+                                 $dOrd
+                                 (let {
+                                    $dFractional2 :: GHC.Real.Fractional n
+                                    = GHC.Float.$p1Floating @ n $dFloating
+                                  } in
+                                  let {
+                                    $dNum2 :: GHC.Num.Num n
+                                    = GHC.Real.$p1Fractional @ n $dFractional2
+                                  } in
+                                  let {
+                                    f2 :: n -> n -> n = GHC.Num.+ @ n $dNum2
+                                  } in
+                                  GHC.Float.sqrt
+                                    @ n
+                                    $dFloating
+                                    (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                       @ Data.Vector.Fusion.Util.Id
+                                       @ n
+                                       @ n
+                                       @ Data.Vector.Vector
+                                       Data.Vector.Fusion.Util.$fMonadId
+                                       (\ (a2 :: n) (b2 :: n)[OneShot] -> f2 a2 b2)
+                                         `cast`
+                                       (<n>_R
+                                        ->_R <n>_R
+                                        ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                       (GHC.Num.fromInteger @ n $dNum2 0)
+                                       (Data.Vector.Fusion.Bundle.inplace
+                                          @ n
+                                          @ n
+                                          @ Data.Vector.Vector
+                                          (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                                           Data.Vector.Fusion.Stream.Monadic.mapM
+                                             @ m
+                                             @ n
+                                             @ n
+                                             $dMonad
+                                             (let {
+                                                f3 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                                              } in
+                                              \ (x3 :: n) -> f3 (GHC.Num.* @ n $dNum2 x3 x3)))
+                                          (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                                          (Data.Vector.Generic.stream
+                                             @ Data.Vector.Vector
+                                             @ n
+                                             (Data.Vector.$fVectorVectora @ n)
+                                             r'1)))
+                                      `cast`
+                                    (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                 tol of wild2 {
+                            GHC.Types.False
+                            -> case GHC.Num.* @ n $dNum1 minus1 t'1 of minust { DEFAULT ->
+                               case GHC.Num.fromInteger @ n $dNum1 1 of alpha3 { DEFAULT ->
+                               case Data.Vector.Generic.new
+                                      @ Data.Vector.Vector
+                                      @ n
+                                      (Data.Vector.$fVectorVectora @ n)
+                                      (Data.Vector.Generic.New.unstream
+                                         @ Data.Vector.Vector
+                                         @ n
+                                         (Data.Vector.$fVectorVectora @ n)
+                                         (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                            @ Data.Vector.Fusion.Util.Id
+                                            @ n
+                                            @ n
+                                            @ n
+                                            @ Data.Vector.Vector
+                                            Data.Vector.Fusion.Util.$fMonadId
+                                            (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                                             GHC.Num.+
+                                               @ n
+                                               $dNum1
+                                               b2
+                                               (GHC.Num.* @ n $dNum1 minust a2))
+                                              `cast`
+                                            (<n>_R
+                                             ->_R <n>_R
+                                             ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                            (Data.Vector.Generic.stream
+                                               @ Data.Vector.Vector
+                                               @ n
+                                               (Data.Vector.$fVectorVectora @ n)
+                                               z'1)
+                                            (Data.Vector.Generic.stream
+                                               @ Data.Vector.Vector
+                                               @ n
+                                               (Data.Vector.$fVectorVectora @ n)
+                                               vec1))) of xs2 { Data.Vector.Vector ipv44 ipv45 ipv46 ->
+                               case Data.Vector.Generic.new
+                                      @ Data.Vector.Vector
+                                      @ n
+                                      (Data.Vector.$fVectorVectora @ n)
+                                      (Data.Vector.Generic.New.unstream
+                                         @ Data.Vector.Vector
+                                         @ n
+                                         (Data.Vector.$fVectorVectora @ n)
+                                         (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                            @ Data.Vector.Fusion.Util.Id
+                                            @ n
+                                            @ n
+                                            @ n
+                                            @ Data.Vector.Vector
+                                            Data.Vector.Fusion.Util.$fMonadId
+                                            (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                                             GHC.Num.+
+                                               @ n
+                                               $dNum1
+                                               b2
+                                               (GHC.Num.* @ n $dNum1 alpha3 a2))
+                                              `cast`
+                                            (<n>_R
+                                             ->_R <n>_R
+                                             ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                            (Data.Vector.Generic.stream
+                                               @ Data.Vector.Vector
+                                               @ n
+                                               (Data.Vector.$fVectorVectora @ n)
+                                               xs2)
+                                            (Data.Vector.Generic.stream
+                                               @ Data.Vector.Vector
+                                               @ n
+                                               (Data.Vector.$fVectorVectora @ n)
+                                               r'1))) of rr { Data.Vector.Vector ipv47 ipv48 ipv49 ->
+                               case GHC.Classes.<
+                                      @ n
+                                      $dOrd
+                                      (let {
+                                         $dFractional2 :: GHC.Real.Fractional n
+                                         = GHC.Float.$p1Floating @ n $dFloating
+                                       } in
+                                       let {
+                                         $dNum2 :: GHC.Num.Num n
+                                         = GHC.Real.$p1Fractional @ n $dFractional2
+                                       } in
+                                       let {
+                                         f2 :: n -> n -> n = GHC.Num.+ @ n $dNum2
+                                       } in
+                                       GHC.Float.sqrt
+                                         @ n
+                                         $dFloating
+                                         (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                            @ Data.Vector.Fusion.Util.Id
+                                            @ n
+                                            @ n
+                                            @ Data.Vector.Vector
+                                            Data.Vector.Fusion.Util.$fMonadId
+                                            (\ (a2 :: n) (b2 :: n)[OneShot] -> f2 a2 b2)
+                                              `cast`
+                                            (<n>_R
+                                             ->_R <n>_R
+                                             ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                            (GHC.Num.fromInteger @ n $dNum2 0)
+                                            (Data.Vector.Fusion.Bundle.inplace
+                                               @ n
+                                               @ n
+                                               @ Data.Vector.Vector
+                                               (\ @ m :: * -> *
+                                                  ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                                                Data.Vector.Fusion.Stream.Monadic.mapM
+                                                  @ m
+                                                  @ n
+                                                  @ n
+                                                  $dMonad
+                                                  (let {
+                                                     f3 :: n -> m n
+                                                     = GHC.Base.return @ m $dMonad @ n
+                                                   } in
+                                                   \ (x3 :: n) -> f3 (GHC.Num.* @ n $dNum2 x3 x3)))
+                                               (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                                               (Data.Vector.Generic.stream
+                                                  @ Data.Vector.Vector
+                                                  @ n
+                                                  (Data.Vector.$fVectorVectora @ n)
+                                                  rr)))
+                                           `cast`
+                                         (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                      tol of wild3 {
+                                 GHC.Types.False
+                                 -> case GHC.Real./
+                                           @ n
+                                           $dFractional1
+                                           (let {
+                                              f2 :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                                            } in
+                                            let {
+                                              f3 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                                            } in
+                                            (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                               @ Data.Vector.Fusion.Util.Id
+                                               @ n
+                                               @ n
+                                               @ Data.Vector.Vector
+                                               Data.Vector.Fusion.Util.$fMonadId
+                                               (\ (a2 :: n) (b2 :: n)[OneShot] -> f2 a2 b2)
+                                                 `cast`
+                                               (<n>_R
+                                                ->_R <n>_R
+                                                ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                               (GHC.Num.fromInteger @ n $dNum1 0)
+                                               (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                                  @ Data.Vector.Fusion.Util.Id
+                                                  @ n
+                                                  @ n
+                                                  @ n
+                                                  @ Data.Vector.Vector
+                                                  Data.Vector.Fusion.Util.$fMonadId
+                                                  (\ (a2 :: n) (b2 :: n)[OneShot] -> f3 a2 b2)
+                                                    `cast`
+                                                  (<n>_R
+                                                   ->_R <n>_R
+                                                   ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                                  (Data.Vector.Generic.stream
+                                                     @ Data.Vector.Vector
+                                                     @ n
+                                                     (Data.Vector.$fVectorVectora @ n)
+                                                     rr)
+                                                  (Data.Vector.Generic.stream
+                                                     @ Data.Vector.Vector
+                                                     @ n
+                                                     (Data.Vector.$fVectorVectora @ n)
+                                                     z'1)))
+                                              `cast`
+                                            (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                           s'1 of bb { DEFAULT ->
+                                    case Data.Vector.Generic.new
+                                           @ Data.Vector.Vector
+                                           @ n
+                                           (Data.Vector.$fVectorVectora @ n)
+                                           (Data.Vector.Generic.New.unstream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              (Data.Vector.Fusion.Bundle.inplace
+                                                 @ n
+                                                 @ n
+                                                 @ Data.Vector.Vector
+                                                 (\ @ m :: * -> *
+                                                    ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                                                  let {
+                                                    f2 :: n -> n = GHC.Num.* @ n $dNum1 bb
+                                                  } in
+                                                  Data.Vector.Fusion.Stream.Monadic.mapM
+                                                    @ m
+                                                    @ n
+                                                    @ n
+                                                    $dMonad
+                                                    (let {
+                                                       f3 :: n -> m n
+                                                       = GHC.Base.return @ m $dMonad @ n
+                                                     } in
+                                                     \ (x3 :: n) -> f3 (f2 x3)))
+                                                 (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    y'1))) of by { Data.Vector.Vector ipv50 ipv51 ipv52 ->
+                                    case GHC.Num.fromInteger @ n $dNum1 1 of alpha4 { DEFAULT ->
+                                    case Data.Vector.Generic.new
+                                           @ Data.Vector.Vector
+                                           @ n
+                                           (Data.Vector.$fVectorVectora @ n)
+                                           (Data.Vector.Generic.New.unstream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                                 @ Data.Vector.Fusion.Util.Id
+                                                 @ n
+                                                 @ n
+                                                 @ n
+                                                 @ Data.Vector.Vector
+                                                 Data.Vector.Fusion.Util.$fMonadId
+                                                 (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                                                  GHC.Num.+
+                                                    @ n
+                                                    $dNum1
+                                                    b2
+                                                    (GHC.Num.* @ n $dNum1 minus1 a2))
+                                                   `cast`
+                                                 (<n>_R
+                                                  ->_R <n>_R
+                                                  ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    rr)
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    vec1))) of xs3 { Data.Vector.Vector ipv53 ipv54 ipv55 ->
+                                    case Data.Vector.Generic.new
+                                           @ Data.Vector.Vector
+                                           @ n
+                                           (Data.Vector.$fVectorVectora @ n)
+                                           (Data.Vector.Generic.New.unstream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                                 @ Data.Vector.Fusion.Util.Id
+                                                 @ n
+                                                 @ n
+                                                 @ n
+                                                 @ Data.Vector.Vector
+                                                 Data.Vector.Fusion.Util.$fMonadId
+                                                 (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                                                  GHC.Num.+
+                                                    @ n
+                                                    $dNum1
+                                                    b2
+                                                    (GHC.Num.* @ n $dNum1 alpha4 a2))
+                                                   `cast`
+                                                 (<n>_R
+                                                  ->_R <n>_R
+                                                  ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    xs3)
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    by))) of yy { Data.Vector.Vector ipv56 ipv57 ipv58 ->
+                                    case Data.Vector.Generic.new
+                                           @ Data.Vector.Vector
+                                           @ n
+                                           (Data.Vector.$fVectorVectora @ n)
+                                           (Data.Vector.Generic.New.unstream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              (Data.Vector.Fusion.Bundle.inplace
+                                                 @ (Data.Vector.Vector n)
+                                                 @ n
+                                                 @ Data.Vector.Vector
+                                                 (\ @ m :: * -> *
+                                                    ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                                                  Data.Vector.Fusion.Stream.Monadic.mapM
+                                                    @ m
+                                                    @ (Data.Vector.Vector n)
+                                                    @ n
+                                                    $dMonad
+                                                    (let {
+                                                       f2 :: n -> m n
+                                                       = GHC.Base.return @ m $dMonad @ n
+                                                     } in
+                                                     \ (x3 :: Data.Vector.Vector n) ->
+                                                     f2
+                                                       (case x3 of b2 { Data.Vector.Vector ipv59 ipv60 ipv61 ->
+                                                        let {
+                                                          f3 :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                                                        } in
+                                                        let {
+                                                          f4 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                                                        } in
+                                                        (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                                           @ Data.Vector.Fusion.Util.Id
+                                                           @ n
+                                                           @ n
+                                                           @ Data.Vector.Vector
+                                                           Data.Vector.Fusion.Util.$fMonadId
+                                                           (\ (a2 :: n) (b3 :: n)[OneShot] ->
+                                                            f3 a2 b3)
+                                                             `cast`
+                                                           (<n>_R
+                                                            ->_R <n>_R
+                                                            ->_R Sym (Data.Vector.Fusion.Util.N:Id[0]
+                                                                          <n>_R))
+                                                           (GHC.Num.fromInteger @ n $dNum1 0)
+                                                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                                              @ Data.Vector.Fusion.Util.Id
+                                                              @ n
+                                                              @ n
+                                                              @ n
+                                                              @ Data.Vector.Vector
+                                                              Data.Vector.Fusion.Util.$fMonadId
+                                                              (\ (a2 :: n) (b3 :: n)[OneShot] ->
+                                                               f4 a2 b3)
+                                                                `cast`
+                                                              (<n>_R
+                                                               ->_R <n>_R
+                                                               ->_R Sym (Data.Vector.Fusion.Util.N:Id[0]
+                                                                             <n>_R))
+                                                              (Data.Vector.Generic.stream
+                                                                 @ Data.Vector.Vector
+                                                                 @ n
+                                                                 (Data.Vector.$fVectorVectora @ n)
+                                                                 yy)
+                                                              (Data.Vector.Generic.stream
+                                                                 @ Data.Vector.Vector
+                                                                 @ n
+                                                                 (Data.Vector.$fVectorVectora @ n)
+                                                                 b2)))
+                                                          `cast`
+                                                        (Data.Vector.Fusion.Util.N:Id[0] <n>_R) })))
+                                                 (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ (Data.Vector.Vector n)
+                                                    (Data.Vector.$fVectorVectora
+                                                       @ (Data.Vector.Vector n))
+                                                    a1))) of zz { Data.Vector.Vector ipv59 ipv60 ipv61 ->
+                                    let {
+                                      f2 :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                                    } in
+                                    let {
+                                      f3 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                                    } in
+                                    case (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                            @ Data.Vector.Fusion.Util.Id
+                                            @ n
+                                            @ n
+                                            @ Data.Vector.Vector
+                                            Data.Vector.Fusion.Util.$fMonadId
+                                            (\ (a2 :: n) (b2 :: n)[OneShot] -> f2 a2 b2)
+                                              `cast`
+                                            (<n>_R
+                                             ->_R <n>_R
+                                             ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                            (GHC.Num.fromInteger @ n $dNum1 0)
+                                            (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                               @ Data.Vector.Fusion.Util.Id
+                                               @ n
+                                               @ n
+                                               @ n
+                                               @ Data.Vector.Vector
+                                               Data.Vector.Fusion.Util.$fMonadId
+                                               (\ (a2 :: n) (b2 :: n)[OneShot] -> f3 a2 b2)
+                                                 `cast`
+                                               (<n>_R
+                                                ->_R <n>_R
+                                                ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                               (Data.Vector.Generic.stream
+                                                  @ Data.Vector.Vector
+                                                  @ n
+                                                  (Data.Vector.$fVectorVectora @ n)
+                                                  yy)
+                                               (Data.Vector.Generic.stream
+                                                  @ Data.Vector.Vector
+                                                  @ n
+                                                  (Data.Vector.$fVectorVectora @ n)
+                                                  zz)))
+                                           `cast`
+                                         (Data.Vector.Fusion.Util.N:Id[0] <n>_R) of ss { DEFAULT ->
+                                    case GHC.Real./
+                                           @ n
+                                           $dFractional1
+                                           (let {
+                                              f4 :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                                            } in
+                                            let {
+                                              f5 :: n -> n -> n = GHC.Num.* @ n $dNum1
+                                            } in
+                                            (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                                               @ Data.Vector.Fusion.Util.Id
+                                               @ n
+                                               @ n
+                                               @ Data.Vector.Vector
+                                               Data.Vector.Fusion.Util.$fMonadId
+                                               (\ (a2 :: n) (b2 :: n)[OneShot] -> f4 a2 b2)
+                                                 `cast`
+                                               (<n>_R
+                                                ->_R <n>_R
+                                                ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                               (GHC.Num.fromInteger @ n $dNum1 0)
+                                               (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                                  @ Data.Vector.Fusion.Util.Id
+                                                  @ n
+                                                  @ n
+                                                  @ n
+                                                  @ Data.Vector.Vector
+                                                  Data.Vector.Fusion.Util.$fMonadId
+                                                  (\ (a2 :: n) (b2 :: n)[OneShot] -> f5 a2 b2)
+                                                    `cast`
+                                                  (<n>_R
+                                                   ->_R <n>_R
+                                                   ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                                  (Data.Vector.Generic.stream
+                                                     @ Data.Vector.Vector
+                                                     @ n
+                                                     (Data.Vector.$fVectorVectora @ n)
+                                                     rr)
+                                                  (Data.Vector.Generic.stream
+                                                     @ Data.Vector.Vector
+                                                     @ n
+                                                     (Data.Vector.$fVectorVectora @ n)
+                                                     yy)))
+                                              `cast`
+                                            (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                           ss of tt { DEFAULT ->
+                                    case GHC.Num.fromInteger @ n $dNum1 1 of alpha5 { DEFAULT ->
+                                    case Data.Vector.Generic.new
+                                           @ Data.Vector.Vector
+                                           @ n
+                                           (Data.Vector.$fVectorVectora @ n)
+                                           (Data.Vector.Generic.New.unstream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                                 @ Data.Vector.Fusion.Util.Id
+                                                 @ n
+                                                 @ n
+                                                 @ n
+                                                 @ Data.Vector.Vector
+                                                 Data.Vector.Fusion.Util.$fMonadId
+                                                 (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                                                  GHC.Num.+
+                                                    @ n
+                                                    $dNum1
+                                                    b2
+                                                    (GHC.Num.* @ n $dNum1 tt a2))
+                                                   `cast`
+                                                 (<n>_R
+                                                  ->_R <n>_R
+                                                  ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    yy)
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    vec1))) of xs4 { Data.Vector.Vector ipv62 ipv63 ipv64 ->
+                                    case Data.Vector.Generic.new
+                                           @ Data.Vector.Vector
+                                           @ n
+                                           (Data.Vector.$fVectorVectora @ n)
+                                           (Data.Vector.Generic.New.unstream
+                                              @ Data.Vector.Vector
+                                              @ n
+                                              (Data.Vector.$fVectorVectora @ n)
+                                              (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                                                 @ Data.Vector.Fusion.Util.Id
+                                                 @ n
+                                                 @ n
+                                                 @ n
+                                                 @ Data.Vector.Vector
+                                                 Data.Vector.Fusion.Util.$fMonadId
+                                                 (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                                                  GHC.Num.+
+                                                    @ n
+                                                    $dNum1
+                                                    b2
+                                                    (GHC.Num.* @ n $dNum1 alpha5 a2))
+                                                   `cast`
+                                                 (<n>_R
+                                                  ->_R <n>_R
+                                                  ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    xs4)
+                                                 (Data.Vector.Generic.stream
+                                                    @ Data.Vector.Vector
+                                                    @ n
+                                                    (Data.Vector.$fVectorVectora @ n)
+                                                    x'1))) of xx { Data.Vector.Vector ipv65 ipv66 ipv67 ->
+                                    cgm
+                                      (GHC.Types.I# (GHC.Prim.-# ipv31 1#))
+                                      (rr, yy, zz, ss, tt, xx) } } } } } } } } } } }
+                                 GHC.Types.True -> x'1 } } } } }
+                            GHC.Types.True -> b1 } } } } } } } } }
+                       GHC.Types.True
+                       -> case ds1 of wild1 { (,,,,,) ds2 ds3 ds4 ds5 ds6 x' -> x' } }
+                 } in
+                 cgm n1 (r, y, z, s, t, x2) } } } } } } } } } } } } } } } } }) -}
+45382869fccdc8575fe927b5bd9b3648
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+529073e95d7e97cca9b9c5c633464b51
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+5510fa2cfc7989247ee295903c8707a0
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+024c892c370a52b0c7cd703a70bafa15
+  repeatNTimes ::
+    (GHC.Base.Monad m, GHC.Num.Num t, GHC.Classes.Eq t) =>
+    t -> m a -> m ()
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),1*C1(U),A)><L,U(A,C(C1(U)),A,A,A,A,C(U))><S(C(C(S))L),U(C(C1(U)),A)><L,U><L,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ t
+                   @ m :: * -> *
+                   @ a
+                   ($dMonad :: GHC.Base.Monad m)
+                   ($dNum :: GHC.Num.Num t)
+                   ($dEq :: GHC.Classes.Eq t) ->
+                 letrec {
+                   repeatNTimes1 :: t -> m a -> m () {- Arity: 2 -}
+                   = \ (ds :: t) (ds1 :: m a) ->
+                     case GHC.Classes.==
+                            @ t
+                            $dEq
+                            ds
+                            (GHC.Num.fromInteger @ t $dNum 0) of wild {
+                       GHC.Types.False
+                       -> case ds of ds2 { DEFAULT ->
+                          case ds1 of ds3 { DEFAULT ->
+                          GHC.Base.>>
+                            @ m
+                            $dMonad
+                            @ a
+                            @ ()
+                            ds3
+                            (repeatNTimes1
+                               (GHC.Num.- @ t $dNum ds2 (GHC.Num.fromInteger @ t $dNum 1))
+                               ds3) } }
+                       GHC.Types.True -> GHC.Base.return @ m $dMonad @ () GHC.Tuple.() }
+                 } in
+                 repeatNTimes1) -}
+45bd13f0cb38738169576b045a55842c
+  round4dp ::
+    (GHC.Num.Num n, GHC.Real.RealFrac n, GHC.Real.Fractional n,
+     GHC.Classes.Ord n, GHC.Float.Floating n) =>
+    n -> n
+  {- Arity: 6,
+     Strictness: <L,A><S(LS(LC(C(S))LL)LLLLL),U(U(U(A,A,C(C1(U)),A,A,A,C(U)),A,A),U(A,C(C1(U)),A,C(U)),A,A,C(C1(U)),A,A)><L,A><L,A><L,A><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (6, True, True)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Real.RealFrac n)
+                   (w2 :: GHC.Real.Fractional n)
+                   (w3 :: GHC.Classes.Ord n)
+                   (w4 :: GHC.Float.Floating n)
+                   (w5 :: n) ->
+                 Main.$wround4dp @ n w1 w5) -}
+327738339ddefb0b972579e74a4a0a7f
+  round4dp1 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   Main.round4dp3
+                   Main.round4dp2) -}
+c57250295067000b7a184569382bd754
+  round4dp2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+072dfc7bfd62c3a48433794fa4f249eb
+  round4dp3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10000) -}
+"SPEC/Main $wcreateSymSq @ Double" [orphan] [0] forall (w :: GHC.Num.Num
+                                                               GHC.Types.Double)
+  HBLAS.IO.Vector.$wcreateSymSq @ GHC.Types.Double w
+  = Main.$s$wcreateSymSq
+"SPEC/Main $wcreateVecX @ Double" [orphan] [0] forall (w :: GHC.Num.Num
+                                                              GHC.Types.Double)
+  HBLAS.IO.Vector.$wcreateVecX @ GHC.Types.Double w
+  = Main.$s$wcreateVecX
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

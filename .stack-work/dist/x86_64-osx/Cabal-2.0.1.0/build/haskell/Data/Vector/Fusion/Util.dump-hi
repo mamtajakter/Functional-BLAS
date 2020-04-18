@@ -1,0 +1,474 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-26 05:36:29.438533 UTC
+
+interface hblas-0.0.0.0-9LbZGQM6wW53wyAIAU2rOm:Data.Vector.Fusion.Util 8022
+  interface hash: ae6707af937daf7225a6474eb2b68f9c
+  ABI hash: 99e3ee0fdac766f808f04e25e438e2ef
+  export-list hash: 5f06be01cd922ea63e477b4cd0e4ceb5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 13bfa03a5e04a36e009ad69dfe8c07fa
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Vector.Fusion.Util.delay_inline
+  Data.Vector.Fusion.Util.delayed_min
+  Data.Vector.Fusion.Util.Box{Data.Vector.Fusion.Util.Box unBox}
+  Data.Vector.Fusion.Util.Id{Data.Vector.Fusion.Util.Id unId}
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Control.Monad ebed2e8e7444944e0c1d827c6faf40a4
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+0f603c399d2c3a717539108eebdaabc0
+  $fApplicativeBox ::
+    GHC.Base.Applicative Data.Vector.Fusion.Util.Box
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Util.Box
+                  Data.Vector.Fusion.Util.$fFunctorBox
+                  Data.Vector.Fusion.Util.Box
+                  Data.Vector.Fusion.Util.$fApplicativeBox_$c<*>
+                  Data.Vector.Fusion.Util.$fApplicativeBox_$cliftA2
+                  Data.Vector.Fusion.Util.$fApplicativeBox_$c*>
+                  Data.Vector.Fusion.Util.$fApplicativeBox_$c<* -}
+0f603c399d2c3a717539108eebdaabc0
+  $fApplicativeBox_$c*> ::
+    Data.Vector.Fusion.Util.Box a
+    -> Data.Vector.Fusion.Util.Box b -> Data.Vector.Fusion.Util.Box b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (a1 :: Data.Vector.Fusion.Util.Box a)
+                   (a2 :: Data.Vector.Fusion.Util.Box b) ->
+                 case a1 of wild { Data.Vector.Fusion.Util.Box x -> a2 }) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fApplicativeBox_$c<* ::
+    Data.Vector.Fusion.Util.Box a
+    -> Data.Vector.Fusion.Util.Box b -> Data.Vector.Fusion.Util.Box a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><S,1*H>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (x :: Data.Vector.Fusion.Util.Box a)
+                   (ds :: Data.Vector.Fusion.Util.Box b) ->
+                 case x of wild { Data.Vector.Fusion.Util.Box x1 ->
+                 case ds of wild1 { Data.Vector.Fusion.Util.Box x2 ->
+                 Data.Vector.Fusion.Util.Box @ a x1 } }) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fApplicativeBox_$c<*> ::
+    Data.Vector.Fusion.Util.Box (a -> b)
+    -> Data.Vector.Fusion.Util.Box a -> Data.Vector.Fusion.Util.Box b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(1*C1(U))><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (ds :: Data.Vector.Fusion.Util.Box (a -> b))
+                   (ds1 :: Data.Vector.Fusion.Util.Box a) ->
+                 case ds of wild { Data.Vector.Fusion.Util.Box f ->
+                 case ds1 of wild1 { Data.Vector.Fusion.Util.Box x ->
+                 Data.Vector.Fusion.Util.Box @ b (f x) } }) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fApplicativeBox_$cliftA2 ::
+    (a -> b -> c)
+    -> Data.Vector.Fusion.Util.Box a
+    -> Data.Vector.Fusion.Util.Box b
+    -> Data.Vector.Fusion.Util.Box c
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(C(U))><L,1*U(U)>,
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   (f1 :: a -> b -> c)
+                   (x :: Data.Vector.Fusion.Util.Box a) ->
+                 let {
+                   ds :: Data.Vector.Fusion.Util.Box (b -> c)
+                   = case x of wild { Data.Vector.Fusion.Util.Box x1 ->
+                     Data.Vector.Fusion.Util.Box @ (b -> c) (f1 x1) }
+                 } in
+                 \ (ds1 :: Data.Vector.Fusion.Util.Box b) ->
+                 case ds of wild { Data.Vector.Fusion.Util.Box f ->
+                 case ds1 of wild1 { Data.Vector.Fusion.Util.Box x1 ->
+                 Data.Vector.Fusion.Util.Box @ c (f x1) } }) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fApplicativeId :: GHC.Base.Applicative Data.Vector.Fusion.Util.Id
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Util.Id
+                  Data.Vector.Fusion.Util.$fFunctorId
+                  Data.Vector.Fusion.Util.$fApplicativeId3
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <a>_R))
+                  Data.Vector.Fusion.Util.$fApplicativeId2
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Data.Vector.Fusion.Util.Id (a -> b)>_R
+                   ->_R <Data.Vector.Fusion.Util.Id a>_R
+                   ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <b>_R))
+                  Data.Vector.Fusion.Util.$fApplicativeId_$cliftA2
+                  (\ @ a @ b -> Data.Vector.Fusion.Util.$fApplicativeId1 @ b @ a)
+                  Data.Vector.Fusion.Util.$fApplicativeId_$c<* -}
+d694431ce71c9fb22b5069f5076cc088
+  $fApplicativeId1 ::
+    Data.Vector.Fusion.Util.Id a
+    -> Data.Vector.Fusion.Util.Id b -> Data.Vector.Fusion.Util.Id b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ b
+                   @ a
+                   (a1 :: Data.Vector.Fusion.Util.Id a)
+                   (a2 :: Data.Vector.Fusion.Util.Id b) ->
+                 a2) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fApplicativeId2 ::
+    Data.Vector.Fusion.Util.Id (a -> b)
+    -> Data.Vector.Fusion.Util.Id a -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ b
+                   (ds :: Data.Vector.Fusion.Util.Id (a -> b))
+                   (ds1 :: Data.Vector.Fusion.Util.Id a) ->
+                 ds `cast` (Data.Vector.Fusion.Util.N:Id[0] <a -> b>_R)
+                   ds1 `cast` (Data.Vector.Fusion.Util.N:Id[0] <a>_R)) -}
+07c9e9b4fa8127b9501b1c150450019c
+  $fApplicativeId3 :: a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True) (\ @ a (v :: a) -> v) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fApplicativeId_$c<* ::
+    Data.Vector.Fusion.Util.Id a
+    -> Data.Vector.Fusion.Util.Id b -> Data.Vector.Fusion.Util.Id a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ b
+                   (x :: Data.Vector.Fusion.Util.Id a)
+                   (eta :: Data.Vector.Fusion.Util.Id b) ->
+                 x) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fApplicativeId_$cliftA2 ::
+    (a -> b -> c)
+    -> Data.Vector.Fusion.Util.Id a
+    -> Data.Vector.Fusion.Util.Id b
+    -> Data.Vector.Fusion.Util.Id c
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(C(U))><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   (f1 :: a -> b -> c)
+                   (x :: Data.Vector.Fusion.Util.Id a) ->
+                 let {
+                   ds :: b -> c = f1 x `cast` (Data.Vector.Fusion.Util.N:Id[0] <a>_R)
+                 } in
+                 (\ (ds1 :: Data.Vector.Fusion.Util.Id b) ->
+                  ds ds1 `cast` (Data.Vector.Fusion.Util.N:Id[0] <b>_R))
+                   `cast`
+                 (<Data.Vector.Fusion.Util.Id b>_R
+                  ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <c>_R))) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fFunctorBox :: GHC.Base.Functor Data.Vector.Fusion.Util.Box
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Util.Box
+                  Data.Vector.Fusion.Util.$fFunctorBox_$cfmap
+                  Data.Vector.Fusion.Util.$fFunctorBox_$c<$ -}
+0f603c399d2c3a717539108eebdaabc0
+  $fFunctorBox_$c<$ ::
+    a -> Data.Vector.Fusion.Util.Box b -> Data.Vector.Fusion.Util.Box a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*H>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (x :: a) (ds :: Data.Vector.Fusion.Util.Box b) ->
+                 case ds of wild { Data.Vector.Fusion.Util.Box x1 ->
+                 Data.Vector.Fusion.Util.Box @ a x }) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fFunctorBox_$cfmap ::
+    (a -> b)
+    -> Data.Vector.Fusion.Util.Box a -> Data.Vector.Fusion.Util.Box b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> b) (ds :: Data.Vector.Fusion.Util.Box a) ->
+                 case ds of wild { Data.Vector.Fusion.Util.Box x ->
+                 Data.Vector.Fusion.Util.Box @ b (f x) }) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fFunctorId :: GHC.Base.Functor Data.Vector.Fusion.Util.Id
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Util.Id
+                  Data.Vector.Fusion.Util.$fFunctorId2
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a -> b>_R
+                   ->_R <Data.Vector.Fusion.Util.Id a>_R
+                   ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <b>_R))
+                  (\ @ a @ b -> Data.Vector.Fusion.Util.$fFunctorId1 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Data.Vector.Fusion.Util.Id b>_R
+                   ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <a>_R)) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fFunctorId1 :: a -> Data.Vector.Fusion.Util.Id b -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ b @ a (x :: a) (ds :: Data.Vector.Fusion.Util.Id b) -> x) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fFunctorId2 :: (a -> b) -> Data.Vector.Fusion.Util.Id a -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a @ b (f :: a -> b) (ds :: Data.Vector.Fusion.Util.Id a) ->
+                 f ds `cast` (Data.Vector.Fusion.Util.N:Id[0] <a>_R)) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fMonadBox :: GHC.Base.Monad Data.Vector.Fusion.Util.Box
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Util.Box
+                  Data.Vector.Fusion.Util.$fApplicativeBox
+                  Data.Vector.Fusion.Util.$fMonadBox_$c>>=
+                  Data.Vector.Fusion.Util.$fMonadBox_$c>>
+                  Data.Vector.Fusion.Util.Box
+                  (\ @ a ->
+                   GHC.Err.errorWithoutStackTrace
+                     @ 'GHC.Types.LiftedRep
+                     @ (Data.Vector.Fusion.Util.Box a)) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fMonadBox_$c>> ::
+    Data.Vector.Fusion.Util.Box a
+    -> Data.Vector.Fusion.Util.Box b -> Data.Vector.Fusion.Util.Box b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*U(U)>m,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (m1 :: Data.Vector.Fusion.Util.Box a)
+                   (k :: Data.Vector.Fusion.Util.Box b) ->
+                 case m1 of wild { Data.Vector.Fusion.Util.Box x -> k }) -}
+0f603c399d2c3a717539108eebdaabc0
+  $fMonadBox_$c>>= ::
+    Data.Vector.Fusion.Util.Box a
+    -> (a -> Data.Vector.Fusion.Util.Box b)
+    -> Data.Vector.Fusion.Util.Box b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><C(S),1*C1(U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (ds :: Data.Vector.Fusion.Util.Box a)
+                   (f :: a -> Data.Vector.Fusion.Util.Box b) ->
+                 case ds of wild { Data.Vector.Fusion.Util.Box x -> f x }) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fMonadId :: GHC.Base.Monad Data.Vector.Fusion.Util.Id
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Util.Id
+                  Data.Vector.Fusion.Util.$fApplicativeId
+                  Data.Vector.Fusion.Util.$fMonadId_$c>>=
+                  Data.Vector.Fusion.Util.$fMonadId_$c>>
+                  Data.Vector.Fusion.Util.$fApplicativeId3
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <a>_R))
+                  (\ @ a ->
+                   GHC.Err.errorWithoutStackTrace
+                     @ 'GHC.Types.LiftedRep
+                     @ (Data.Vector.Fusion.Util.Id a)) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fMonadId_$c>> ::
+    Data.Vector.Fusion.Util.Id a
+    -> Data.Vector.Fusion.Util.Id b -> Data.Vector.Fusion.Util.Id b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, True)
+                (\ @ a
+                   @ b
+                   (m1 :: Data.Vector.Fusion.Util.Id a)
+                   (k :: Data.Vector.Fusion.Util.Id b) ->
+                 k) -}
+d694431ce71c9fb22b5069f5076cc088
+  $fMonadId_$c>>= ::
+    Data.Vector.Fusion.Util.Id a
+    -> (a -> Data.Vector.Fusion.Util.Id b)
+    -> Data.Vector.Fusion.Util.Id b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ b
+                   (ds :: Data.Vector.Fusion.Util.Id a)
+                   (f :: a -> Data.Vector.Fusion.Util.Id b) ->
+                 f ds `cast` (Data.Vector.Fusion.Util.N:Id[0] <a>_R)) -}
+7b0dc30a0e0a977918f9ed9c93028ce2
+  $tc'Box :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10420790017986383676##
+                   7540025573119161314##
+                   Data.Vector.Fusion.Util.$trModule
+                   Data.Vector.Fusion.Util.$tc'Box2
+                   1#
+                   Data.Vector.Fusion.Util.$tc'Box1) -}
+dc7568d580263d4ed4c7961049e32cc7
+  $tc'Box1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9ed063e5af4a09d3faea948a48905e2e
+  $tc'Box2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Vector.Fusion.Util.$tc'Box3) -}
+6598f4f6337342b04296e878b0ab5ca3
+  $tc'Box3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Box"#) -}
+825fceadc51e288002397bc729193b7b
+  $tc'Id :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3343005849767407570##
+                   11379007350841995328##
+                   Data.Vector.Fusion.Util.$trModule
+                   Data.Vector.Fusion.Util.$tc'Id2
+                   1#
+                   Data.Vector.Fusion.Util.$tc'Id1) -}
+2328bba17e5ae8a2212d8e7a5ad46ce9
+  $tc'Id1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5bb894895664057fa0e75db4a40043ff
+  $tc'Id2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Vector.Fusion.Util.$tc'Id3) -}
+9b5c2b597611faac0350c97e21b594bc
+  $tc'Id3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Id"#) -}
+750134b0fc9ef1b6da573dfc49cc299e
+  $tcBox :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8253510366979555649##
+                   12229224093894029031##
+                   Data.Vector.Fusion.Util.$trModule
+                   Data.Vector.Fusion.Util.$tcBox1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+d7a399353cd5770b6f643be6c0bc8bae
+  $tcBox1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Vector.Fusion.Util.$tcBox2) -}
+60263b44e360e615c0639bd4bea2ae3c
+  $tcBox2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Box"#) -}
+c38393f167264f2d7fa98ae2b58bd139
+  $tcId :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8304647576618050082##
+                   3684399115176798495##
+                   Data.Vector.Fusion.Util.$trModule
+                   Data.Vector.Fusion.Util.$tcId1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+13b3b7895f5e39aca6c2ead397286b4d
+  $tcId1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Vector.Fusion.Util.$tcId2) -}
+a9b2fcf27a4d292165b8c4baaca4cac8
+  $tcId2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Id"#) -}
+a50d8fcbf22f7a02128766503aa8d492
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Vector.Fusion.Util.$trModule3
+                   Data.Vector.Fusion.Util.$trModule1) -}
+e082741685b2987b6f072a990703c95b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Util.$trModule2) -}
+f1b6be009b4639456791a4ca43c18647
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Vector.Fusion.Util"#) -}
+5a24f426f8196033515e0208175ed057
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Util.$trModule4) -}
+df2da25b1bc12397ad12228a477743f0
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-9LbZGQM6wW53wyAIAU2rOm"#) -}
+0f603c399d2c3a717539108eebdaabc0
+  data Box a = Box {unBox :: a}
+d694431ce71c9fb22b5069f5076cc088
+  newtype Id a = Id {unId :: a}
+f2d834849e47abbae4106af5ee6e6b3f
+  delay_inline :: (a -> b) -> a -> b
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: [0] (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ @ a @ b (f :: a -> b) -> f) -}
+846013f682179a4eed6dc47114e720d6
+  delayed_min :: GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Inline: [0] (sat-args=2),
+     Unfolding: InlineRule (2, False, True)
+                GHC.Classes.$fOrdInt_$cmin -}
+0f603c399d2c3a717539108eebdaabc0
+  unBox :: Data.Vector.Fusion.Util.Box a -> a
+  RecSel Left Data.Vector.Fusion.Util.Box
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Data.Vector.Fusion.Util.Box a) ->
+                 case ds of wild { Data.Vector.Fusion.Util.Box ds1 -> ds1 }) -}
+d694431ce71c9fb22b5069f5076cc088
+  unId :: Data.Vector.Fusion.Util.Id a -> a
+  RecSel Left Data.Vector.Fusion.Util.Id
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Vector.Fusion.Util.unId1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Vector.Fusion.Util.Id a>_R
+                 ->_R Data.Vector.Fusion.Util.N:Id[0] <a>_R) -}
+d694431ce71c9fb22b5069f5076cc088
+  unId1 ::
+    Data.Vector.Fusion.Util.Id a -> Data.Vector.Fusion.Util.Id a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: Data.Vector.Fusion.Util.Id a) -> ds) -}
+instance [safe] GHC.Base.Applicative [Data.Vector.Fusion.Util.Box]
+  = Data.Vector.Fusion.Util.$fApplicativeBox
+instance [safe] GHC.Base.Applicative [Data.Vector.Fusion.Util.Id]
+  = Data.Vector.Fusion.Util.$fApplicativeId
+instance [safe] GHC.Base.Functor [Data.Vector.Fusion.Util.Box]
+  = Data.Vector.Fusion.Util.$fFunctorBox
+instance [safe] GHC.Base.Functor [Data.Vector.Fusion.Util.Id]
+  = Data.Vector.Fusion.Util.$fFunctorId
+instance [safe] GHC.Base.Monad [Data.Vector.Fusion.Util.Box]
+  = Data.Vector.Fusion.Util.$fMonadBox
+instance [safe] GHC.Base.Monad [Data.Vector.Fusion.Util.Id]
+  = Data.Vector.Fusion.Util.$fMonadId
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

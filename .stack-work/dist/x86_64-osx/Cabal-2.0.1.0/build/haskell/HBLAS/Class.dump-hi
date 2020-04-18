@@ -1,0 +1,226 @@
+
+==================== FINAL INTERFACE ====================
+2019-01-16 08:13:44.842116 UTC
+
+interface hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI:HBLAS.Class 8022
+  interface hash: 53d50d371751ef5a79a2311dbf429d35
+  ABI hash: 4610295a6fba69f91f0316e9de344d57
+  export-list hash: 3cb77aff74f2b81c143eeedc73416c5c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e1794d0c0a2efc3a1bd7ef881d5a5ef9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HBLAS.Class.replicateHBlas
+  HBLAS.Class.HBLAS
+  HBLAS.Class.Indexable{HBLAS.Class.!! HBLAS.Class.elemIndex}
+  HBLAS.Class.Mappable{HBLAS.Class.map}
+  HBLAS.Class.Zippable{HBLAS.Class.zipWith}
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 primitive-0.6.3.0
+                      transformers-0.5.2.0 vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array vector-0.12.0.1:Data.Vector
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:Data.Monoid c0108b166e27f747671c7fe4ffb11019
+import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  vector-0.12.0.1:Data.Vector 05d09acb6f8f89c1df7193ef513155f3
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+aa4ed51f08259c8cf6d86bef56c3dcee
+  $fIndexableVector :: HBLAS.Class.Indexable Data.Vector.Vector
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Vector Data.Vector.! Data.Vector.elemIndex -}
+aa4ed51f08259c8cf6d86bef56c3dcee
+  $fIndexable[] :: HBLAS.Class.Indexable []
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ [] GHC.List.!! Data.OldList.elemIndex -}
+3850081fe908910cd32c1d7e40e46ed7
+  $fMappableVector :: HBLAS.Class.Mappable Data.Vector.Vector
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Vector
+                  Data.Vector.$fFoldableVector
+                  Data.Vector.map -}
+3850081fe908910cd32c1d7e40e46ed7
+  $fMappable[] :: HBLAS.Class.Mappable []
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ [] Data.Foldable.$fFoldable[] GHC.Base.map -}
+500156a5d295ab4cfc92cf148def83f9
+  $fZippableVector :: HBLAS.Class.Zippable Data.Vector.Vector
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Vector
+                  Data.Vector.$fFoldableVector
+                  Data.Vector.zipWith -}
+500156a5d295ab4cfc92cf148def83f9
+  $fZippable[] :: HBLAS.Class.Zippable []
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [] Data.Foldable.$fFoldable[] GHC.List.zipWith -}
+a4845f272d5f50eb5cc3f048238f9424
+  $tcIndexable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11975608973708466063##
+                   15600605609261801346##
+                   HBLAS.Class.$trModule
+                   HBLAS.Class.$tcIndexable2
+                   0#
+                   HBLAS.Class.$tcIndexable1) -}
+265a1d77d1b2d2301c3b54e7c88f8230
+  $tcIndexable1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+980468d34f094744539b48a74250e963
+  $tcIndexable2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Class.$tcIndexable3) -}
+098f3d858aac6804064361a59df54954
+  $tcIndexable3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Indexable"#) -}
+c4d916ecbb20cf2b553585b6b35ea921
+  $tcMappable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   784994996972908847##
+                   8186147048832833043##
+                   HBLAS.Class.$trModule
+                   HBLAS.Class.$tcMappable1
+                   0#
+                   HBLAS.Class.$tcIndexable1) -}
+919645299b487aeb8399238221a4c058
+  $tcMappable1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Class.$tcMappable2) -}
+d36954760b1f2cf5e892dac298d92c0c
+  $tcMappable2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Mappable"#) -}
+c477e144256b65df029cf9aa8c4a5018
+  $tcZippable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15290625339596224942##
+                   4383590680729324303##
+                   HBLAS.Class.$trModule
+                   HBLAS.Class.$tcZippable1
+                   0#
+                   HBLAS.Class.$tcIndexable1) -}
+5f96d9b6dd249581b63893afd1e87a82
+  $tcZippable1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Class.$tcZippable2) -}
+73f225c6ee4e233e6c15bc9ef674a7a2
+  $tcZippable2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Zippable"#) -}
+274525de8b3bb6e5d2cdb29a3e646215
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HBLAS.Class.$trModule3
+                   HBLAS.Class.$trModule1) -}
+6ffd100fe6ccea19e71072f99558dd7d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Class.$trModule2) -}
+05e8b7aa261e6f059667fdd241fb94f3
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HBLAS.Class"#) -}
+b2ead8ca85291a1eddfbf2e10585e054
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Class.$trModule4) -}
+0ff2ac69699dcc14cf089ffeedcdcdfc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI"#) -}
+3858d95db46519715f7a43706281631c
+  $wreplicateHBlas ::
+    (HBLAS.Class.HBLAS m, GHC.Base.Monoid (m n)) =>
+    GHC.Prim.Int# -> n -> m n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(A,C(U),A,A,A,A),A,A,A,A)><S,U(U,C(C1(U)),A)><S,1*U><L,U>,
+     Inline: [0] -}
+bed6b8cca801ab5800f252515609adf4
+  type HBLAS (m :: * -> *) =
+    (GHC.Base.Applicative m, HBLAS.Class.Mappable m,
+     HBLAS.Class.Zippable m, HBLAS.Class.Indexable m,
+     Data.Foldable.Foldable m)
+    :: GHC.Types.Constraint
+aa4ed51f08259c8cf6d86bef56c3dcee
+  class Indexable (m :: * -> *) where
+    (!!) :: m a -> GHC.Types.Int -> a
+    elemIndex :: GHC.Classes.Eq a =>
+                 a -> m a -> GHC.Base.Maybe GHC.Types.Int
+    {-# MINIMAL (!!), elemIndex #-}
+3850081fe908910cd32c1d7e40e46ed7
+  class Data.Foldable.Foldable m => Mappable (m :: * -> *) where
+    map :: (a -> b) -> m a -> m b
+    {-# MINIMAL map #-}
+500156a5d295ab4cfc92cf148def83f9
+  class Data.Foldable.Foldable m => Zippable (m :: * -> *) where
+    zipWith :: (a -> b -> c) -> m a -> m b -> m c
+    {-# MINIMAL zipWith #-}
+1c4cd32eb406aa5c708c360b79781a62
+  replicateHBlas ::
+    (GHC.Base.Applicative m, HBLAS.Class.HBLAS m,
+     GHC.Base.Monoid (m n)) =>
+    GHC.Types.Int -> n -> m n
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><L,U(U(A,C(U),A,A,A,A),A,A,A,A)><S,U(U,C(C1(U)),A)><S(S),1*U(1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ m :: * -> *
+                   @ n
+                   (w :: GHC.Base.Applicative m)
+                   (w1 :: HBLAS.Class.HBLAS m)
+                   (w2 :: GHC.Base.Monoid (m n))
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: n) ->
+                 case w3 of ww { GHC.Types.I# ww1 ->
+                 HBLAS.Class.$wreplicateHBlas @ m @ n w1 w2 ww1 w4 }) -}
+instance HBLAS.Class.Indexable [Data.Vector.Vector]
+  = HBLAS.Class.$fIndexableVector
+instance HBLAS.Class.Indexable [[]] = HBLAS.Class.$fIndexable[]
+instance HBLAS.Class.Mappable [Data.Vector.Vector]
+  = HBLAS.Class.$fMappableVector
+instance HBLAS.Class.Mappable [[]] = HBLAS.Class.$fMappable[]
+instance HBLAS.Class.Zippable [Data.Vector.Vector]
+  = HBLAS.Class.$fZippableVector
+instance HBLAS.Class.Zippable [[]] = HBLAS.Class.$fZippable[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

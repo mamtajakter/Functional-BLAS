@@ -1,0 +1,231 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-22 03:19:26.32389 UTC
+
+interface main:Main 8022
+  interface hash: 4d5b3aca603934065185191f785e7b70
+  ABI hash: 1cc781698414357702e2c20dbc0ff0df
+  export-list hash: 1a925c7a05aaa20da90d6b984f648a4d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5cb9906890bfb837c971bb267ec331cc
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.axpyaxpy
+  Main.axpyaxpy1
+  Main.main
+  Main.vec1
+  Main.vec2
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 hblas-0.0.0.0 integer-gmp-1.0.1.0
+                      primitive-0.6.3.0 time-1.8.0.2 transformers-0.5.2.0 vector-0.12.0.1
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array vector-0.12.0.1:Data.Vector
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.IO 525805ab19df5e4fe6d8de7dde9cb909
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  hblas-0.0.0.0:HBLAS.Class c90463c2cac35db46cff9ae92911748f
+import  -/  hblas-0.0.0.0:HBLAS.IO.List 13a0fd1278ae1ca01af13de01768bce9
+import  -/  hblas-0.0.0.0:HBLAS.IO.Vector b72374112c592dad36d200f9d7aa9f75
+import  -/  hblas-0.0.0.0:HBLAS.Level1 21e8e09ce8e2f6e17328bd1bbae9e4ea
+import  -/  time-1.8.0.2:Data.Time 94c4b97ca0ea17df29bc6210fb9e1b2b
+import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCDiff a07e012374f68f0eec645405302031bb
+import  -/  time-1.8.0.2:Data.Time.Clock.POSIX 9bbc4ffee03d887b4be58f486cb9ae4c
+import  -/  vector-0.12.0.1:Data.Vector 05d09acb6f8f89c1df7193ef513155f3
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+4f5502298198f3bf19f3af199637fa4a
+  $w$saxpyaxpy1 ::
+    GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# GHC.Types.Double
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# GHC.Types.Double
+    -> Data.Vector.Vector GHC.Types.Double
+  {- Arity: 8,
+     Strictness: <L,U(U)><L,U(U)><L,U><S,U><L,U><L,U><S,U><L,U>,
+     Inline: [0] -}
+c8ce5a2f9d2263fa3b7f06e27e551c7e
+  $waxpyaxpy ::
+    (HBLAS.Class.HBLAS m, GHC.Num.Num n) => n -> m n -> m n -> m n
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(LLS(LC(C(C(S))))LL),1*U(A,A,1*U(A,C(C1(C1(U)))),A,A)><L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ m :: * -> *
+                   @ n
+                   (w :: HBLAS.Class.HBLAS m)
+                   (w1 :: GHC.Num.Num n)
+                   (w2 :: n)
+                   (w3 :: m n)
+                   (w4 :: m n) ->
+                 let {
+                   $dZippable :: HBLAS.Class.Zippable m
+                   = GHC.Classes.$p3(%,,,,%)
+                       @ (GHC.Base.Applicative m)
+                       @ (GHC.Base.Functor m)
+                       @ (HBLAS.Class.Zippable m)
+                       @ (HBLAS.Class.Indexable m)
+                       @ (Data.Foldable.Foldable m)
+                       w
+                 } in
+                 HBLAS.Level1.axpy
+                   @ m
+                   @ n
+                   $dZippable
+                   w1
+                   w2
+                   (HBLAS.Level1.axpy @ m @ n $dZippable w1 w2 w3 w4)
+                   w4) -}
+f88458869c9f05034a70a523c4cc3fae
+  $waxpyaxpy1 ::
+    (HBLAS.Class.HBLAS m, GHC.Num.Num n) => n -> n -> m n -> m n -> m n
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S(LLS(LC(C(C(S))))LL),1*U(A,A,1*U(A,C(C1(C1(U)))),A,A)><L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ m :: * -> *
+                   @ n
+                   (w :: HBLAS.Class.HBLAS m)
+                   (w1 :: GHC.Num.Num n)
+                   (w2 :: n)
+                   (w3 :: n)
+                   (w4 :: m n)
+                   (w5 :: m n) ->
+                 let {
+                   $dZippable :: HBLAS.Class.Zippable m
+                   = GHC.Classes.$p3(%,,,,%)
+                       @ (GHC.Base.Applicative m)
+                       @ (GHC.Base.Functor m)
+                       @ (HBLAS.Class.Zippable m)
+                       @ (HBLAS.Class.Indexable m)
+                       @ (Data.Foldable.Foldable m)
+                       w
+                 } in
+                 HBLAS.Class.zipWith
+                   @ m
+                   $dZippable
+                   @ n
+                   @ n
+                   @ n
+                   (\ (x :: n) (y :: n) -> GHC.Num.+ @ n w1 y (GHC.Num.* @ n w1 w2 x))
+                   (HBLAS.Level1.axpy @ m @ n $dZippable w1 w2 w4 w5)
+                   (HBLAS.Level1.axpy @ m @ n $dZippable w1 w3 w4 w5)) -}
+f9c5872271a5556d0fefb3d61299f9ef
+  axpyaxpy ::
+    (HBLAS.Class.HBLAS m, GHC.Base.Monoid (m n), GHC.Num.Num n,
+     GHC.Show.Show (m n)) =>
+    n -> m n -> m n -> m n
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <S(LLS(LC(C(C(S))))LL),1*U(A,A,1*U(A,C(C1(C1(U)))),A,A)><L,A><L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><L,A><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (7, True, True)
+                (\ @ m :: * -> *
+                   @ n
+                   (w :: HBLAS.Class.HBLAS m)
+                   (w1 :: GHC.Base.Monoid (m n))
+                   (w2 :: GHC.Num.Num n)
+                   (w3 :: GHC.Show.Show (m n))
+                   (w4 :: n)
+                   (w5 :: m n)
+                   (w6 :: m n) ->
+                 Main.$waxpyaxpy @ m @ n w w2 w4 w5 w6) -}
+628daacc0779ec3a6d1d36f806c3bb13
+  axpyaxpy1 ::
+    (HBLAS.Class.HBLAS m, GHC.Base.Monoid (m n), GHC.Num.Num n,
+     GHC.Show.Show (m n)) =>
+    n -> n -> m n -> m n -> m n
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <S(LLS(LC(C(C(S))))LL),1*U(A,A,1*U(A,C(C1(C1(U)))),A,A)><L,A><L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><L,A><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (8, True, True)
+                (\ @ m :: * -> *
+                   @ n
+                   (w :: HBLAS.Class.HBLAS m)
+                   (w1 :: GHC.Base.Monoid (m n))
+                   (w2 :: GHC.Num.Num n)
+                   (w3 :: GHC.Show.Show (m n))
+                   (w4 :: n)
+                   (w5 :: n)
+                   (w6 :: m n)
+                   (w7 :: m n) ->
+                 Main.$waxpyaxpy1 @ m @ n w w2 w4 w5 w6 w7) -}
+45382869fccdc8575fe927b5bd9b3648
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+529073e95d7e97cca9b9c5c633464b51
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+5510fa2cfc7989247ee295903c8707a0
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+8f9854e07db591fa47fbb7290d4cd716
+  vec1 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec4) -}
+c78ad2684ad6a33e89b3c0724a618e55
+  vec2 :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# Main.vec5) -}
+fe4ae65a790898b65c23695920ed9653
+  vec4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec1_10_7.csv"#) -}
+cb263a57d506c2e887f09f7fd25f8050
+  vec5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("data/vec2_10_7.csv"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

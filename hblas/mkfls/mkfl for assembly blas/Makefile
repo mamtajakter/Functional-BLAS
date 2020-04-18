@@ -1,0 +1,7 @@
+build:
+	gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_1.c && srun --cpus-per-task=1 --time=60 ./a.out 1>vec_10_1.txt && gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_2.c && srun --cpus-per-task=1 --time=60 ./a.out 1>vec_10_2.txt && gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_3.c && srun --cpus-per-task=1 --time=60 .&&/a.out 1>vec_10_3.txt && gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_4.c && srun --cpus-per-task=1 --time=60 ./a.out 1>vec_10_4.txt && gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_5.c && srun --cpus-per-task=1 --time=60 ./a.out 1>vec_10_5.txt && gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_6.c && srun --cpus-per-task=1 --time=60 ./a.out 1>vec_10_6.txt && gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_7.c && srun --cpus-per-task=1 --time=60 ./a.out 1>vec_10_7.txt && gcc -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl cblas_10_8.c && srun --cpus-per-task=1 --time=60 ./a.out 1>vec_10_8.txt
+
+search: 
+	cat foo.txt | grep stream
+clean: 
+	rm *.out

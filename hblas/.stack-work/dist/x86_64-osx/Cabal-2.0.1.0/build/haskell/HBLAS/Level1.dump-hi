@@ -1,0 +1,2524 @@
+
+==================== FINAL INTERFACE ====================
+2019-10-16 23:39:42.579913 UTC
+
+interface hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI:HBLAS.Level1 8022
+  interface hash: 75d1eda234d94d3e1c6c8459fcb3ea68
+  ABI hash: c721343fe773ce88d7ccfbf81ea94a57
+  export-list hash: bf736c87c683b3eb2621cef8f9001da8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 2804918ffae816c69890ef0538da0f0c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HBLAS.Level1.asum
+  HBLAS.Level1.axpy
+  HBLAS.Level1.axpy'
+  HBLAS.Level1.axpyaxpy
+  HBLAS.Level1.copy
+  HBLAS.Level1.dot
+  HBLAS.Level1.hrotm
+  HBLAS.Level1.idamax
+  HBLAS.Level1.idamin
+  HBLAS.Level1.nrm2
+  HBLAS.Level1.rot
+  HBLAS.Level1.rotg
+  HBLAS.Level1.rotg_c
+  HBLAS.Level1.rotg_r
+  HBLAS.Level1.rotg_roe
+  HBLAS.Level1.rotg_s
+  HBLAS.Level1.rotg_z
+  HBLAS.Level1.rotm
+  HBLAS.Level1.scal
+  HBLAS.Level1.swap
+  HBLAS.Level1.znrm2
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 primitive-0.6.3.0
+                      transformers-0.5.2.0 vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array vector-0.12.0.1:Data.Vector
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Monoid c0108b166e27f747671c7fe4ffb11019
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Float 28e3bf9e258278ac8084e9cab43fd542
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  vector-0.12.0.1:Data.Vector 05d09acb6f8f89c1df7193ef513155f3
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+b7b387fddbe70c1438817b90c6a034b7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HBLAS.Level1.$trModule3
+                   HBLAS.Level1.$trModule1) -}
+03fc2958013f67cac51b44eb33968711
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Level1.$trModule2) -}
+17bdc277fcbf9598c57f75941356c72b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HBLAS.Level1"#) -}
+56585a31524c9dd47d8062f90a9370a3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Level1.$trModule4) -}
+1580abafb0856b4e0b7a91677a148b44
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI"#) -}
+0b0b35e02eca2a1dc5b224fc92dd93f9
+  asum :: GHC.Num.Num n => Data.Vector.Vector n -> n
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A,A,C(U),A,1*C1(U))><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) (y :: Data.Vector.Vector n) ->
+                 case y of y1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 (Data.Vector.Fusion.Bundle.Monadic.foldrM
+                    @ Data.Vector.Fusion.Util.Id
+                    @ n
+                    @ n
+                    @ Data.Vector.Vector
+                    Data.Vector.Fusion.Util.$fMonadId
+                    (\ (a1 :: n) (b1 :: n) ->
+                     GHC.Num.+ @ n $dNum (GHC.Num.abs @ n $dNum a1) b1)
+                      `cast`
+                    (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                    (GHC.Num.fromInteger @ n $dNum 0)
+                    (Data.Vector.Generic.stream
+                       @ Data.Vector.Vector
+                       @ n
+                       (Data.Vector.$fVectorVectora @ n)
+                       y1))
+                   `cast`
+                 (Data.Vector.Fusion.Util.N:Id[0] <n>_R) }) -}
+6570fdd1b3556c79341672b08ad6de5c
+  axpy ::
+    GHC.Num.Num n =>
+    n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><S,1*U><S(LSL),1*U(U,U,U)><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (alpha :: n)
+                   (xs :: Data.Vector.Vector n)
+                   (ys :: Data.Vector.Vector n) ->
+                 case alpha of alpha1 { DEFAULT ->
+                 case xs of xs1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case ys of ys1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 Data.Vector.Generic.new
+                   @ Data.Vector.Vector
+                   @ n
+                   (Data.Vector.$fVectorVectora @ n)
+                   (Data.Vector.Generic.New.unstream
+                      @ Data.Vector.Vector
+                      @ n
+                      (Data.Vector.$fVectorVectora @ n)
+                      (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                         @ Data.Vector.Fusion.Util.Id
+                         @ n
+                         @ n
+                         @ n
+                         @ Data.Vector.Vector
+                         Data.Vector.Fusion.Util.$fMonadId
+                         (\ (a1 :: n) (b1 :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum b1 (GHC.Num.* @ n $dNum alpha1 a1))
+                           `cast`
+                         (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            xs1)
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            ys1))) } } }) -}
+5e622242f2016d37afded5fa35d60933
+  axpy' ::
+    GHC.Num.Num n =>
+    n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+  {- Arity: 5,
+     Strictness: <S(LLLLLLC(S)),U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U))><S,1*U><S(LSL),1*U(U,U,U)><S,1*U(U,U,U)><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=4),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (alpha :: n)
+                   (x :: Data.Vector.Vector n)
+                   (y :: Data.Vector.Vector n)
+                   (vec0 :: Data.Vector.Vector n) ->
+                 case alpha of alpha1 { DEFAULT ->
+                 case x of x1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case y of y1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 case vec0 of vec1 { Data.Vector.Vector ipv6 ipv7 ipv8 ->
+                 case GHC.Num.fromInteger @ n $dNum 1 of alpha2 { DEFAULT ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                              @ Data.Vector.Fusion.Util.Id
+                              @ n
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              (\ (a1 :: n) (b1 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum b1 (GHC.Num.* @ n $dNum alpha1 a1))
+                                `cast`
+                              (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 x1)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 vec1))) of xs { Data.Vector.Vector ipv9 ipv10 ipv11 ->
+                 Data.Vector.Generic.new
+                   @ Data.Vector.Vector
+                   @ n
+                   (Data.Vector.$fVectorVectora @ n)
+                   (Data.Vector.Generic.New.unstream
+                      @ Data.Vector.Vector
+                      @ n
+                      (Data.Vector.$fVectorVectora @ n)
+                      (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                         @ Data.Vector.Fusion.Util.Id
+                         @ n
+                         @ n
+                         @ n
+                         @ Data.Vector.Vector
+                         Data.Vector.Fusion.Util.$fMonadId
+                         (\ (a1 :: n) (b1 :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum b1 (GHC.Num.* @ n $dNum alpha2 a1))
+                           `cast`
+                         (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            xs)
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            y1))) } } } } } }) -}
+843e7403d7e0fb7c3c2f7d0147ed5dac
+  axpyaxpy ::
+    GHC.Num.Num n =>
+    n
+    -> n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><S,1*U><S,1*U><S(LSL),1*U(U,U,U)><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=4),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (a1 :: n)
+                   (a2 :: n)
+                   (x :: Data.Vector.Vector n)
+                   (y :: Data.Vector.Vector n) ->
+                 case a1 of a4 { DEFAULT ->
+                 case a2 of a5 { DEFAULT ->
+                 case x of x1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case y of y1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                              @ Data.Vector.Fusion.Util.Id
+                              @ n
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              (\ (a6 :: n) (b1 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum b1 (GHC.Num.* @ n $dNum a4 a6))
+                                `cast`
+                              (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 x1)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 y1))) of t1 { Data.Vector.Vector ipv6 ipv7 ipv8 ->
+                 Data.Vector.Generic.new
+                   @ Data.Vector.Vector
+                   @ n
+                   (Data.Vector.$fVectorVectora @ n)
+                   (Data.Vector.Generic.New.unstream
+                      @ Data.Vector.Vector
+                      @ n
+                      (Data.Vector.$fVectorVectora @ n)
+                      (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                         @ Data.Vector.Fusion.Util.Id
+                         @ n
+                         @ n
+                         @ n
+                         @ Data.Vector.Vector
+                         Data.Vector.Fusion.Util.$fMonadId
+                         (\ (a6 :: n) (b1 :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum b1 (GHC.Num.* @ n $dNum a5 a6))
+                           `cast`
+                         (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            t1)
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            x1))) } } } } }) -}
+0d4e6724deb188a598a06835c13f93e0
+  copy ::
+    (GHC.Classes.Eq n, GHC.Num.Num n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n -> Data.Vector.Vector n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,A><S,1*U(U,U,U)><L,A>m, Inline: (sat-args=2),
+     Unfolding: InlineRule (4, False, True)
+                (\ @ n
+                   ($dEq :: GHC.Classes.Eq n)
+                   ($dNum :: GHC.Num.Num n)
+                   (xs :: Data.Vector.Vector n)
+                   (ds :: Data.Vector.Vector n) ->
+                 xs) -}
+0402886cdc4968169b624beeeb8fa157
+  dot ::
+    GHC.Num.Num n => Data.Vector.Vector n -> Data.Vector.Vector n -> n
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U))><S(LSL),1*U(U,U,U)><S,1*U(U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (a :: Data.Vector.Vector n)
+                   (b :: Data.Vector.Vector n) ->
+                 case a of a1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case b of b1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 let {
+                   f :: n -> n -> n = GHC.Num.+ @ n $dNum
+                 } in
+                 let {
+                   f1 :: n -> n -> n = GHC.Num.* @ n $dNum
+                 } in
+                 (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                    @ Data.Vector.Fusion.Util.Id
+                    @ n
+                    @ n
+                    @ Data.Vector.Vector
+                    Data.Vector.Fusion.Util.$fMonadId
+                    (\ (a2 :: n) (b2 :: n)[OneShot] -> f a2 b2)
+                      `cast`
+                    (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                    (GHC.Num.fromInteger @ n $dNum 0)
+                    (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                       @ Data.Vector.Fusion.Util.Id
+                       @ n
+                       @ n
+                       @ n
+                       @ Data.Vector.Vector
+                       Data.Vector.Fusion.Util.$fMonadId
+                       (\ (a2 :: n) (b2 :: n)[OneShot] -> f1 a2 b2)
+                         `cast`
+                       (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                       (Data.Vector.Generic.stream
+                          @ Data.Vector.Vector
+                          @ n
+                          (Data.Vector.$fVectorVectora @ n)
+                          a1)
+                       (Data.Vector.Generic.stream
+                          @ Data.Vector.Vector
+                          @ n
+                          (Data.Vector.$fVectorVectora @ n)
+                          b1)))
+                   `cast`
+                 (Data.Vector.Fusion.Util.N:Id[0] <n>_R) } }) -}
+193b93949441c03bdf66a423cddc226f
+  hrotm ::
+    (GHC.Classes.Eq n, GHC.Num.Num n) =>
+    Data.Vector.Vector n -> (n, n, n, n)
+  {- Arity: 3,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><L,U(A,A,A,1*C1(U),A,A,C(U))><S(SSS),1*U(U,U,U)>m,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n
+                   ($dEq :: GHC.Classes.Eq n)
+                   ($dNum :: GHC.Num.Num n)
+                   (dparam1 :: Data.Vector.Vector n) ->
+                 case dparam1 of dparam2 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case Data.Vector.Generic.!
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        dparam2
+                        (GHC.Types.I# 4#) of h22 { DEFAULT ->
+                 case Data.Vector.Generic.!
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        dparam2
+                        (GHC.Types.I# 3#) of h21 { DEFAULT ->
+                 case Data.Vector.Generic.!
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        dparam2
+                        (GHC.Types.I# 2#) of h12 { DEFAULT ->
+                 case Data.Vector.Generic.!
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        dparam2
+                        (GHC.Types.I# 1#) of h11 { DEFAULT ->
+                 let {
+                   ds :: n
+                   = Data.Vector.Generic.!
+                       @ Data.Vector.Vector
+                       @ n
+                       (Data.Vector.$fVectorVectora @ n)
+                       dparam2
+                       (GHC.Types.I# 0#)
+                 } in
+                 case GHC.Classes.==
+                        @ n
+                        $dEq
+                        ds
+                        (GHC.Num.fromInteger @ n $dNum 0) of wild {
+                   GHC.Types.False
+                   -> case GHC.Classes.==
+                             @ n
+                             $dEq
+                             ds
+                             (GHC.Num.fromInteger @ n $dNum 1) of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Classes.==
+                                  @ n
+                                  $dEq
+                                  ds
+                                  (GHC.Num.negate
+                                     @ n
+                                     $dNum
+                                     (GHC.Num.fromInteger @ n $dNum 2)) of wild2 {
+                             GHC.Types.False -> (h11, h12, h21, h22)
+                             GHC.Types.True
+                             -> (GHC.Num.fromInteger @ n $dNum 1,
+                                 GHC.Num.fromInteger @ n $dNum 0, GHC.Num.fromInteger @ n $dNum 0,
+                                 GHC.Num.fromInteger @ n $dNum 1) }
+                        GHC.Types.True
+                        -> (h11, GHC.Num.fromInteger @ n $dNum 1,
+                            GHC.Num.negate @ n $dNum (GHC.Num.fromInteger @ n $dNum 1), h22) }
+                   GHC.Types.True
+                   -> (GHC.Num.fromInteger @ n $dNum 1, h12, h21,
+                       GHC.Num.fromInteger @ n $dNum 1) } } } } } }) -}
+886de27db726fcf48fc183bad356925d
+  idamax ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(1*U(1*C1(C(U)),A),A,A,A,A,A,C(C1(U)),A)><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) ($dOrd :: GHC.Classes.Ord n) ->
+                 let {
+                   $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (a :: Data.Vector.Vector n) ->
+                 case a of a1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 (Data.Vector.Fusion.Bundle.Monadic.findIndex
+                    @ Data.Vector.Fusion.Util.Id
+                    @ n
+                    @ Data.Vector.Vector
+                    Data.Vector.Fusion.Util.$fMonadId
+                    (GHC.Classes.==
+                       @ n
+                       $dEq
+                       (let {
+                          f :: n -> n -> n = GHC.Classes.max @ n $dOrd
+                        } in
+                        (Data.Vector.Fusion.Bundle.Monadic.foldl1M'
+                           @ Data.Vector.Fusion.Util.Id
+                           @ n
+                           @ Data.Vector.Vector
+                           Data.Vector.Fusion.Util.$fMonadId
+                           (\ (a2 :: n) (b :: n)[OneShot] -> f a2 b)
+                             `cast`
+                           (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                           (Data.Vector.Fusion.Bundle.inplace
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                               let {
+                                 f1 :: n -> n = GHC.Num.abs @ n $dNum
+                               } in
+                               Data.Vector.Fusion.Stream.Monadic.mapM
+                                 @ m
+                                 @ n
+                                 @ n
+                                 $dMonad
+                                 (let {
+                                    f2 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                                  } in
+                                  \ (x :: n) -> f2 (f1 x)))
+                              (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 a1)))
+                          `cast`
+                        (Data.Vector.Fusion.Util.N:Id[0] <n>_R)))
+                    (Data.Vector.Fusion.Bundle.inplace
+                       @ n
+                       @ n
+                       @ Data.Vector.Vector
+                       (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                        let {
+                          f :: n -> n = GHC.Num.abs @ n $dNum
+                        } in
+                        Data.Vector.Fusion.Stream.Monadic.mapM
+                          @ m
+                          @ n
+                          @ n
+                          $dMonad
+                          (let {
+                             f1 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                           } in
+                           \ (x :: n) -> f1 (f x)))
+                       (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                       (Data.Vector.Generic.stream
+                          @ Data.Vector.Vector
+                          @ n
+                          (Data.Vector.$fVectorVectora @ n)
+                          a1)))
+                   `cast`
+                 (Data.Vector.Fusion.Util.N:Id[0]
+                      <GHC.Base.Maybe GHC.Types.Int>_R) }) -}
+6445e9ea03c7bcb42cf3e7464d731903
+  idamin ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(1*U(1*C1(C(U)),A),A,A,A,A,A,A,C(C1(U)))><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) ($dOrd :: GHC.Classes.Ord n) ->
+                 let {
+                   $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (a :: Data.Vector.Vector n) ->
+                 case a of a1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 (Data.Vector.Fusion.Bundle.Monadic.findIndex
+                    @ Data.Vector.Fusion.Util.Id
+                    @ n
+                    @ Data.Vector.Vector
+                    Data.Vector.Fusion.Util.$fMonadId
+                    (GHC.Classes.==
+                       @ n
+                       $dEq
+                       (let {
+                          f :: n -> n -> n = GHC.Classes.min @ n $dOrd
+                        } in
+                        (Data.Vector.Fusion.Bundle.Monadic.foldl1M'
+                           @ Data.Vector.Fusion.Util.Id
+                           @ n
+                           @ Data.Vector.Vector
+                           Data.Vector.Fusion.Util.$fMonadId
+                           (\ (a2 :: n) (b :: n)[OneShot] -> f a2 b)
+                             `cast`
+                           (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                           (Data.Vector.Fusion.Bundle.inplace
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                               let {
+                                 f1 :: n -> n = GHC.Num.abs @ n $dNum
+                               } in
+                               Data.Vector.Fusion.Stream.Monadic.mapM
+                                 @ m
+                                 @ n
+                                 @ n
+                                 $dMonad
+                                 (let {
+                                    f2 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                                  } in
+                                  \ (x :: n) -> f2 (f1 x)))
+                              (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 a1)))
+                          `cast`
+                        (Data.Vector.Fusion.Util.N:Id[0] <n>_R)))
+                    (Data.Vector.Fusion.Bundle.inplace
+                       @ n
+                       @ n
+                       @ Data.Vector.Vector
+                       (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                        let {
+                          f :: n -> n = GHC.Num.abs @ n $dNum
+                        } in
+                        Data.Vector.Fusion.Stream.Monadic.mapM
+                          @ m
+                          @ n
+                          @ n
+                          $dMonad
+                          (let {
+                             f1 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                           } in
+                           \ (x :: n) -> f1 (f x)))
+                       (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                       (Data.Vector.Generic.stream
+                          @ Data.Vector.Vector
+                          @ n
+                          (Data.Vector.$fVectorVectora @ n)
+                          a1)))
+                   `cast`
+                 (Data.Vector.Fusion.Util.N:Id[0]
+                      <GHC.Base.Maybe GHC.Types.Int>_R) }) -}
+7a1e4744e44d1a8fdffa2541ee460803
+  nrm2 ::
+    (GHC.Num.Num n, GHC.Float.Floating n) => Data.Vector.Vector n -> n
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,A><L,U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U)),A,A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dFloating :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 let {
+                   f :: n -> n = GHC.Float.sqrt @ n $dFloating
+                 } in
+                 let {
+                   f1 :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                 } in
+                 let {
+                   z :: n = GHC.Num.fromInteger @ n $dNum1 0
+                 } in
+                 let {
+                   g :: n -> n -> n {- Arity: 2 -} = \ (a1 :: n) (b1 :: n) -> f1 a1 b1
+                 } in
+                 let {
+                   f2 :: forall (m :: * -> *).
+                         GHC.Base.Monad m =>
+                         Data.Vector.Fusion.Stream.Monadic.Stream m n
+                         -> Data.Vector.Fusion.Stream.Monadic.Stream m n
+                     {- Arity: 1 -}
+                   = \ @ m :: * -> * ($dMonad :: GHC.Base.Monad m) ->
+                     Data.Vector.Fusion.Stream.Monadic.mapM
+                       @ m
+                       @ n
+                       @ n
+                       $dMonad
+                       (let {
+                          f3 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                        } in
+                        \ (x :: n) -> f3 (GHC.Num.* @ n $dNum1 x x))
+                 } in
+                 \ (x :: Data.Vector.Vector n) ->
+                 f (Data.Vector.Fusion.Bundle.Monadic.foldlM'
+                      @ Data.Vector.Fusion.Util.Id
+                      @ n
+                      @ n
+                      @ Data.Vector.Vector
+                      Data.Vector.Fusion.Util.$fMonadId
+                      g `cast`
+                      (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                      z
+                      (Data.Vector.Fusion.Bundle.inplace
+                         @ n
+                         @ n
+                         @ Data.Vector.Vector
+                         f2
+                         (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            x)))
+                     `cast`
+                   (Data.Vector.Fusion.Util.N:Id[0] <n>_R)) -}
+a9507f1d23529b55f02f37c7bbba0510
+  rot ::
+    (GHC.Float.Floating n, GHC.Classes.Eq n, GHC.Num.Num n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> n
+    -> (Data.Vector.Vector n, Data.Vector.Vector n)
+  {- Arity: 6,
+     Strictness: <L,U(1*U(1*U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),A,A,A),A,A,A,1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,A><S,1*U(U,U,U)><S,1*U(U,U,U)><S,1*U>m,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (6, False, False)
+                (\ @ n
+                   ($dFloating :: GHC.Float.Floating n)
+                   ($dEq :: GHC.Classes.Eq n)
+                   ($dNum :: GHC.Num.Num n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 \ (x :: Data.Vector.Vector n)
+                   (y :: Data.Vector.Vector n)
+                   (c :: n) ->
+                 case x of x1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case y of y1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 case c of c1 { DEFAULT ->
+                 case GHC.Classes.==
+                        @ n
+                        $dEq
+                        c1
+                        (GHC.Num.fromInteger @ n $dNum1 1) of wild {
+                   GHC.Types.False
+                   -> case GHC.Num.*
+                             @ n
+                             $dNum1
+                             (GHC.Float.sqrt @ n $dFloating (GHC.Num.fromInteger @ n $dNum1 3))
+                             c1 of s { DEFAULT ->
+                      (Data.Vector.Generic.new
+                         @ Data.Vector.Vector
+                         @ n
+                         (Data.Vector.$fVectorVectora @ n)
+                         (Data.Vector.Generic.New.unstream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                               @ Data.Vector.Fusion.Util.Id
+                               @ n
+                               @ n
+                               @ n
+                               @ Data.Vector.Vector
+                               Data.Vector.Fusion.Util.$fMonadId
+                               (\ (a1 :: n) (b1 :: n)[OneShot] ->
+                                GHC.Num.+
+                                  @ n
+                                  $dNum1
+                                  (GHC.Num.* @ n $dNum1 c1 a1)
+                                  (GHC.Num.* @ n $dNum1 s b1))
+                                 `cast`
+                               (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                               (Data.Vector.Generic.stream
+                                  @ Data.Vector.Vector
+                                  @ n
+                                  (Data.Vector.$fVectorVectora @ n)
+                                  x1)
+                               (Data.Vector.Generic.stream
+                                  @ Data.Vector.Vector
+                                  @ n
+                                  (Data.Vector.$fVectorVectora @ n)
+                                  y1))),
+                       Data.Vector.Generic.new
+                         @ Data.Vector.Vector
+                         @ n
+                         (Data.Vector.$fVectorVectora @ n)
+                         (Data.Vector.Generic.New.unstream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                               @ Data.Vector.Fusion.Util.Id
+                               @ n
+                               @ n
+                               @ n
+                               @ Data.Vector.Vector
+                               Data.Vector.Fusion.Util.$fMonadId
+                               (\ (a1 :: n) (b1 :: n)[OneShot] ->
+                                GHC.Num.-
+                                  @ n
+                                  $dNum1
+                                  (GHC.Num.* @ n $dNum1 c1 b1)
+                                  (GHC.Num.* @ n $dNum1 s a1))
+                                 `cast`
+                               (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                               (Data.Vector.Generic.stream
+                                  @ Data.Vector.Vector
+                                  @ n
+                                  (Data.Vector.$fVectorVectora @ n)
+                                  x1)
+                               (Data.Vector.Generic.stream
+                                  @ Data.Vector.Vector
+                                  @ n
+                                  (Data.Vector.$fVectorVectora @ n)
+                                  y1)))) }
+                   GHC.Types.True -> (x1, y1) } } } }) -}
+965ebf136552e63ffabb24536143be53
+  rotg ::
+    (GHC.Float.Floating n, GHC.Classes.Ord n) => n -> n -> (n, n, n, n)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),C(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(U(C(C1(U)),C(C1(U))),A,A,A,C(C1(U)),C(C1(U)),A,A)><S,1*U><S,1*U>m,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dFloating :: GHC.Float.Floating n)
+                   ($dOrd :: GHC.Classes.Ord n)
+                   (a :: n)
+                   (b :: n) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 (let {
+                    $dFractional :: GHC.Real.Fractional n
+                    = GHC.Float.$p1Floating @ n $dFloating
+                  } in
+                  let {
+                    $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                  } in
+                  let {
+                    $j :: n -> n <join 1> {- Arity: 1 -}
+                    = \ (roe :: n)[OneShot] ->
+                      GHC.Num.*
+                        @ n
+                        $dNum
+                        (GHC.Num.signum @ n $dNum roe)
+                        (GHC.Float.sqrt
+                           @ n
+                           $dFloating
+                           (GHC.Num.+
+                              @ n
+                              $dNum
+                              (GHC.Num.* @ n $dNum a1 a1)
+                              (GHC.Num.* @ n $dNum b1 b1)))
+                  } in
+                  case GHC.Classes.>
+                         @ n
+                         $dOrd
+                         (GHC.Num.abs @ n $dNum a1)
+                         (GHC.Num.abs @ n $dNum b1) of wild {
+                    GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 },
+                  let {
+                    $dFractional :: GHC.Real.Fractional n
+                    = GHC.Float.$p1Floating @ n $dFloating
+                  } in
+                  let {
+                    $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                  } in
+                  let {
+                    $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                  } in
+                  case GHC.Classes.>
+                         @ n
+                         $dOrd
+                         (GHC.Num.abs @ n $dNum a1)
+                         (GHC.Num.abs @ n $dNum b1) of wild {
+                    GHC.Types.False
+                    -> let {
+                         $j :: n <join 0>
+                         = let {
+                             $j1 :: n <join 0>
+                             = case GHC.Classes.==
+                                      @ n
+                                      $dEq
+                                      (let {
+                                         $dFractional1 :: GHC.Real.Fractional n
+                                         = GHC.Float.$p1Floating @ n $dFloating
+                                       } in
+                                       let {
+                                         $dNum1 :: GHC.Num.Num n
+                                         = GHC.Real.$p1Fractional @ n $dFractional1
+                                       } in
+                                       let {
+                                         $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                         = \ (roe :: n)[OneShot] ->
+                                           GHC.Num.*
+                                             @ n
+                                             $dNum1
+                                             (GHC.Num.signum @ n $dNum1 roe)
+                                             (GHC.Float.sqrt
+                                                @ n
+                                                $dFloating
+                                                (GHC.Num.+
+                                                   @ n
+                                                   $dNum1
+                                                   (GHC.Num.* @ n $dNum1 a1 a1)
+                                                   (GHC.Num.* @ n $dNum1 b1 b1)))
+                                       } in
+                                       case GHC.Classes.>
+                                              @ n
+                                              $dOrd
+                                              (GHC.Num.abs @ n $dNum1 a1)
+                                              (GHC.Num.abs @ n $dNum1 b1) of wild1 {
+                                         GHC.Types.False -> $j2 b1 GHC.Types.True -> $j2 a1 })
+                                      (GHC.Num.fromInteger @ n $dNum 0) of wild1 { DEFAULT ->
+                               GHC.Num.fromInteger @ n $dNum 0 }
+                           } in
+                           case GHC.Classes.>=
+                                  @ n
+                                  $dOrd
+                                  (GHC.Num.abs @ n $dNum b1)
+                                  (GHC.Num.abs @ n $dNum a1) of wild1 {
+                             GHC.Types.False -> $j1
+                             GHC.Types.True
+                             -> case GHC.Classes.==
+                                       @ n
+                                       $dEq
+                                       (let {
+                                          $dFractional1 :: GHC.Real.Fractional n
+                                          = GHC.Float.$p1Floating @ n $dFloating
+                                        } in
+                                        let {
+                                          $dNum1 :: GHC.Num.Num n
+                                          = GHC.Real.$p1Fractional @ n $dFractional1
+                                        } in
+                                        case GHC.Classes.==
+                                               @ n
+                                               (GHC.Classes.$p1Ord @ n $dOrd)
+                                               (let {
+                                                  $dFractional2 :: GHC.Real.Fractional n
+                                                  = GHC.Float.$p1Floating @ n $dFloating
+                                                } in
+                                                let {
+                                                  $dNum2 :: GHC.Num.Num n
+                                                  = GHC.Real.$p1Fractional @ n $dFractional2
+                                                } in
+                                                let {
+                                                  $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                                  = \ (roe :: n)[OneShot] ->
+                                                    GHC.Num.*
+                                                      @ n
+                                                      $dNum2
+                                                      (GHC.Num.signum @ n $dNum2 roe)
+                                                      (GHC.Float.sqrt
+                                                         @ n
+                                                         $dFloating
+                                                         (GHC.Num.+
+                                                            @ n
+                                                            $dNum2
+                                                            (GHC.Num.* @ n $dNum2 a1 a1)
+                                                            (GHC.Num.* @ n $dNum2 b1 b1)))
+                                                } in
+                                                case GHC.Classes.>
+                                                       @ n
+                                                       $dOrd
+                                                       (GHC.Num.abs @ n $dNum2 a1)
+                                                       (GHC.Num.abs @ n $dNum2 b1) of wild2 {
+                                                  GHC.Types.False -> $j2 b1
+                                                  GHC.Types.True -> $j2 a1 })
+                                               (GHC.Num.fromInteger @ n $dNum1 0) of wild2 {
+                                          GHC.Types.False
+                                          -> GHC.Real./
+                                               @ n
+                                               $dFractional1
+                                               a1
+                                               (let {
+                                                  $dFractional2 :: GHC.Real.Fractional n
+                                                  = GHC.Float.$p1Floating @ n $dFloating
+                                                } in
+                                                let {
+                                                  $dNum2 :: GHC.Num.Num n
+                                                  = GHC.Real.$p1Fractional @ n $dFractional2
+                                                } in
+                                                let {
+                                                  $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                                  = \ (roe :: n)[OneShot] ->
+                                                    GHC.Num.*
+                                                      @ n
+                                                      $dNum2
+                                                      (GHC.Num.signum @ n $dNum2 roe)
+                                                      (GHC.Float.sqrt
+                                                         @ n
+                                                         $dFloating
+                                                         (GHC.Num.+
+                                                            @ n
+                                                            $dNum2
+                                                            (GHC.Num.* @ n $dNum2 a1 a1)
+                                                            (GHC.Num.* @ n $dNum2 b1 b1)))
+                                                } in
+                                                case GHC.Classes.>
+                                                       @ n
+                                                       $dOrd
+                                                       (GHC.Num.abs @ n $dNum2 a1)
+                                                       (GHC.Num.abs @ n $dNum2 b1) of wild3 {
+                                                  GHC.Types.False -> $j2 b1
+                                                  GHC.Types.True -> $j2 a1 })
+                                          GHC.Types.True -> GHC.Num.fromInteger @ n $dNum1 1 })
+                                       (GHC.Num.fromInteger @ n $dNum 0) of wild2 {
+                                  GHC.Types.False -> $j1
+                                  GHC.Types.True
+                                  -> case GHC.Classes./=
+                                            @ n
+                                            $dEq
+                                            (let {
+                                               $dFractional1 :: GHC.Real.Fractional n
+                                               = GHC.Float.$p1Floating @ n $dFloating
+                                             } in
+                                             let {
+                                               $dNum1 :: GHC.Num.Num n
+                                               = GHC.Real.$p1Fractional @ n $dFractional1
+                                             } in
+                                             let {
+                                               $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                               = \ (roe :: n)[OneShot] ->
+                                                 GHC.Num.*
+                                                   @ n
+                                                   $dNum1
+                                                   (GHC.Num.signum @ n $dNum1 roe)
+                                                   (GHC.Float.sqrt
+                                                      @ n
+                                                      $dFloating
+                                                      (GHC.Num.+
+                                                         @ n
+                                                         $dNum1
+                                                         (GHC.Num.* @ n $dNum1 a1 a1)
+                                                         (GHC.Num.* @ n $dNum1 b1 b1)))
+                                             } in
+                                             case GHC.Classes.>
+                                                    @ n
+                                                    $dOrd
+                                                    (GHC.Num.abs @ n $dNum1 a1)
+                                                    (GHC.Num.abs @ n $dNum1 b1) of wild3 {
+                                               GHC.Types.False -> $j2 b1 GHC.Types.True -> $j2 a1 })
+                                            (GHC.Num.fromInteger @ n $dNum 0) of wild3 {
+                                       GHC.Types.False -> $j1
+                                       GHC.Types.True -> GHC.Num.fromInteger @ n $dNum 1 } } }
+                       } in
+                       case GHC.Classes.>=
+                              @ n
+                              $dOrd
+                              (GHC.Num.abs @ n $dNum b1)
+                              (GHC.Num.abs @ n $dNum a1) of wild1 {
+                         GHC.Types.False -> $j
+                         GHC.Types.True
+                         -> case GHC.Classes./=
+                                   @ n
+                                   $dEq
+                                   (let {
+                                      $dFractional1 :: GHC.Real.Fractional n
+                                      = GHC.Float.$p1Floating @ n $dFloating
+                                    } in
+                                    let {
+                                      $dNum1 :: GHC.Num.Num n
+                                      = GHC.Real.$p1Fractional @ n $dFractional1
+                                    } in
+                                    case GHC.Classes.==
+                                           @ n
+                                           (GHC.Classes.$p1Ord @ n $dOrd)
+                                           (let {
+                                              $dFractional2 :: GHC.Real.Fractional n
+                                              = GHC.Float.$p1Floating @ n $dFloating
+                                            } in
+                                            let {
+                                              $dNum2 :: GHC.Num.Num n
+                                              = GHC.Real.$p1Fractional @ n $dFractional2
+                                            } in
+                                            let {
+                                              $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                              = \ (roe :: n)[OneShot] ->
+                                                GHC.Num.*
+                                                  @ n
+                                                  $dNum2
+                                                  (GHC.Num.signum @ n $dNum2 roe)
+                                                  (GHC.Float.sqrt
+                                                     @ n
+                                                     $dFloating
+                                                     (GHC.Num.+
+                                                        @ n
+                                                        $dNum2
+                                                        (GHC.Num.* @ n $dNum2 a1 a1)
+                                                        (GHC.Num.* @ n $dNum2 b1 b1)))
+                                            } in
+                                            case GHC.Classes.>
+                                                   @ n
+                                                   $dOrd
+                                                   (GHC.Num.abs @ n $dNum2 a1)
+                                                   (GHC.Num.abs @ n $dNum2 b1) of wild2 {
+                                              GHC.Types.False -> $j1 b1 GHC.Types.True -> $j1 a1 })
+                                           (GHC.Num.fromInteger @ n $dNum1 0) of wild2 {
+                                      GHC.Types.False
+                                      -> GHC.Real./
+                                           @ n
+                                           $dFractional1
+                                           a1
+                                           (let {
+                                              $dFractional2 :: GHC.Real.Fractional n
+                                              = GHC.Float.$p1Floating @ n $dFloating
+                                            } in
+                                            let {
+                                              $dNum2 :: GHC.Num.Num n
+                                              = GHC.Real.$p1Fractional @ n $dFractional2
+                                            } in
+                                            let {
+                                              $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                              = \ (roe :: n)[OneShot] ->
+                                                GHC.Num.*
+                                                  @ n
+                                                  $dNum2
+                                                  (GHC.Num.signum @ n $dNum2 roe)
+                                                  (GHC.Float.sqrt
+                                                     @ n
+                                                     $dFloating
+                                                     (GHC.Num.+
+                                                        @ n
+                                                        $dNum2
+                                                        (GHC.Num.* @ n $dNum2 a1 a1)
+                                                        (GHC.Num.* @ n $dNum2 b1 b1)))
+                                            } in
+                                            case GHC.Classes.>
+                                                   @ n
+                                                   $dOrd
+                                                   (GHC.Num.abs @ n $dNum2 a1)
+                                                   (GHC.Num.abs @ n $dNum2 b1) of wild3 {
+                                              GHC.Types.False -> $j1 b1 GHC.Types.True -> $j1 a1 })
+                                      GHC.Types.True -> GHC.Num.fromInteger @ n $dNum1 1 })
+                                   (GHC.Num.fromInteger @ n $dNum 0) of wild2 {
+                              GHC.Types.False -> $j
+                              GHC.Types.True
+                              -> case GHC.Classes./=
+                                        @ n
+                                        $dEq
+                                        (let {
+                                           $dFractional1 :: GHC.Real.Fractional n
+                                           = GHC.Float.$p1Floating @ n $dFloating
+                                         } in
+                                         let {
+                                           $dNum1 :: GHC.Num.Num n
+                                           = GHC.Real.$p1Fractional @ n $dFractional1
+                                         } in
+                                         let {
+                                           $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                           = \ (roe :: n)[OneShot] ->
+                                             GHC.Num.*
+                                               @ n
+                                               $dNum1
+                                               (GHC.Num.signum @ n $dNum1 roe)
+                                               (GHC.Float.sqrt
+                                                  @ n
+                                                  $dFloating
+                                                  (GHC.Num.+
+                                                     @ n
+                                                     $dNum1
+                                                     (GHC.Num.* @ n $dNum1 a1 a1)
+                                                     (GHC.Num.* @ n $dNum1 b1 b1)))
+                                         } in
+                                         case GHC.Classes.>
+                                                @ n
+                                                $dOrd
+                                                (GHC.Num.abs @ n $dNum1 a1)
+                                                (GHC.Num.abs @ n $dNum1 b1) of wild3 {
+                                           GHC.Types.False -> $j1 b1 GHC.Types.True -> $j1 a1 })
+                                        (GHC.Num.fromInteger @ n $dNum 0) of wild3 {
+                                   GHC.Types.False -> $j
+                                   GHC.Types.True
+                                   -> GHC.Real./
+                                        @ n
+                                        $dFractional
+                                        (GHC.Num.fromInteger @ n $dNum 1)
+                                        (let {
+                                           $dFractional1 :: GHC.Real.Fractional n
+                                           = GHC.Float.$p1Floating @ n $dFloating
+                                         } in
+                                         let {
+                                           $dNum1 :: GHC.Num.Num n
+                                           = GHC.Real.$p1Fractional @ n $dFractional1
+                                         } in
+                                         case GHC.Classes.==
+                                                @ n
+                                                (GHC.Classes.$p1Ord @ n $dOrd)
+                                                (let {
+                                                   $dFractional2 :: GHC.Real.Fractional n
+                                                   = GHC.Float.$p1Floating @ n $dFloating
+                                                 } in
+                                                 let {
+                                                   $dNum2 :: GHC.Num.Num n
+                                                   = GHC.Real.$p1Fractional @ n $dFractional2
+                                                 } in
+                                                 let {
+                                                   $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                                   = \ (roe :: n)[OneShot] ->
+                                                     GHC.Num.*
+                                                       @ n
+                                                       $dNum2
+                                                       (GHC.Num.signum @ n $dNum2 roe)
+                                                       (GHC.Float.sqrt
+                                                          @ n
+                                                          $dFloating
+                                                          (GHC.Num.+
+                                                             @ n
+                                                             $dNum2
+                                                             (GHC.Num.* @ n $dNum2 a1 a1)
+                                                             (GHC.Num.* @ n $dNum2 b1 b1)))
+                                                 } in
+                                                 case GHC.Classes.>
+                                                        @ n
+                                                        $dOrd
+                                                        (GHC.Num.abs @ n $dNum2 a1)
+                                                        (GHC.Num.abs @ n $dNum2 b1) of wild4 {
+                                                   GHC.Types.False -> $j1 b1
+                                                   GHC.Types.True -> $j1 a1 })
+                                                (GHC.Num.fromInteger @ n $dNum1 0) of wild4 {
+                                           GHC.Types.False
+                                           -> GHC.Real./
+                                                @ n
+                                                $dFractional1
+                                                a1
+                                                (let {
+                                                   $dFractional2 :: GHC.Real.Fractional n
+                                                   = GHC.Float.$p1Floating @ n $dFloating
+                                                 } in
+                                                 let {
+                                                   $dNum2 :: GHC.Num.Num n
+                                                   = GHC.Real.$p1Fractional @ n $dFractional2
+                                                 } in
+                                                 let {
+                                                   $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                                   = \ (roe :: n)[OneShot] ->
+                                                     GHC.Num.*
+                                                       @ n
+                                                       $dNum2
+                                                       (GHC.Num.signum @ n $dNum2 roe)
+                                                       (GHC.Float.sqrt
+                                                          @ n
+                                                          $dFloating
+                                                          (GHC.Num.+
+                                                             @ n
+                                                             $dNum2
+                                                             (GHC.Num.* @ n $dNum2 a1 a1)
+                                                             (GHC.Num.* @ n $dNum2 b1 b1)))
+                                                 } in
+                                                 case GHC.Classes.>
+                                                        @ n
+                                                        $dOrd
+                                                        (GHC.Num.abs @ n $dNum2 a1)
+                                                        (GHC.Num.abs @ n $dNum2 b1) of wild5 {
+                                                   GHC.Types.False -> $j1 b1
+                                                   GHC.Types.True -> $j1 a1 })
+                                           GHC.Types.True
+                                           -> GHC.Num.fromInteger @ n $dNum1 1 }) } } }
+                    GHC.Types.True
+                    -> let {
+                         $dFractional1 :: GHC.Real.Fractional n
+                         = GHC.Float.$p1Floating @ n $dFloating
+                       } in
+                       let {
+                         $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                       } in
+                       case GHC.Classes.==
+                              @ n
+                              (GHC.Classes.$p1Ord @ n $dOrd)
+                              (let {
+                                 $dFractional2 :: GHC.Real.Fractional n
+                                 = GHC.Float.$p1Floating @ n $dFloating
+                               } in
+                               let {
+                                 $dNum2 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional2
+                               } in
+                               let {
+                                 $j :: n -> n <join 1> {- Arity: 1 -}
+                                 = \ (roe :: n)[OneShot] ->
+                                   GHC.Num.*
+                                     @ n
+                                     $dNum2
+                                     (GHC.Num.signum @ n $dNum2 roe)
+                                     (GHC.Float.sqrt
+                                        @ n
+                                        $dFloating
+                                        (GHC.Num.+
+                                           @ n
+                                           $dNum2
+                                           (GHC.Num.* @ n $dNum2 a1 a1)
+                                           (GHC.Num.* @ n $dNum2 b1 b1)))
+                               } in
+                               case GHC.Classes.>
+                                      @ n
+                                      $dOrd
+                                      (GHC.Num.abs @ n $dNum2 a1)
+                                      (GHC.Num.abs @ n $dNum2 b1) of wild1 {
+                                 GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                              (GHC.Num.fromInteger @ n $dNum1 0) of wild1 {
+                         GHC.Types.False
+                         -> GHC.Real./
+                              @ n
+                              $dFractional1
+                              b1
+                              (let {
+                                 $dFractional2 :: GHC.Real.Fractional n
+                                 = GHC.Float.$p1Floating @ n $dFloating
+                               } in
+                               let {
+                                 $dNum2 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional2
+                               } in
+                               let {
+                                 $j :: n -> n <join 1> {- Arity: 1 -}
+                                 = \ (roe :: n)[OneShot] ->
+                                   GHC.Num.*
+                                     @ n
+                                     $dNum2
+                                     (GHC.Num.signum @ n $dNum2 roe)
+                                     (GHC.Float.sqrt
+                                        @ n
+                                        $dFloating
+                                        (GHC.Num.+
+                                           @ n
+                                           $dNum2
+                                           (GHC.Num.* @ n $dNum2 a1 a1)
+                                           (GHC.Num.* @ n $dNum2 b1 b1)))
+                               } in
+                               case GHC.Classes.>
+                                      @ n
+                                      $dOrd
+                                      (GHC.Num.abs @ n $dNum2 a1)
+                                      (GHC.Num.abs @ n $dNum2 b1) of wild2 {
+                                 GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                         GHC.Types.True -> GHC.Num.fromInteger @ n $dNum1 0 } },
+                  let {
+                    $dFractional :: GHC.Real.Fractional n
+                    = GHC.Float.$p1Floating @ n $dFloating
+                  } in
+                  let {
+                    $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                  } in
+                  case GHC.Classes.==
+                         @ n
+                         (GHC.Classes.$p1Ord @ n $dOrd)
+                         (let {
+                            $dFractional1 :: GHC.Real.Fractional n
+                            = GHC.Float.$p1Floating @ n $dFloating
+                          } in
+                          let {
+                            $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                          } in
+                          let {
+                            $j :: n -> n <join 1> {- Arity: 1 -}
+                            = \ (roe :: n)[OneShot] ->
+                              GHC.Num.*
+                                @ n
+                                $dNum1
+                                (GHC.Num.signum @ n $dNum1 roe)
+                                (GHC.Float.sqrt
+                                   @ n
+                                   $dFloating
+                                   (GHC.Num.+
+                                      @ n
+                                      $dNum1
+                                      (GHC.Num.* @ n $dNum1 a1 a1)
+                                      (GHC.Num.* @ n $dNum1 b1 b1)))
+                          } in
+                          case GHC.Classes.>
+                                 @ n
+                                 $dOrd
+                                 (GHC.Num.abs @ n $dNum1 a1)
+                                 (GHC.Num.abs @ n $dNum1 b1) of wild {
+                            GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                         (GHC.Num.fromInteger @ n $dNum 0) of wild {
+                    GHC.Types.False
+                    -> GHC.Real./
+                         @ n
+                         $dFractional
+                         a1
+                         (let {
+                            $dFractional1 :: GHC.Real.Fractional n
+                            = GHC.Float.$p1Floating @ n $dFloating
+                          } in
+                          let {
+                            $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                          } in
+                          let {
+                            $j :: n -> n <join 1> {- Arity: 1 -}
+                            = \ (roe :: n)[OneShot] ->
+                              GHC.Num.*
+                                @ n
+                                $dNum1
+                                (GHC.Num.signum @ n $dNum1 roe)
+                                (GHC.Float.sqrt
+                                   @ n
+                                   $dFloating
+                                   (GHC.Num.+
+                                      @ n
+                                      $dNum1
+                                      (GHC.Num.* @ n $dNum1 a1 a1)
+                                      (GHC.Num.* @ n $dNum1 b1 b1)))
+                          } in
+                          case GHC.Classes.>
+                                 @ n
+                                 $dOrd
+                                 (GHC.Num.abs @ n $dNum1 a1)
+                                 (GHC.Num.abs @ n $dNum1 b1) of wild1 {
+                            GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                    GHC.Types.True -> GHC.Num.fromInteger @ n $dNum 1 },
+                  let {
+                    $dFractional :: GHC.Real.Fractional n
+                    = GHC.Float.$p1Floating @ n $dFloating
+                  } in
+                  let {
+                    $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                  } in
+                  case GHC.Classes.==
+                         @ n
+                         (GHC.Classes.$p1Ord @ n $dOrd)
+                         (let {
+                            $dFractional1 :: GHC.Real.Fractional n
+                            = GHC.Float.$p1Floating @ n $dFloating
+                          } in
+                          let {
+                            $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                          } in
+                          let {
+                            $j :: n -> n <join 1> {- Arity: 1 -}
+                            = \ (roe :: n)[OneShot] ->
+                              GHC.Num.*
+                                @ n
+                                $dNum1
+                                (GHC.Num.signum @ n $dNum1 roe)
+                                (GHC.Float.sqrt
+                                   @ n
+                                   $dFloating
+                                   (GHC.Num.+
+                                      @ n
+                                      $dNum1
+                                      (GHC.Num.* @ n $dNum1 a1 a1)
+                                      (GHC.Num.* @ n $dNum1 b1 b1)))
+                          } in
+                          case GHC.Classes.>
+                                 @ n
+                                 $dOrd
+                                 (GHC.Num.abs @ n $dNum1 a1)
+                                 (GHC.Num.abs @ n $dNum1 b1) of wild {
+                            GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                         (GHC.Num.fromInteger @ n $dNum 0) of wild {
+                    GHC.Types.False
+                    -> GHC.Real./
+                         @ n
+                         $dFractional
+                         b1
+                         (let {
+                            $dFractional1 :: GHC.Real.Fractional n
+                            = GHC.Float.$p1Floating @ n $dFloating
+                          } in
+                          let {
+                            $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                          } in
+                          let {
+                            $j :: n -> n <join 1> {- Arity: 1 -}
+                            = \ (roe :: n)[OneShot] ->
+                              GHC.Num.*
+                                @ n
+                                $dNum1
+                                (GHC.Num.signum @ n $dNum1 roe)
+                                (GHC.Float.sqrt
+                                   @ n
+                                   $dFloating
+                                   (GHC.Num.+
+                                      @ n
+                                      $dNum1
+                                      (GHC.Num.* @ n $dNum1 a1 a1)
+                                      (GHC.Num.* @ n $dNum1 b1 b1)))
+                          } in
+                          case GHC.Classes.>
+                                 @ n
+                                 $dOrd
+                                 (GHC.Num.abs @ n $dNum1 a1)
+                                 (GHC.Num.abs @ n $dNum1 b1) of wild1 {
+                            GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                    GHC.Types.True -> GHC.Num.fromInteger @ n $dNum 0 }) } }) -}
+74f44e2f0f5bf2d7454ac11b61d88fc3
+  rotg_c :: (GHC.Classes.Ord n, GHC.Float.Floating n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(1*U(1*C1(C1(U)),A),A,A,A,C(C1(U)),A,A,A)><L,U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),1*C1(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dOrd :: GHC.Classes.Ord n)
+                   ($dFloating :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 let {
+                   $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (a :: n) (b :: n) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 case GHC.Classes.==
+                        @ n
+                        $dEq
+                        (let {
+                           $dFractional1 :: GHC.Real.Fractional n
+                           = GHC.Float.$p1Floating @ n $dFloating
+                         } in
+                         let {
+                           $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                         } in
+                         let {
+                           $j :: n -> n <join 1> {- Arity: 1 -}
+                           = \ (roe :: n)[OneShot] ->
+                             GHC.Num.*
+                               @ n
+                               $dNum1
+                               (GHC.Num.signum @ n $dNum1 roe)
+                               (GHC.Float.sqrt
+                                  @ n
+                                  $dFloating
+                                  (GHC.Num.+
+                                     @ n
+                                     $dNum1
+                                     (GHC.Num.* @ n $dNum1 a1 a1)
+                                     (GHC.Num.* @ n $dNum1 b1 b1)))
+                         } in
+                         case GHC.Classes.>
+                                @ n
+                                $dOrd
+                                (GHC.Num.abs @ n $dNum1 a1)
+                                (GHC.Num.abs @ n $dNum1 b1) of wild {
+                           GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                        (GHC.Num.fromInteger @ n $dNum 0) of wild {
+                   GHC.Types.False
+                   -> GHC.Real./
+                        @ n
+                        $dFractional
+                        a1
+                        (let {
+                           $dFractional1 :: GHC.Real.Fractional n
+                           = GHC.Float.$p1Floating @ n $dFloating
+                         } in
+                         let {
+                           $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                         } in
+                         let {
+                           $j :: n -> n <join 1> {- Arity: 1 -}
+                           = \ (roe :: n)[OneShot] ->
+                             GHC.Num.*
+                               @ n
+                               $dNum1
+                               (GHC.Num.signum @ n $dNum1 roe)
+                               (GHC.Float.sqrt
+                                  @ n
+                                  $dFloating
+                                  (GHC.Num.+
+                                     @ n
+                                     $dNum1
+                                     (GHC.Num.* @ n $dNum1 a1 a1)
+                                     (GHC.Num.* @ n $dNum1 b1 b1)))
+                         } in
+                         case GHC.Classes.>
+                                @ n
+                                $dOrd
+                                (GHC.Num.abs @ n $dNum1 a1)
+                                (GHC.Num.abs @ n $dNum1 b1) of wild1 {
+                           GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                   GHC.Types.True -> GHC.Num.fromInteger @ n $dNum 1 } } }) -}
+087019e6c91a5788b4003f1504ac9b15
+  rotg_r ::
+    (GHC.Num.Num n, GHC.Classes.Ord n, GHC.Float.Floating n) =>
+    n -> n -> n
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><S(LLLLC(C(S))LLL),1*U(A,A,A,A,1*C1(C1(U)),A,A,A)><S(S(S(LLC(C(S))LLLL)LLL)LLLLLLLLLLLLLLLLLLLLLL),U(1*U(1*U(1*C1(C1(U)),A,C(C1(U)),A,C(U),1*C1(U),A),A,A,A),A,A,A,1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dOrd :: GHC.Classes.Ord n)
+                   ($dFloating :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 \ (a :: n) (b :: n) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 let {
+                   $j :: n -> n <join 1> {- Arity: 1 -}
+                   = \ (roe :: n)[OneShot] ->
+                     GHC.Num.*
+                       @ n
+                       $dNum1
+                       (GHC.Num.signum @ n $dNum1 roe)
+                       (GHC.Float.sqrt
+                          @ n
+                          $dFloating
+                          (GHC.Num.+
+                             @ n
+                             $dNum1
+                             (GHC.Num.* @ n $dNum1 a1 a1)
+                             (GHC.Num.* @ n $dNum1 b1 b1)))
+                 } in
+                 case GHC.Classes.>
+                        @ n
+                        $dOrd
+                        (GHC.Num.abs @ n $dNum1 a1)
+                        (GHC.Num.abs @ n $dNum1 b1) of wild {
+                   GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 } } }) -}
+96367c14ed82ce06114dbd4d7f873117
+  rotg_roe :: (GHC.Num.Num n, GHC.Classes.Ord n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><S(LLLLC(C(S))LLL),1*U(A,A,A,A,1*C1(C1(U)),A,A,A)><S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dOrd :: GHC.Classes.Ord n)
+                   (a :: n)
+                   (b :: n) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 case GHC.Classes.>
+                        @ n
+                        $dOrd
+                        (GHC.Num.abs @ n $dNum a1)
+                        (GHC.Num.abs @ n $dNum b1) of wild {
+                   GHC.Types.False -> b1 GHC.Types.True -> a1 } } }) -}
+fcbf3662cd5f41822cfa903526bd9b07
+  rotg_s :: (GHC.Classes.Ord n, GHC.Float.Floating n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(1*U(1*C1(C1(U)),A),A,A,A,C(C1(U)),A,A,A)><L,U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),1*C1(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dOrd :: GHC.Classes.Ord n)
+                   ($dFloating :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 let {
+                   $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (a :: n) (b :: n) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 case GHC.Classes.==
+                        @ n
+                        $dEq
+                        (let {
+                           $dFractional1 :: GHC.Real.Fractional n
+                           = GHC.Float.$p1Floating @ n $dFloating
+                         } in
+                         let {
+                           $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                         } in
+                         let {
+                           $j :: n -> n <join 1> {- Arity: 1 -}
+                           = \ (roe :: n)[OneShot] ->
+                             GHC.Num.*
+                               @ n
+                               $dNum1
+                               (GHC.Num.signum @ n $dNum1 roe)
+                               (GHC.Float.sqrt
+                                  @ n
+                                  $dFloating
+                                  (GHC.Num.+
+                                     @ n
+                                     $dNum1
+                                     (GHC.Num.* @ n $dNum1 a1 a1)
+                                     (GHC.Num.* @ n $dNum1 b1 b1)))
+                         } in
+                         case GHC.Classes.>
+                                @ n
+                                $dOrd
+                                (GHC.Num.abs @ n $dNum1 a1)
+                                (GHC.Num.abs @ n $dNum1 b1) of wild {
+                           GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                        (GHC.Num.fromInteger @ n $dNum 0) of wild {
+                   GHC.Types.False
+                   -> GHC.Real./
+                        @ n
+                        $dFractional
+                        b1
+                        (let {
+                           $dFractional1 :: GHC.Real.Fractional n
+                           = GHC.Float.$p1Floating @ n $dFloating
+                         } in
+                         let {
+                           $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                         } in
+                         let {
+                           $j :: n -> n <join 1> {- Arity: 1 -}
+                           = \ (roe :: n)[OneShot] ->
+                             GHC.Num.*
+                               @ n
+                               $dNum1
+                               (GHC.Num.signum @ n $dNum1 roe)
+                               (GHC.Float.sqrt
+                                  @ n
+                                  $dFloating
+                                  (GHC.Num.+
+                                     @ n
+                                     $dNum1
+                                     (GHC.Num.* @ n $dNum1 a1 a1)
+                                     (GHC.Num.* @ n $dNum1 b1 b1)))
+                         } in
+                         case GHC.Classes.>
+                                @ n
+                                $dOrd
+                                (GHC.Num.abs @ n $dNum1 a1)
+                                (GHC.Num.abs @ n $dNum1 b1) of wild1 {
+                           GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                   GHC.Types.True -> GHC.Num.fromInteger @ n $dNum 0 } } }) -}
+fed97e32f06079be10b83081851fbe8c
+  rotg_z :: (GHC.Classes.Ord n, GHC.Float.Floating n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(SLLLC(C(S))LLL),U(1*U(C(C1(U)),C(C1(U))),A,A,A,1*C1(C1(U)),C(C1(U)),A,A)><L,U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),C(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dOrd :: GHC.Classes.Ord n)
+                   ($dFloating :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 let {
+                   $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (a :: n) (b :: n) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 case GHC.Classes.>
+                        @ n
+                        $dOrd
+                        (GHC.Num.abs @ n $dNum a1)
+                        (GHC.Num.abs @ n $dNum b1) of wild {
+                   GHC.Types.False
+                   -> let {
+                        $j :: n <join 0>
+                        = let {
+                            $j1 :: n <join 0>
+                            = case GHC.Classes.==
+                                     @ n
+                                     $dEq
+                                     (let {
+                                        $dFractional1 :: GHC.Real.Fractional n
+                                        = GHC.Float.$p1Floating @ n $dFloating
+                                      } in
+                                      let {
+                                        $dNum1 :: GHC.Num.Num n
+                                        = GHC.Real.$p1Fractional @ n $dFractional1
+                                      } in
+                                      let {
+                                        $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                        = \ (roe :: n)[OneShot] ->
+                                          GHC.Num.*
+                                            @ n
+                                            $dNum1
+                                            (GHC.Num.signum @ n $dNum1 roe)
+                                            (GHC.Float.sqrt
+                                               @ n
+                                               $dFloating
+                                               (GHC.Num.+
+                                                  @ n
+                                                  $dNum1
+                                                  (GHC.Num.* @ n $dNum1 a1 a1)
+                                                  (GHC.Num.* @ n $dNum1 b1 b1)))
+                                      } in
+                                      case GHC.Classes.>
+                                             @ n
+                                             $dOrd
+                                             (GHC.Num.abs @ n $dNum1 a1)
+                                             (GHC.Num.abs @ n $dNum1 b1) of wild1 {
+                                        GHC.Types.False -> $j2 b1 GHC.Types.True -> $j2 a1 })
+                                     (GHC.Num.fromInteger @ n $dNum 0) of wild1 { DEFAULT ->
+                              GHC.Num.fromInteger @ n $dNum 0 }
+                          } in
+                          case GHC.Classes.>=
+                                 @ n
+                                 $dOrd
+                                 (GHC.Num.abs @ n $dNum b1)
+                                 (GHC.Num.abs @ n $dNum a1) of wild1 {
+                            GHC.Types.False -> $j1
+                            GHC.Types.True
+                            -> case GHC.Classes.==
+                                      @ n
+                                      $dEq
+                                      (let {
+                                         $dFractional1 :: GHC.Real.Fractional n
+                                         = GHC.Float.$p1Floating @ n $dFloating
+                                       } in
+                                       let {
+                                         $dNum1 :: GHC.Num.Num n
+                                         = GHC.Real.$p1Fractional @ n $dFractional1
+                                       } in
+                                       case GHC.Classes.==
+                                              @ n
+                                              (GHC.Classes.$p1Ord @ n $dOrd)
+                                              (let {
+                                                 $dFractional2 :: GHC.Real.Fractional n
+                                                 = GHC.Float.$p1Floating @ n $dFloating
+                                               } in
+                                               let {
+                                                 $dNum2 :: GHC.Num.Num n
+                                                 = GHC.Real.$p1Fractional @ n $dFractional2
+                                               } in
+                                               let {
+                                                 $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                                 = \ (roe :: n)[OneShot] ->
+                                                   GHC.Num.*
+                                                     @ n
+                                                     $dNum2
+                                                     (GHC.Num.signum @ n $dNum2 roe)
+                                                     (GHC.Float.sqrt
+                                                        @ n
+                                                        $dFloating
+                                                        (GHC.Num.+
+                                                           @ n
+                                                           $dNum2
+                                                           (GHC.Num.* @ n $dNum2 a1 a1)
+                                                           (GHC.Num.* @ n $dNum2 b1 b1)))
+                                               } in
+                                               case GHC.Classes.>
+                                                      @ n
+                                                      $dOrd
+                                                      (GHC.Num.abs @ n $dNum2 a1)
+                                                      (GHC.Num.abs @ n $dNum2 b1) of wild2 {
+                                                 GHC.Types.False -> $j2 b1
+                                                 GHC.Types.True -> $j2 a1 })
+                                              (GHC.Num.fromInteger @ n $dNum1 0) of wild2 {
+                                         GHC.Types.False
+                                         -> GHC.Real./
+                                              @ n
+                                              $dFractional1
+                                              a1
+                                              (let {
+                                                 $dFractional2 :: GHC.Real.Fractional n
+                                                 = GHC.Float.$p1Floating @ n $dFloating
+                                               } in
+                                               let {
+                                                 $dNum2 :: GHC.Num.Num n
+                                                 = GHC.Real.$p1Fractional @ n $dFractional2
+                                               } in
+                                               let {
+                                                 $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                                 = \ (roe :: n)[OneShot] ->
+                                                   GHC.Num.*
+                                                     @ n
+                                                     $dNum2
+                                                     (GHC.Num.signum @ n $dNum2 roe)
+                                                     (GHC.Float.sqrt
+                                                        @ n
+                                                        $dFloating
+                                                        (GHC.Num.+
+                                                           @ n
+                                                           $dNum2
+                                                           (GHC.Num.* @ n $dNum2 a1 a1)
+                                                           (GHC.Num.* @ n $dNum2 b1 b1)))
+                                               } in
+                                               case GHC.Classes.>
+                                                      @ n
+                                                      $dOrd
+                                                      (GHC.Num.abs @ n $dNum2 a1)
+                                                      (GHC.Num.abs @ n $dNum2 b1) of wild3 {
+                                                 GHC.Types.False -> $j2 b1
+                                                 GHC.Types.True -> $j2 a1 })
+                                         GHC.Types.True -> GHC.Num.fromInteger @ n $dNum1 1 })
+                                      (GHC.Num.fromInteger @ n $dNum 0) of wild2 {
+                                 GHC.Types.False -> $j1
+                                 GHC.Types.True
+                                 -> case GHC.Classes./=
+                                           @ n
+                                           $dEq
+                                           (let {
+                                              $dFractional1 :: GHC.Real.Fractional n
+                                              = GHC.Float.$p1Floating @ n $dFloating
+                                            } in
+                                            let {
+                                              $dNum1 :: GHC.Num.Num n
+                                              = GHC.Real.$p1Fractional @ n $dFractional1
+                                            } in
+                                            let {
+                                              $j2 :: n -> n <join 1> {- Arity: 1 -}
+                                              = \ (roe :: n)[OneShot] ->
+                                                GHC.Num.*
+                                                  @ n
+                                                  $dNum1
+                                                  (GHC.Num.signum @ n $dNum1 roe)
+                                                  (GHC.Float.sqrt
+                                                     @ n
+                                                     $dFloating
+                                                     (GHC.Num.+
+                                                        @ n
+                                                        $dNum1
+                                                        (GHC.Num.* @ n $dNum1 a1 a1)
+                                                        (GHC.Num.* @ n $dNum1 b1 b1)))
+                                            } in
+                                            case GHC.Classes.>
+                                                   @ n
+                                                   $dOrd
+                                                   (GHC.Num.abs @ n $dNum1 a1)
+                                                   (GHC.Num.abs @ n $dNum1 b1) of wild3 {
+                                              GHC.Types.False -> $j2 b1 GHC.Types.True -> $j2 a1 })
+                                           (GHC.Num.fromInteger @ n $dNum 0) of wild3 {
+                                      GHC.Types.False -> $j1
+                                      GHC.Types.True -> GHC.Num.fromInteger @ n $dNum 1 } } }
+                      } in
+                      case GHC.Classes.>=
+                             @ n
+                             $dOrd
+                             (GHC.Num.abs @ n $dNum b1)
+                             (GHC.Num.abs @ n $dNum a1) of wild1 {
+                        GHC.Types.False -> $j
+                        GHC.Types.True
+                        -> case GHC.Classes./=
+                                  @ n
+                                  $dEq
+                                  (let {
+                                     $dFractional1 :: GHC.Real.Fractional n
+                                     = GHC.Float.$p1Floating @ n $dFloating
+                                   } in
+                                   let {
+                                     $dNum1 :: GHC.Num.Num n
+                                     = GHC.Real.$p1Fractional @ n $dFractional1
+                                   } in
+                                   case GHC.Classes.==
+                                          @ n
+                                          (GHC.Classes.$p1Ord @ n $dOrd)
+                                          (let {
+                                             $dFractional2 :: GHC.Real.Fractional n
+                                             = GHC.Float.$p1Floating @ n $dFloating
+                                           } in
+                                           let {
+                                             $dNum2 :: GHC.Num.Num n
+                                             = GHC.Real.$p1Fractional @ n $dFractional2
+                                           } in
+                                           let {
+                                             $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                             = \ (roe :: n)[OneShot] ->
+                                               GHC.Num.*
+                                                 @ n
+                                                 $dNum2
+                                                 (GHC.Num.signum @ n $dNum2 roe)
+                                                 (GHC.Float.sqrt
+                                                    @ n
+                                                    $dFloating
+                                                    (GHC.Num.+
+                                                       @ n
+                                                       $dNum2
+                                                       (GHC.Num.* @ n $dNum2 a1 a1)
+                                                       (GHC.Num.* @ n $dNum2 b1 b1)))
+                                           } in
+                                           case GHC.Classes.>
+                                                  @ n
+                                                  $dOrd
+                                                  (GHC.Num.abs @ n $dNum2 a1)
+                                                  (GHC.Num.abs @ n $dNum2 b1) of wild2 {
+                                             GHC.Types.False -> $j1 b1 GHC.Types.True -> $j1 a1 })
+                                          (GHC.Num.fromInteger @ n $dNum1 0) of wild2 {
+                                     GHC.Types.False
+                                     -> GHC.Real./
+                                          @ n
+                                          $dFractional1
+                                          a1
+                                          (let {
+                                             $dFractional2 :: GHC.Real.Fractional n
+                                             = GHC.Float.$p1Floating @ n $dFloating
+                                           } in
+                                           let {
+                                             $dNum2 :: GHC.Num.Num n
+                                             = GHC.Real.$p1Fractional @ n $dFractional2
+                                           } in
+                                           let {
+                                             $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                             = \ (roe :: n)[OneShot] ->
+                                               GHC.Num.*
+                                                 @ n
+                                                 $dNum2
+                                                 (GHC.Num.signum @ n $dNum2 roe)
+                                                 (GHC.Float.sqrt
+                                                    @ n
+                                                    $dFloating
+                                                    (GHC.Num.+
+                                                       @ n
+                                                       $dNum2
+                                                       (GHC.Num.* @ n $dNum2 a1 a1)
+                                                       (GHC.Num.* @ n $dNum2 b1 b1)))
+                                           } in
+                                           case GHC.Classes.>
+                                                  @ n
+                                                  $dOrd
+                                                  (GHC.Num.abs @ n $dNum2 a1)
+                                                  (GHC.Num.abs @ n $dNum2 b1) of wild3 {
+                                             GHC.Types.False -> $j1 b1 GHC.Types.True -> $j1 a1 })
+                                     GHC.Types.True -> GHC.Num.fromInteger @ n $dNum1 1 })
+                                  (GHC.Num.fromInteger @ n $dNum 0) of wild2 {
+                             GHC.Types.False -> $j
+                             GHC.Types.True
+                             -> case GHC.Classes./=
+                                       @ n
+                                       $dEq
+                                       (let {
+                                          $dFractional1 :: GHC.Real.Fractional n
+                                          = GHC.Float.$p1Floating @ n $dFloating
+                                        } in
+                                        let {
+                                          $dNum1 :: GHC.Num.Num n
+                                          = GHC.Real.$p1Fractional @ n $dFractional1
+                                        } in
+                                        let {
+                                          $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                          = \ (roe :: n)[OneShot] ->
+                                            GHC.Num.*
+                                              @ n
+                                              $dNum1
+                                              (GHC.Num.signum @ n $dNum1 roe)
+                                              (GHC.Float.sqrt
+                                                 @ n
+                                                 $dFloating
+                                                 (GHC.Num.+
+                                                    @ n
+                                                    $dNum1
+                                                    (GHC.Num.* @ n $dNum1 a1 a1)
+                                                    (GHC.Num.* @ n $dNum1 b1 b1)))
+                                        } in
+                                        case GHC.Classes.>
+                                               @ n
+                                               $dOrd
+                                               (GHC.Num.abs @ n $dNum1 a1)
+                                               (GHC.Num.abs @ n $dNum1 b1) of wild3 {
+                                          GHC.Types.False -> $j1 b1 GHC.Types.True -> $j1 a1 })
+                                       (GHC.Num.fromInteger @ n $dNum 0) of wild3 {
+                                  GHC.Types.False -> $j
+                                  GHC.Types.True
+                                  -> GHC.Real./
+                                       @ n
+                                       $dFractional
+                                       (GHC.Num.fromInteger @ n $dNum 1)
+                                       (let {
+                                          $dFractional1 :: GHC.Real.Fractional n
+                                          = GHC.Float.$p1Floating @ n $dFloating
+                                        } in
+                                        let {
+                                          $dNum1 :: GHC.Num.Num n
+                                          = GHC.Real.$p1Fractional @ n $dFractional1
+                                        } in
+                                        case GHC.Classes.==
+                                               @ n
+                                               (GHC.Classes.$p1Ord @ n $dOrd)
+                                               (let {
+                                                  $dFractional2 :: GHC.Real.Fractional n
+                                                  = GHC.Float.$p1Floating @ n $dFloating
+                                                } in
+                                                let {
+                                                  $dNum2 :: GHC.Num.Num n
+                                                  = GHC.Real.$p1Fractional @ n $dFractional2
+                                                } in
+                                                let {
+                                                  $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                                  = \ (roe :: n)[OneShot] ->
+                                                    GHC.Num.*
+                                                      @ n
+                                                      $dNum2
+                                                      (GHC.Num.signum @ n $dNum2 roe)
+                                                      (GHC.Float.sqrt
+                                                         @ n
+                                                         $dFloating
+                                                         (GHC.Num.+
+                                                            @ n
+                                                            $dNum2
+                                                            (GHC.Num.* @ n $dNum2 a1 a1)
+                                                            (GHC.Num.* @ n $dNum2 b1 b1)))
+                                                } in
+                                                case GHC.Classes.>
+                                                       @ n
+                                                       $dOrd
+                                                       (GHC.Num.abs @ n $dNum2 a1)
+                                                       (GHC.Num.abs @ n $dNum2 b1) of wild4 {
+                                                  GHC.Types.False -> $j1 b1
+                                                  GHC.Types.True -> $j1 a1 })
+                                               (GHC.Num.fromInteger @ n $dNum1 0) of wild4 {
+                                          GHC.Types.False
+                                          -> GHC.Real./
+                                               @ n
+                                               $dFractional1
+                                               a1
+                                               (let {
+                                                  $dFractional2 :: GHC.Real.Fractional n
+                                                  = GHC.Float.$p1Floating @ n $dFloating
+                                                } in
+                                                let {
+                                                  $dNum2 :: GHC.Num.Num n
+                                                  = GHC.Real.$p1Fractional @ n $dFractional2
+                                                } in
+                                                let {
+                                                  $j1 :: n -> n <join 1> {- Arity: 1 -}
+                                                  = \ (roe :: n)[OneShot] ->
+                                                    GHC.Num.*
+                                                      @ n
+                                                      $dNum2
+                                                      (GHC.Num.signum @ n $dNum2 roe)
+                                                      (GHC.Float.sqrt
+                                                         @ n
+                                                         $dFloating
+                                                         (GHC.Num.+
+                                                            @ n
+                                                            $dNum2
+                                                            (GHC.Num.* @ n $dNum2 a1 a1)
+                                                            (GHC.Num.* @ n $dNum2 b1 b1)))
+                                                } in
+                                                case GHC.Classes.>
+                                                       @ n
+                                                       $dOrd
+                                                       (GHC.Num.abs @ n $dNum2 a1)
+                                                       (GHC.Num.abs @ n $dNum2 b1) of wild5 {
+                                                  GHC.Types.False -> $j1 b1
+                                                  GHC.Types.True -> $j1 a1 })
+                                          GHC.Types.True
+                                          -> GHC.Num.fromInteger @ n $dNum1 1 }) } } }
+                   GHC.Types.True
+                   -> let {
+                        $dFractional1 :: GHC.Real.Fractional n
+                        = GHC.Float.$p1Floating @ n $dFloating
+                      } in
+                      let {
+                        $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional1
+                      } in
+                      case GHC.Classes.==
+                             @ n
+                             (GHC.Classes.$p1Ord @ n $dOrd)
+                             (let {
+                                $dFractional2 :: GHC.Real.Fractional n
+                                = GHC.Float.$p1Floating @ n $dFloating
+                              } in
+                              let {
+                                $dNum2 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional2
+                              } in
+                              let {
+                                $j :: n -> n <join 1> {- Arity: 1 -}
+                                = \ (roe :: n)[OneShot] ->
+                                  GHC.Num.*
+                                    @ n
+                                    $dNum2
+                                    (GHC.Num.signum @ n $dNum2 roe)
+                                    (GHC.Float.sqrt
+                                       @ n
+                                       $dFloating
+                                       (GHC.Num.+
+                                          @ n
+                                          $dNum2
+                                          (GHC.Num.* @ n $dNum2 a1 a1)
+                                          (GHC.Num.* @ n $dNum2 b1 b1)))
+                              } in
+                              case GHC.Classes.>
+                                     @ n
+                                     $dOrd
+                                     (GHC.Num.abs @ n $dNum2 a1)
+                                     (GHC.Num.abs @ n $dNum2 b1) of wild1 {
+                                GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                             (GHC.Num.fromInteger @ n $dNum1 0) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Real./
+                             @ n
+                             $dFractional1
+                             b1
+                             (let {
+                                $dFractional2 :: GHC.Real.Fractional n
+                                = GHC.Float.$p1Floating @ n $dFloating
+                              } in
+                              let {
+                                $dNum2 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional2
+                              } in
+                              let {
+                                $j :: n -> n <join 1> {- Arity: 1 -}
+                                = \ (roe :: n)[OneShot] ->
+                                  GHC.Num.*
+                                    @ n
+                                    $dNum2
+                                    (GHC.Num.signum @ n $dNum2 roe)
+                                    (GHC.Float.sqrt
+                                       @ n
+                                       $dFloating
+                                       (GHC.Num.+
+                                          @ n
+                                          $dNum2
+                                          (GHC.Num.* @ n $dNum2 a1 a1)
+                                          (GHC.Num.* @ n $dNum2 b1 b1)))
+                              } in
+                              case GHC.Classes.>
+                                     @ n
+                                     $dOrd
+                                     (GHC.Num.abs @ n $dNum2 a1)
+                                     (GHC.Num.abs @ n $dNum2 b1) of wild2 {
+                                GHC.Types.False -> $j b1 GHC.Types.True -> $j a1 })
+                        GHC.Types.True -> GHC.Num.fromInteger @ n $dNum1 0 } } } }) -}
+f2f55469d06a80c9d66c62d65d4e404f
+  rotm ::
+    (GHC.Num.Num n, GHC.Classes.Eq n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> (Data.Vector.Vector n, Data.Vector.Vector n)
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),1*C1(U),A,A,C(U))><L,A><S(S(C(C(S))L)LLLLLLL),1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)><S,1*U(U,U,U)><S,1*U(U,U,U)><S(SSS),1*U(U,U,U)>m,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (6, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dEq :: GHC.Classes.Eq n)
+                   ($dOrd :: GHC.Classes.Ord n) ->
+                 let {
+                   $dEq1 :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (x :: Data.Vector.Vector n)
+                   (y :: Data.Vector.Vector n)
+                   (dparam :: Data.Vector.Vector n) ->
+                 case x of x1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case y of y1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 case dparam of dparam1 { Data.Vector.Vector ipv6 ipv7 ipv8 ->
+                 let {
+                   ds :: (n, n, n, n)
+                   = case Data.Vector.Generic.!
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            dparam1
+                            (GHC.Types.I# 4#) of h22 { DEFAULT ->
+                     case Data.Vector.Generic.!
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            dparam1
+                            (GHC.Types.I# 3#) of h21 { DEFAULT ->
+                     case Data.Vector.Generic.!
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            dparam1
+                            (GHC.Types.I# 2#) of h12 { DEFAULT ->
+                     case Data.Vector.Generic.!
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            dparam1
+                            (GHC.Types.I# 1#) of h11 { DEFAULT ->
+                     let {
+                       ds1 :: n
+                       = Data.Vector.Generic.!
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           dparam1
+                           (GHC.Types.I# 0#)
+                     } in
+                     case GHC.Classes.==
+                            @ n
+                            $dEq1
+                            ds1
+                            (GHC.Num.fromInteger @ n $dNum 0) of wild {
+                       GHC.Types.False
+                       -> case GHC.Classes.==
+                                 @ n
+                                 $dEq1
+                                 ds1
+                                 (GHC.Num.fromInteger @ n $dNum 1) of wild1 {
+                            GHC.Types.False
+                            -> case GHC.Classes.==
+                                      @ n
+                                      $dEq1
+                                      ds1
+                                      (GHC.Num.negate
+                                         @ n
+                                         $dNum
+                                         (GHC.Num.fromInteger @ n $dNum 2)) of wild2 {
+                                 GHC.Types.False -> (h11, h12, h21, h22)
+                                 GHC.Types.True
+                                 -> (GHC.Num.fromInteger @ n $dNum 1,
+                                     GHC.Num.fromInteger @ n $dNum 0,
+                                     GHC.Num.fromInteger @ n $dNum 0,
+                                     GHC.Num.fromInteger @ n $dNum 1) }
+                            GHC.Types.True
+                            -> (h11, GHC.Num.fromInteger @ n $dNum 1,
+                                GHC.Num.negate @ n $dNum (GHC.Num.fromInteger @ n $dNum 1), h22) }
+                       GHC.Types.True
+                       -> (GHC.Num.fromInteger @ n $dNum 1, h12, h21,
+                           GHC.Num.fromInteger @ n $dNum 1) } } } } }
+                 } in
+                 let {
+                   h11 :: n = case ds of wild { (,,,) h1 h12 h21 h22 -> h1 }
+                 } in
+                 let {
+                   h12 :: n = case ds of wild { (,,,) h1 h2 h21 h22 -> h2 }
+                 } in
+                 let {
+                   h21 :: n = case ds of wild { (,,,) h1 h2 h3 h22 -> h3 }
+                 } in
+                 let {
+                   h22 :: n = case ds of wild { (,,,) h1 h2 h3 h4 -> h4 }
+                 } in
+                 case ds of ds1 { (,,,) ipv9 ipv10 ipv11 ipv12 ->
+                 (Data.Vector.Generic.new
+                    @ Data.Vector.Vector
+                    @ n
+                    (Data.Vector.$fVectorVectora @ n)
+                    (Data.Vector.Generic.New.unstream
+                       @ Data.Vector.Vector
+                       @ n
+                       (Data.Vector.$fVectorVectora @ n)
+                       (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                          @ Data.Vector.Fusion.Util.Id
+                          @ n
+                          @ n
+                          @ n
+                          @ Data.Vector.Vector
+                          Data.Vector.Fusion.Util.$fMonadId
+                          (\ (a1 :: n) (b1 :: n)[OneShot] ->
+                           GHC.Num.+
+                             @ n
+                             $dNum
+                             (GHC.Num.* @ n $dNum a1 h11)
+                             (GHC.Num.* @ n $dNum b1 h12))
+                            `cast`
+                          (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                          (Data.Vector.Generic.stream
+                             @ Data.Vector.Vector
+                             @ n
+                             (Data.Vector.$fVectorVectora @ n)
+                             x1)
+                          (Data.Vector.Generic.stream
+                             @ Data.Vector.Vector
+                             @ n
+                             (Data.Vector.$fVectorVectora @ n)
+                             y1))),
+                  Data.Vector.Generic.new
+                    @ Data.Vector.Vector
+                    @ n
+                    (Data.Vector.$fVectorVectora @ n)
+                    (Data.Vector.Generic.New.unstream
+                       @ Data.Vector.Vector
+                       @ n
+                       (Data.Vector.$fVectorVectora @ n)
+                       (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                          @ Data.Vector.Fusion.Util.Id
+                          @ n
+                          @ n
+                          @ n
+                          @ Data.Vector.Vector
+                          Data.Vector.Fusion.Util.$fMonadId
+                          (\ (a1 :: n) (b1 :: n)[OneShot] ->
+                           GHC.Num.+
+                             @ n
+                             $dNum
+                             (GHC.Num.* @ n $dNum a1 h21)
+                             (GHC.Num.* @ n $dNum b1 h22))
+                            `cast`
+                          (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                          (Data.Vector.Generic.stream
+                             @ Data.Vector.Vector
+                             @ n
+                             (Data.Vector.$fVectorVectora @ n)
+                             y1)
+                          (Data.Vector.Generic.stream
+                             @ Data.Vector.Vector
+                             @ n
+                             (Data.Vector.$fVectorVectora @ n)
+                             x1)))) } } } }) -}
+efb83521cdec2e2135c98ba1b7c75e64
+  scal ::
+    GHC.Num.Num n => n -> Data.Vector.Vector n -> Data.Vector.Vector n
+  {- Arity: 3,
+     Strictness: <L,1*U(A,A,1*C1(C(U)),A,A,A,A)><S,1*U><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (alpha :: n)
+                   (x :: Data.Vector.Vector n) ->
+                 case alpha of alpha1 { DEFAULT ->
+                 case x of x1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 Data.Vector.Generic.new
+                   @ Data.Vector.Vector
+                   @ n
+                   (Data.Vector.$fVectorVectora @ n)
+                   (Data.Vector.Generic.New.unstream
+                      @ Data.Vector.Vector
+                      @ n
+                      (Data.Vector.$fVectorVectora @ n)
+                      (Data.Vector.Fusion.Bundle.inplace
+                         @ n
+                         @ n
+                         @ Data.Vector.Vector
+                         (\ @ m :: * -> * ($dMonad :: GHC.Base.Monad m)[OneShot] ->
+                          let {
+                            f :: n -> n = GHC.Num.* @ n $dNum alpha1
+                          } in
+                          Data.Vector.Fusion.Stream.Monadic.mapM
+                            @ m
+                            @ n
+                            @ n
+                            $dMonad
+                            (let {
+                               f1 :: n -> m n = GHC.Base.return @ m $dMonad @ n
+                             } in
+                             \ (x2 :: n) -> f1 (f x2)))
+                         (GHC.Base.id @ Data.Vector.Fusion.Bundle.Size.Size)
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            x1))) } }) -}
+7848061b4acda688a238ac7b636a81a3
+  swap :: (a, b) -> (b, a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a @ b (ds :: (a, b)) ->
+                 case ds of wild { (,) x y -> (y, x) }) -}
+0165a5413c8a23dac7325e661ffcc8f0
+  znrm2 ::
+    (GHC.Num.Num n, GHC.Float.Floating n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><S(S(S(LLC(C(S))LLLL)LLL)LLLLLLLLLLLLLLLLLLLLLL),U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,C(U),A,C(U)),C(C1(U)),A,A),A,A,A,1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(A,A,C(C1(U)),A,A,A,A,A)><S,1*U(U,U,U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dFloating :: GHC.Float.Floating n)
+                   ($dOrd :: GHC.Classes.Ord n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 \ (x :: Data.Vector.Vector n) ->
+                 case x of x1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 let {
+                   ds :: Data.Vector.Fusion.Util.Id (n, n)
+                   = Data.Vector.Fusion.Bundle.Monadic.foldrM
+                       @ Data.Vector.Fusion.Util.Id
+                       @ n
+                       @ (n, n)
+                       @ Data.Vector.Vector
+                       Data.Vector.Fusion.Util.$fMonadId
+                       (\ (a1 :: n) (b1 :: (n, n)) ->
+                        case b1 of wild { (,) s c ->
+                        case GHC.Classes.<
+                               @ n
+                               $dOrd
+                               c
+                               (GHC.Num.abs @ n $dNum1 a1) of wild1 {
+                          GHC.Types.False
+                          -> (GHC.Num.+
+                                @ n
+                                $dNum1
+                                s
+                                (GHC.Num.*
+                                   @ n
+                                   $dNum1
+                                   (GHC.Real./ @ n $dFractional (GHC.Num.abs @ n $dNum1 a1) c)
+                                   (GHC.Real./ @ n $dFractional (GHC.Num.abs @ n $dNum1 a1) c)),
+                              c)
+                          GHC.Types.True
+                          -> (GHC.Num.+
+                                @ n
+                                $dNum1
+                                (GHC.Num.fromInteger @ n $dNum1 1)
+                                (GHC.Num.*
+                                   @ n
+                                   $dNum1
+                                   (GHC.Num.*
+                                      @ n
+                                      $dNum1
+                                      s
+                                      (GHC.Real./ @ n $dFractional c (GHC.Num.abs @ n $dNum1 a1)))
+                                   (GHC.Real./ @ n $dFractional c (GHC.Num.abs @ n $dNum1 a1))),
+                              GHC.Num.abs @ n $dNum1 a1) } })
+                         `cast`
+                       (<n>_R
+                        ->_R <(n, n)>_R
+                        ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <(n, n)>_R))
+                       (GHC.Num.fromInteger @ n $dNum1 1,
+                        GHC.Num.fromInteger @ n $dNum1 0)
+                       (Data.Vector.Generic.stream
+                          @ Data.Vector.Vector
+                          @ n
+                          (Data.Vector.$fVectorVectora @ n)
+                          x1)
+                 } in
+                 GHC.Num.*
+                   @ n
+                   $dNum1
+                   (case ds
+                           `cast`
+                         (Data.Vector.Fusion.Util.N:Id[0]
+                              <(n, n)>_R) of wild { (,) ssq scale ->
+                    scale })
+                   (GHC.Float.sqrt
+                      @ n
+                      $dFloating
+                      (case ds
+                              `cast`
+                            (Data.Vector.Fusion.Util.N:Id[0]
+                                 <(n, n)>_R) of wild { (,) ssq scale ->
+                       ssq })) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

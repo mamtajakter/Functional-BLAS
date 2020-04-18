@@ -1,0 +1,1412 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-17 08:42:43.342095 UTC
+
+interface hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI:HBLAS.Level1 8022
+  interface hash: f99b253f4ffccd5ec4ae57a92e3eefac
+  ABI hash: d46dd99bad0e06cb8418247d1ee74354
+  export-list hash: 5228b1a19ddc33f82680d6d3f25cc0a7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 74ef984bbe6e76e62084ed05cfc06721
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HBLAS.Level1.asum
+  HBLAS.Level1.axpy
+  HBLAS.Level1.axpyaxpy
+  HBLAS.Level1.copy
+  HBLAS.Level1.dot
+  HBLAS.Level1.hrotm
+  HBLAS.Level1.idamax
+  HBLAS.Level1.idamin
+  HBLAS.Level1.nrm2
+  HBLAS.Level1.rot
+  HBLAS.Level1.rotg
+  HBLAS.Level1.rotg_c
+  HBLAS.Level1.rotg_r
+  HBLAS.Level1.rotg_roe
+  HBLAS.Level1.rotg_s
+  HBLAS.Level1.rotg_z
+  HBLAS.Level1.rotm
+  HBLAS.Level1.scal
+  HBLAS.Level1.swap
+  HBLAS.Level1.znrm2
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 primitive-0.6.3.0
+                      transformers-0.5.2.0 vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array vector-0.12.0.1:Data.Vector
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Monoid c0108b166e27f747671c7fe4ffb11019
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Float 28e3bf9e258278ac8084e9cab43fd542
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  vector-0.12.0.1:Data.Vector 05d09acb6f8f89c1df7193ef513155f3
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+b7b387fddbe70c1438817b90c6a034b7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HBLAS.Level1.$trModule3
+                   HBLAS.Level1.$trModule1) -}
+03fc2958013f67cac51b44eb33968711
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Level1.$trModule2) -}
+17bdc277fcbf9598c57f75941356c72b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HBLAS.Level1"#) -}
+56585a31524c9dd47d8062f90a9370a3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Level1.$trModule4) -}
+1580abafb0856b4e0b7a91677a148b44
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI"#) -}
+73ccb0916bff727b587a61aea072f918
+  $waxpy ::
+    GHC.Num.Num n =>
+    n
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# n
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# n
+    -> Data.Vector.Vector n
+  {- Arity: 8,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><L,U><L,U><S,U><L,U><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: n)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# n)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Array# n) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector n #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         let {
+                           $j :: GHC.Prim.Int#
+                                 -> (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector n #)
+                             <join 1> {- Arity: 1, Strictness: <S,U> -}
+                           = \ (n# :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.newArray#
+                                    @ n
+                                    @ (Control.Monad.Primitive.PrimState
+                                         (GHC.ST.ST GHC.Prim.RealWorld))
+                                    n#
+                                    (Data.Vector.Mutable.uninitialised @ n)
+                                    s1
+                                      `cast`
+                                    (Nth:2
+                                         (Nth:2
+                                              (Trans
+                                                   (<GHC.ST.STRep
+                                                       GHC.Prim.RealWorld
+                                                       (Data.Primitive.Array.MutableArray
+                                                          (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                          n)>_R
+                                                    ->_R Sym (GHC.ST.N:ST[0]
+                                                                  <GHC.Prim.RealWorld>_N
+                                                                  <Data.Primitive.Array.MutableArray
+                                                                     (Control.Monad.Primitive.PrimState
+                                                                        (GHC.ST.ST
+                                                                           GHC.Prim.RealWorld))
+                                                                     n>_R))
+                                                   (((GHC.Prim.State#
+                                                        (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                  <GHC.Prim.RealWorld>_N)))_R
+                                                     ->_R ((#,#)
+                                                             <'GHC.Types.TupleRep '[]>_R
+                                                             <'GHC.Types.LiftedRep>_R
+                                                             (GHC.Prim.State#
+                                                                (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                          <GHC.Prim.RealWorld>_N)))_R
+                                                             <Data.Primitive.Array.MutableArray
+                                                                (Control.Monad.Primitive.PrimState
+                                                                   (GHC.ST.ST GHC.Prim.RealWorld))
+                                                                n>_R)_R)
+                                                    ->_R <GHC.ST.ST
+                                                            GHC.Prim.RealWorld
+                                                            (Data.Primitive.Array.MutableArray
+                                                               (Control.Monad.Primitive.PrimState
+                                                                  (GHC.ST.ST GHC.Prim.RealWorld))
+                                                               n)>_R)))) of ds2 { (#,#) ipv ipv1 ->
+                             letrec {
+                               $s$wfoldlM'_loop :: GHC.Prim.State# GHC.Prim.RealWorld
+                                                   -> n
+                                                   -> GHC.Prim.Int#
+                                                   -> GHC.Prim.Int#
+                                                   -> GHC.Prim.Int#
+                                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                         Data.Vector.Vector n #)
+                                 <join 5> {- Arity: 5, Strictness: <S,U><L,U><S,U><L,U><L,U> -}
+                               = \ (sc :: GHC.Prim.State# GHC.Prim.RealWorld)
+                                   (sc1 :: n)
+                                   (sc2 :: GHC.Prim.Int#)
+                                   (sc3 :: GHC.Prim.Int#)
+                                   (sc4 :: GHC.Prim.Int#) ->
+                                 case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.>=# sc2 ww4) of wild {
+                                   GHC.Types.False
+                                   -> case GHC.Prim.writeArray#
+                                             @ (Control.Monad.Primitive.PrimState
+                                                  (GHC.ST.ST GHC.Prim.RealWorld))
+                                             @ n
+                                             ipv1
+                                             sc4
+                                             (case GHC.Prim.indexArray#
+                                                     @ n
+                                                     ww5
+                                                     (GHC.Prim.+# ww3 sc2) of ds3 { Unit# ipv2 ->
+                                              GHC.Num.+ @ n w ipv2 (GHC.Num.* @ n w w1 sc1) })
+                                             sc
+                                               `cast`
+                                             (Nth:2
+                                                  (Nth:2
+                                                       (Trans
+                                                            (<GHC.ST.STRep GHC.Prim.RealWorld ()>_R
+                                                             ->_R Sym (GHC.ST.N:ST[0]
+                                                                           <GHC.Prim.RealWorld>_N
+                                                                           <()>_R))
+                                                            (((GHC.Prim.State#
+                                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                           <GHC.Prim.RealWorld>_N)))_R
+                                                              ->_R ((#,#)
+                                                                      <'GHC.Types.TupleRep '[]>_R
+                                                                      <'GHC.Types.LiftedRep>_R
+                                                                      (GHC.Prim.State#
+                                                                         (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                   <GHC.Prim.RealWorld>_N)))_R
+                                                                      <()>_R)_R)
+                                                             ->_R <GHC.ST.ST
+                                                                     GHC.Prim.RealWorld
+                                                                     ()>_R)))) of s'# { DEFAULT ->
+                                      case GHC.Prim.tagToEnum#
+                                             @ GHC.Types.Bool
+                                             (GHC.Prim.>=# sc3 ww1) of wild1 {
+                                        GHC.Types.False
+                                        -> case GHC.Prim.indexArray#
+                                                  @ n
+                                                  ww2
+                                                  (GHC.Prim.+# ww sc3) of ds3 { Unit# ipv2 ->
+                                           $s$wfoldlM'_loop
+                                             s'#
+                                               `cast`
+                                             (Nth:2
+                                                  (Nth:3
+                                                       (Nth:2
+                                                            (Trans
+                                                                 (((GHC.Prim.State#
+                                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                           <GHC.Prim.RealWorld>_N))_R
+                                                                   ->_R ((#,#)
+                                                                           <'GHC.Types.TupleRep
+                                                                              '[]>_R
+                                                                           <'GHC.Types.LiftedRep>_R
+                                                                           (GHC.Prim.State#
+                                                                              (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                   <GHC.Prim.RealWorld>_N))_R
+                                                                           <()>_R)_R)
+                                                                  ->_R <GHC.ST.ST
+                                                                          GHC.Prim.RealWorld ()>_R)
+                                                                 (<GHC.ST.STRep
+                                                                     GHC.Prim.RealWorld ()>_R
+                                                                  ->_R GHC.ST.N:ST[0]
+                                                                           <GHC.Prim.RealWorld>_N
+                                                                           <()>_R)))))
+                                             ipv2
+                                             (GHC.Prim.+# sc2 1#)
+                                             (GHC.Prim.+# sc3 1#)
+                                             (GHC.Prim.+# sc4 1#) }
+                                        GHC.Types.True
+                                        -> case GHC.Prim.unsafeFreezeArray#
+                                                  @ (Control.Monad.Primitive.PrimState
+                                                       (GHC.ST.ST GHC.Prim.RealWorld))
+                                                  @ n
+                                                  ipv1
+                                                  s'# of ds1 { (#,#) ipv2 ipv3 ->
+                                           (# ipv2
+                                                `cast`
+                                              (Nth:2
+                                                   (Nth:3
+                                                        (Nth:2
+                                                             (Trans
+                                                                  (((GHC.Prim.State#
+                                                                       (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                            <GHC.Prim.RealWorld>_N))_R
+                                                                    ->_R ((#,#)
+                                                                            <'GHC.Types.TupleRep
+                                                                               '[]>_R
+                                                                            <'GHC.Types.LiftedRep>_R
+                                                                            (GHC.Prim.State#
+                                                                               (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                    <GHC.Prim.RealWorld>_N))_R
+                                                                            <Data.Primitive.Array.Array
+                                                                               n>_R)_R)
+                                                                   ->_R <GHC.ST.ST
+                                                                           GHC.Prim.RealWorld
+                                                                           (Data.Primitive.Array.Array
+                                                                              n)>_R)
+                                                                  (<GHC.ST.STRep
+                                                                      GHC.Prim.RealWorld
+                                                                      (Data.Primitive.Array.Array
+                                                                         n)>_R
+                                                                   ->_R GHC.ST.N:ST[0]
+                                                                            <GHC.Prim.RealWorld>_N
+                                                                            <Data.Primitive.Array.Array
+                                                                               n>_R))))),
+                                              Data.Vector.Vector
+                                                @ n
+                                                0#
+                                                (GHC.Prim.+# sc4 1#)
+                                                ipv3 #) } } }
+                                   GHC.Types.True
+                                   -> case GHC.Prim.unsafeFreezeArray#
+                                             @ (Control.Monad.Primitive.PrimState
+                                                  (GHC.ST.ST GHC.Prim.RealWorld))
+                                             @ n
+                                             ipv1
+                                             sc
+                                               `cast`
+                                             (Nth:2
+                                                  (Nth:2
+                                                       (Trans
+                                                            (<GHC.ST.STRep
+                                                                GHC.Prim.RealWorld
+                                                                (Data.Primitive.Array.Array n)>_R
+                                                             ->_R Sym (GHC.ST.N:ST[0]
+                                                                           <GHC.Prim.RealWorld>_N
+                                                                           <Data.Primitive.Array.Array
+                                                                              n>_R))
+                                                            (((GHC.Prim.State#
+                                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                           <GHC.Prim.RealWorld>_N)))_R
+                                                              ->_R ((#,#)
+                                                                      <'GHC.Types.TupleRep '[]>_R
+                                                                      <'GHC.Types.LiftedRep>_R
+                                                                      (GHC.Prim.State#
+                                                                         (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                   <GHC.Prim.RealWorld>_N)))_R
+                                                                      <Data.Primitive.Array.Array
+                                                                         n>_R)_R)
+                                                             ->_R <GHC.ST.ST
+                                                                     GHC.Prim.RealWorld
+                                                                     (Data.Primitive.Array.Array
+                                                                        n)>_R)))) of ds1 { (#,#) ipv2 ipv3 ->
+                                      (# ipv2
+                                           `cast`
+                                         (Nth:2
+                                              (Nth:3
+                                                   (Nth:2
+                                                        (Trans
+                                                             (((GHC.Prim.State#
+                                                                  (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                       <GHC.Prim.RealWorld>_N))_R
+                                                               ->_R ((#,#)
+                                                                       <'GHC.Types.TupleRep '[]>_R
+                                                                       <'GHC.Types.LiftedRep>_R
+                                                                       (GHC.Prim.State#
+                                                                          (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                               <GHC.Prim.RealWorld>_N))_R
+                                                                       <Data.Primitive.Array.Array
+                                                                          n>_R)_R)
+                                                              ->_R <GHC.ST.ST
+                                                                      GHC.Prim.RealWorld
+                                                                      (Data.Primitive.Array.Array
+                                                                         n)>_R)
+                                                             (<GHC.ST.STRep
+                                                                 GHC.Prim.RealWorld
+                                                                 (Data.Primitive.Array.Array n)>_R
+                                                              ->_R GHC.ST.N:ST[0]
+                                                                       <GHC.Prim.RealWorld>_N
+                                                                       <Data.Primitive.Array.Array
+                                                                          n>_R))))),
+                                         Data.Vector.Vector @ n 0# sc4 ipv3 #) } }
+                             } in
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# 0# ww1) of wild {
+                               GHC.Types.False
+                               -> case GHC.Prim.indexArray# @ n ww2 ww of ds3 { Unit# ipv2 ->
+                                  $s$wfoldlM'_loop
+                                    ipv
+                                      `cast`
+                                    (Nth:2
+                                         (Nth:3
+                                              (Nth:2
+                                                   (Trans
+                                                        (((GHC.Prim.State#
+                                                             (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                  <GHC.Prim.RealWorld>_N))_R
+                                                          ->_R ((#,#)
+                                                                  <'GHC.Types.TupleRep '[]>_R
+                                                                  <'GHC.Types.LiftedRep>_R
+                                                                  (GHC.Prim.State#
+                                                                     (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                          <GHC.Prim.RealWorld>_N))_R
+                                                                  <Data.Primitive.Array.MutableArray
+                                                                     (Control.Monad.Primitive.PrimState
+                                                                        (GHC.ST.ST
+                                                                           GHC.Prim.RealWorld))
+                                                                     n>_R)_R)
+                                                         ->_R <GHC.ST.ST
+                                                                 GHC.Prim.RealWorld
+                                                                 (Data.Primitive.Array.MutableArray
+                                                                    (Control.Monad.Primitive.PrimState
+                                                                       (GHC.ST.ST
+                                                                          GHC.Prim.RealWorld))
+                                                                    n)>_R)
+                                                        (<GHC.ST.STRep
+                                                            GHC.Prim.RealWorld
+                                                            (Data.Primitive.Array.MutableArray
+                                                               (Control.Monad.Primitive.PrimState
+                                                                  (GHC.ST.ST GHC.Prim.RealWorld))
+                                                               n)>_R
+                                                         ->_R GHC.ST.N:ST[0]
+                                                                  <GHC.Prim.RealWorld>_N
+                                                                  <Data.Primitive.Array.MutableArray
+                                                                     (Control.Monad.Primitive.PrimState
+                                                                        (GHC.ST.ST
+                                                                           GHC.Prim.RealWorld))
+                                                                     n>_R)))))
+                                    ipv2
+                                    0#
+                                    1#
+                                    0# }
+                               GHC.Types.True
+                               -> case GHC.Prim.unsafeFreezeArray#
+                                         @ (Control.Monad.Primitive.PrimState
+                                              (GHC.ST.ST GHC.Prim.RealWorld))
+                                         @ n
+                                         ipv1
+                                         ipv of ds1 { (#,#) ipv2 ipv3 ->
+                                  (# ipv2
+                                       `cast`
+                                     (Nth:2
+                                          (Nth:3
+                                               (Nth:2
+                                                    (Trans
+                                                         (((GHC.Prim.State#
+                                                              (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                   <GHC.Prim.RealWorld>_N))_R
+                                                           ->_R ((#,#)
+                                                                   <'GHC.Types.TupleRep '[]>_R
+                                                                   <'GHC.Types.LiftedRep>_R
+                                                                   (GHC.Prim.State#
+                                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                           <GHC.Prim.RealWorld>_N))_R
+                                                                   <Data.Primitive.Array.Array
+                                                                      n>_R)_R)
+                                                          ->_R <GHC.ST.ST
+                                                                  GHC.Prim.RealWorld
+                                                                  (Data.Primitive.Array.Array n)>_R)
+                                                         (<GHC.ST.STRep
+                                                             GHC.Prim.RealWorld
+                                                             (Data.Primitive.Array.Array n)>_R
+                                                          ->_R GHC.ST.N:ST[0]
+                                                                   <GHC.Prim.RealWorld>_N
+                                                                   <Data.Primitive.Array.Array
+                                                                      n>_R))))),
+                                     Data.Vector.Vector @ n 0# 0# ipv3 #) } } }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.<=# ww1 ww4) of wild2 {
+                           GHC.Types.False -> $j ww4
+                           GHC.Types.True -> $j ww1 }) of ds1 { (#,#) ipv1 ipv2 ->
+                 ipv2 }) -}
+c3727fa976bff43c1f317b4033b9308f
+  $wdot ::
+    GHC.Num.Num n =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# n
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# n
+    -> n
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U))><L,U><S,U><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# n)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Array# n) ->
+                 letrec {
+                   $s$wfoldlM'_loop :: GHC.Prim.Int# -> GHC.Prim.Int# -> n -> n
+                     <join 3> {- Arity: 3, Strictness: <L,U><S,U><S,1*U> -}
+                   = \ (sc :: GHC.Prim.Int#) (sc1 :: GHC.Prim.Int#) (sc2 :: n) ->
+                     case sc2 of z2 { DEFAULT ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.>=# sc1 ww1) of wild {
+                       GHC.Types.False
+                       -> case GHC.Prim.indexArray#
+                                 @ n
+                                 ww2
+                                 (GHC.Prim.+# ww sc1) of ds3 { Unit# ipv ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.>=# sc ww4) of wild1 {
+                            GHC.Types.False
+                            -> $s$wfoldlM'_loop
+                                 (GHC.Prim.+# sc 1#)
+                                 (GHC.Prim.+# sc1 1#)
+                                 (GHC.Num.+
+                                    @ n
+                                    w
+                                    z2
+                                    (case GHC.Prim.indexArray#
+                                            @ n
+                                            ww5
+                                            (GHC.Prim.+# ww3 sc) of ds1 { Unit# ipv1 ->
+                                     GHC.Num.* @ n w ipv ipv1 }))
+                            GHC.Types.True -> z2 } }
+                       GHC.Types.True -> z2 } }
+                 } in
+                 $s$wfoldlM'_loop
+                   0#
+                   0#
+                   (GHC.Num.fromInteger @ n w HBLAS.Level1.asum1)) -}
+65b33f7333772e43990911673b37ea50
+  $whrotm ::
+    (GHC.Classes.Eq n, GHC.Num.Num n) =>
+    Data.Vector.Vector n -> (# n, n, n, n #)
+  {- Arity: 3,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><L,U(A,A,A,1*C1(U),A,A,C(U))><L,U(U,U,U)>,
+     Inline: [0] -}
+2b018d2a390a818660e34b796471081a
+  $widamax ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# n
+    -> Data.Vector.Fusion.Util.Id (GHC.Base.Maybe GHC.Types.Int)
+  {- Arity: 5,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(1*U(1*C1(C(U)),A),A,A,A,A,A,C(C1(U)),A)><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Classes.Ord n)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# n) ->
+                 let {
+                   f :: n -> GHC.Types.Bool
+                   = GHC.Classes.==
+                       @ n
+                       (GHC.Classes.$p1Ord @ n w1)
+                       (case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.>=# 0# ww1) of wild {
+                          GHC.Types.False
+                          -> letrec {
+                               $s$wfoldlM'_loop :: GHC.Prim.Int# -> n -> n
+                                 <join 2> {- Arity: 2, Strictness: <S,U><S,1*U> -}
+                               = \ (sc :: GHC.Prim.Int#) (sc1 :: n) ->
+                                 case sc1 of z1 { DEFAULT ->
+                                 case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.>=# sc ww1) of wild1 {
+                                   GHC.Types.False
+                                   -> $s$wfoldlM'_loop
+                                        (GHC.Prim.+# sc 1#)
+                                        (GHC.Classes.max
+                                           @ n
+                                           w1
+                                           z1
+                                           (case GHC.Prim.indexArray#
+                                                   @ n
+                                                   ww2
+                                                   (GHC.Prim.+# ww sc) of ds3 { Unit# ipv ->
+                                            GHC.Num.abs @ n w ipv }))
+                                   GHC.Types.True -> z1 } }
+                             } in
+                             case GHC.Prim.indexArray# @ n ww2 ww of ds3 { Unit# ipv ->
+                             $s$wfoldlM'_loop 1# (GHC.Num.abs @ n w ipv) }
+                          GHC.Types.True
+                          -> (HBLAS.Level1.idamax2 @ n)
+                               `cast`
+                             (Data.Vector.Fusion.Util.N:Id[0] <n>_R) })
+                 } in
+                 letrec {
+                   $s$wfindIndex_loop :: GHC.Prim.Int#
+                                         -> GHC.Prim.Int#
+                                         -> Data.Vector.Fusion.Util.Id
+                                              (GHC.Base.Maybe GHC.Types.Int)
+                     <join 2> {- Arity: 2, Strictness: <L,U><S,U> -}
+                   = \ (sc :: GHC.Prim.Int#) (sc1 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.>=# sc1 ww1) of wild {
+                       GHC.Types.False
+                       -> case f (case GHC.Prim.indexArray#
+                                         @ n
+                                         ww2
+                                         (GHC.Prim.+# ww sc1) of ds3 { Unit# ipv ->
+                                  GHC.Num.abs @ n w ipv }) of wild3 {
+                            GHC.Types.False
+                            -> $s$wfindIndex_loop (GHC.Prim.+# sc 1#) (GHC.Prim.+# sc1 1#)
+                            GHC.Types.True
+                            -> (GHC.Base.Just @ GHC.Types.Int (GHC.Types.I# sc))
+                                 `cast`
+                               (Sym (Data.Vector.Fusion.Util.N:Id[0]
+                                         <GHC.Base.Maybe GHC.Types.Int>_R)) }
+                       GHC.Types.True
+                       -> (GHC.Base.Nothing @ GHC.Types.Int)
+                            `cast`
+                          (Sym (Data.Vector.Fusion.Util.N:Id[0]
+                                    <GHC.Base.Maybe GHC.Types.Int>_R)) }
+                 } in
+                 $s$wfindIndex_loop 0# 0#) -}
+b7b8d38627f80d26e10190d560ff4e54
+  $widamin ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# n
+    -> Data.Vector.Fusion.Util.Id (GHC.Base.Maybe GHC.Types.Int)
+  {- Arity: 5,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(1*U(1*C1(C(U)),A),A,A,A,A,A,A,C(C1(U)))><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Classes.Ord n)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# n) ->
+                 let {
+                   f :: n -> GHC.Types.Bool
+                   = GHC.Classes.==
+                       @ n
+                       (GHC.Classes.$p1Ord @ n w1)
+                       (case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.>=# 0# ww1) of wild {
+                          GHC.Types.False
+                          -> letrec {
+                               $s$wfoldlM'_loop :: GHC.Prim.Int# -> n -> n
+                                 <join 2> {- Arity: 2, Strictness: <S,U><S,1*U> -}
+                               = \ (sc :: GHC.Prim.Int#) (sc1 :: n) ->
+                                 case sc1 of z1 { DEFAULT ->
+                                 case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.>=# sc ww1) of wild1 {
+                                   GHC.Types.False
+                                   -> $s$wfoldlM'_loop
+                                        (GHC.Prim.+# sc 1#)
+                                        (GHC.Classes.min
+                                           @ n
+                                           w1
+                                           z1
+                                           (case GHC.Prim.indexArray#
+                                                   @ n
+                                                   ww2
+                                                   (GHC.Prim.+# ww sc) of ds3 { Unit# ipv ->
+                                            GHC.Num.abs @ n w ipv }))
+                                   GHC.Types.True -> z1 } }
+                             } in
+                             case GHC.Prim.indexArray# @ n ww2 ww of ds3 { Unit# ipv ->
+                             $s$wfoldlM'_loop 1# (GHC.Num.abs @ n w ipv) }
+                          GHC.Types.True
+                          -> (HBLAS.Level1.idamax2 @ n)
+                               `cast`
+                             (Data.Vector.Fusion.Util.N:Id[0] <n>_R) })
+                 } in
+                 letrec {
+                   $s$wfindIndex_loop :: GHC.Prim.Int#
+                                         -> GHC.Prim.Int#
+                                         -> Data.Vector.Fusion.Util.Id
+                                              (GHC.Base.Maybe GHC.Types.Int)
+                     <join 2> {- Arity: 2, Strictness: <L,U><S,U> -}
+                   = \ (sc :: GHC.Prim.Int#) (sc1 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.>=# sc1 ww1) of wild {
+                       GHC.Types.False
+                       -> case f (case GHC.Prim.indexArray#
+                                         @ n
+                                         ww2
+                                         (GHC.Prim.+# ww sc1) of ds3 { Unit# ipv ->
+                                  GHC.Num.abs @ n w ipv }) of wild3 {
+                            GHC.Types.False
+                            -> $s$wfindIndex_loop (GHC.Prim.+# sc 1#) (GHC.Prim.+# sc1 1#)
+                            GHC.Types.True
+                            -> (GHC.Base.Just @ GHC.Types.Int (GHC.Types.I# sc))
+                                 `cast`
+                               (Sym (Data.Vector.Fusion.Util.N:Id[0]
+                                         <GHC.Base.Maybe GHC.Types.Int>_R)) }
+                       GHC.Types.True
+                       -> (GHC.Base.Nothing @ GHC.Types.Int)
+                            `cast`
+                          (Sym (Data.Vector.Fusion.Util.N:Id[0]
+                                    <GHC.Base.Maybe GHC.Types.Int>_R)) }
+                 } in
+                 $s$wfindIndex_loop 0# 0#) -}
+2827063709acc90038250d85cbba3d2f
+  $wnrm2 :: GHC.Float.Floating n => Data.Vector.Vector n -> n
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U)),A,A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Inline: [0],
+     Unfolding: (\ @ n (w :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n = GHC.Float.$p1Floating @ n w
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 let {
+                   z :: n = GHC.Num.fromInteger @ n $dNum HBLAS.Level1.asum1
+                 } in
+                 \ (x :: Data.Vector.Vector n) ->
+                 GHC.Float.sqrt
+                   @ n
+                   w
+                   (case x of v2 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                    letrec {
+                      $s$wfoldlM'_loop :: GHC.Prim.Int# -> n -> n
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,1*U> -}
+                      = \ (sc :: GHC.Prim.Int#) (sc1 :: n) ->
+                        case sc1 of z2 { DEFAULT ->
+                        case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.>=# sc ipv1) of wild {
+                          GHC.Types.False
+                          -> $s$wfoldlM'_loop
+                               (GHC.Prim.+# sc 1#)
+                               (GHC.Num.+
+                                  @ n
+                                  $dNum
+                                  z2
+                                  (case GHC.Prim.indexArray#
+                                          @ n
+                                          ipv2
+                                          (GHC.Prim.+# ipv sc) of ds3 { Unit# ipv3 ->
+                                   GHC.Num.* @ n $dNum ipv3 ipv3 }))
+                          GHC.Types.True -> z2 } }
+                    } in
+                    $s$wfoldlM'_loop 0# z })) -}
+a03ae683272c4f9c708f953a8743fb17
+  $wrot ::
+    (GHC.Float.Floating n, GHC.Classes.Eq n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> n
+    -> (# Data.Vector.Vector n, Data.Vector.Vector n #)
+  {- Arity: 5,
+     Strictness: <L,U(1*U(1*U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),A,A,A),A,A,A,1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(U,U,U)><L,U(U,U,U)><L,U>,
+     Inline: [0] -}
+2351abdbac53f5c46730f486cb695414
+  $wrotg ::
+    (GHC.Float.Floating n, GHC.Classes.Ord n) =>
+    n -> n -> (# n, n, n, n #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),C(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(U(C(C1(U)),C(C1(U))),A,A,A,C(C1(U)),C(C1(U)),A,A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n
+                   (w :: GHC.Float.Floating n)
+                   (w1 :: GHC.Classes.Ord n)
+                   (w2 :: n)
+                   (w3 :: n) ->
+                 (# HBLAS.Level1.$wrotg_r @ n w1 w w2 w3,
+                    HBLAS.Level1.rotg_z @ n w1 w w2 w3,
+                    HBLAS.Level1.rotg_c @ n w1 w w2 w3,
+                    HBLAS.Level1.rotg_s @ n w1 w w2 w3 #)) -}
+78e23ebd9cccdf2e49e826bc9b952c9d
+  $wrotg_r ::
+    (GHC.Classes.Ord n, GHC.Float.Floating n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,1*C1(C1(U)),A,A,A)><S(S(S(LLC(C(S))LLLL)LLL)LLLLLLLLLLLLLLLLLLLLLL),U(1*U(1*U(1*C1(C1(U)),A,C(C1(U)),A,C(U),1*C1(U),A),A,A,A),A,A,A,1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n
+                   (w :: GHC.Classes.Ord n)
+                   (w1 :: GHC.Float.Floating n)
+                   (w2 :: n)
+                   (w3 :: n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n w1
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 GHC.Num.*
+                   @ n
+                   $dNum
+                   (GHC.Num.signum
+                      @ n
+                      $dNum
+                      (HBLAS.Level1.rotg_roe @ n $dNum w w2 w3))
+                   (GHC.Float.sqrt
+                      @ n
+                      w1
+                      (GHC.Num.+
+                         @ n
+                         $dNum
+                         (GHC.Num.* @ n $dNum w2 w2)
+                         (GHC.Num.* @ n $dNum w3 w3)))) -}
+13a1e5b590748d9a69d7d8d014286b05
+  $wrotm ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> (# Data.Vector.Vector n, Data.Vector.Vector n #)
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),C(U),A,A,C(U))><L,1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)><L,U(U,U,U)><L,U(U,U,U)><L,U(U,U,U)>,
+     Inline: [0] -}
+7dab69066f1c619b124c2942137e6b2b
+  $wznrm2 ::
+    (GHC.Float.Floating n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n -> n
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(S(LLC(C(S))LLLL)LLL)LLLLLLLLLLLLLLLLLLLLLL),U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,C(U),A,C(U)),C(C1(U)),A,A),A,A,A,1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(A,A,C(C1(U)),A,A,A,A,A)><L,1*U(U,U,U)>,
+     Inline: [0] -}
+b6e1b0f04f8bb2b2cf2c12ec5c5bb9c4
+  asum :: GHC.Num.Num n => Data.Vector.Vector n -> n
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A,A,C(U),A,1*C1(U))>,
+     Unfolding: (\ @ n ($dNum :: GHC.Num.Num n) ->
+                 let {
+                   z :: n = GHC.Num.fromInteger @ n $dNum HBLAS.Level1.asum1
+                 } in
+                 (\ (x :: Data.Vector.Vector n) ->
+                  case x of v2 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                  letrec {
+                    $s$wfoldrM_loop :: GHC.Prim.Int# -> Data.Vector.Fusion.Util.Id n
+                      {- Arity: 1, Strictness: <S,U> -}
+                    = \ (sc :: GHC.Prim.Int#) ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# sc ipv1) of wild {
+                        GHC.Types.False
+                        -> (GHC.Num.+
+                              @ n
+                              $dNum
+                              (case GHC.Prim.indexArray#
+                                      @ n
+                                      ipv2
+                                      (GHC.Prim.+# ipv sc) of ds3 { Unit# ipv3 ->
+                               GHC.Num.abs @ n $dNum ipv3 })
+                              ($s$wfoldrM_loop (GHC.Prim.+# sc 1#))
+                                `cast`
+                              (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                             `cast`
+                           (Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                        GHC.Types.True
+                        -> z `cast` (Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R)) }
+                  } in
+                  $s$wfoldrM_loop 0# })
+                   `cast`
+                 (<Data.Vector.Vector n>_R
+                  ->_R Data.Vector.Fusion.Util.N:Id[0] <n>_R)) -}
+ddffd1be47f7bd20704a4c1cd9c85c02
+  asum1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+1c00ea2196b8eaa015a72236bd4dc6e6
+  axpy ::
+    GHC.Num.Num n =>
+    n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><L,U><S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: n)
+                   (w2 :: Data.Vector.Vector n)
+                   (w3 :: Data.Vector.Vector n) ->
+                 case w2 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 case w3 of ww4 { Data.Vector.Vector ww5 ww6 ww7 ->
+                 HBLAS.Level1.$waxpy @ n w w1 ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+ba3fc7317333019a6f8cd4c66707d3b4
+  axpyaxpy ::
+    GHC.Num.Num n =>
+    n
+    -> n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><L,U><L,U><S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (a1 :: n)
+                   (a2 :: n)
+                   (x :: Data.Vector.Vector n)
+                   (y :: Data.Vector.Vector n) ->
+                 HBLAS.Level1.axpy
+                   @ n
+                   $dNum
+                   a2
+                   (HBLAS.Level1.axpy @ n $dNum a1 x y)
+                   x) -}
+6f7dbf2301d8f567baee585cf31f38df
+  copy ::
+    (GHC.Classes.Eq n, GHC.Num.Num n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n -> Data.Vector.Vector n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,A><S,1*U(U,U,U)><L,A>m,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ n
+                   ($dEq :: GHC.Classes.Eq n)
+                   ($dNum :: GHC.Num.Num n)
+                   (xs :: Data.Vector.Vector n)
+                   (ds :: Data.Vector.Vector n) ->
+                 xs) -}
+b84f7c263f18168ecf0f85f000f429cf
+  dot ::
+    GHC.Num.Num n => Data.Vector.Vector n -> Data.Vector.Vector n -> n
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))><S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: Data.Vector.Vector n)
+                   (w2 :: Data.Vector.Vector n) ->
+                 case w1 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 case w2 of ww4 { Data.Vector.Vector ww5 ww6 ww7 ->
+                 HBLAS.Level1.$wdot @ n w ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+8697cb8d8cffba7be7c3ecbfa5d85114
+  hrotm ::
+    (GHC.Classes.Eq n, GHC.Num.Num n) =>
+    Data.Vector.Vector n -> (n, n, n, n)
+  {- Arity: 3,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><L,U(A,A,A,C(U),A,A,C(U))><L,U(U,U,U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Classes.Eq n)
+                   (w1 :: GHC.Num.Num n)
+                   (w2 :: Data.Vector.Vector n) ->
+                 case HBLAS.Level1.$whrotm
+                        @ n
+                        w
+                        w1
+                        w2 of ww { (#,,,#) ww1 ww2 ww3 ww4 ->
+                 (ww1, ww2, ww3, ww4) }) -}
+5c60ee271910f41291a63d6c0c3ce924
+  idamax ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(U(C(C(U)),A),A,A,A,A,A,C(C1(U)),A)><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                HBLAS.Level1.idamax1
+                  `cast`
+                (forall (n :: <*>_N).
+                 <GHC.Num.Num n>_R
+                 ->_R <GHC.Classes.Ord n>_R
+                 ->_R <Data.Vector.Vector n>_R
+                 ->_R Data.Vector.Fusion.Util.N:Id[0]
+                          <GHC.Base.Maybe GHC.Types.Int>_R) -}
+e9bc7872b63ec814236be9f9fc1d0831
+  idamax1 ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Fusion.Util.Id (GHC.Base.Maybe GHC.Types.Int)
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(U(C(C(U)),A),A,A,A,A,A,C(C1(U)),A)><S(SSS),1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Classes.Ord n)
+                   (w2 :: Data.Vector.Vector n) ->
+                 case w2 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 HBLAS.Level1.$widamax @ n w w1 ww1 ww2 ww3 }) -}
+17caa65b81a5112f158f58e2fb22b5ff
+  idamax2 :: Data.Vector.Fusion.Util.Id a
+  {- Strictness: x -}
+309bd68eaa4dc8b9c6f3f42113d58f83
+  idamin ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(U(C(C(U)),A),A,A,A,A,A,A,C(C1(U)))><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                HBLAS.Level1.idamin1
+                  `cast`
+                (forall (n :: <*>_N).
+                 <GHC.Num.Num n>_R
+                 ->_R <GHC.Classes.Ord n>_R
+                 ->_R <Data.Vector.Vector n>_R
+                 ->_R Data.Vector.Fusion.Util.N:Id[0]
+                          <GHC.Base.Maybe GHC.Types.Int>_R) -}
+d393beac6a07a5abe99ec65cd852d2d5
+  idamin1 ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Fusion.Util.Id (GHC.Base.Maybe GHC.Types.Int)
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(U(C(C(U)),A),A,A,A,A,A,A,C(C1(U)))><S(SSS),1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Classes.Ord n)
+                   (w2 :: Data.Vector.Vector n) ->
+                 case w2 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 HBLAS.Level1.$widamin @ n w w1 ww1 ww2 ww3 }) -}
+9c6b444c4ffc32ab7a36302ba14b36b7
+  nrm2 ::
+    (GHC.Num.Num n, GHC.Float.Floating n) => Data.Vector.Vector n -> n
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,A><L,U(U(U(C(C1(U)),A,C(C1(U)),A,A,A,C(U)),A,A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ n (w :: GHC.Num.Num n) (w1 :: GHC.Float.Floating n) ->
+                 HBLAS.Level1.$wnrm2 @ n w1) -}
+fb96141abb4320962d3bc68827b60134
+  rot ::
+    (GHC.Float.Floating n, GHC.Classes.Eq n, GHC.Num.Num n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> n
+    -> (Data.Vector.Vector n, Data.Vector.Vector n)
+  {- Arity: 6,
+     Strictness: <L,U(U(U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),A,A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,A><L,U(U,U,U)><L,U(U,U,U)><L,U>m,
+     Inline: [0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ n
+                   (w :: GHC.Float.Floating n)
+                   (w1 :: GHC.Classes.Eq n)
+                   (w2 :: GHC.Num.Num n)
+                   (w3 :: Data.Vector.Vector n)
+                   (w4 :: Data.Vector.Vector n)
+                   (w5 :: n) ->
+                 case HBLAS.Level1.$wrot @ n w w1 w3 w4 w5 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+45e8b98bb73ae145354a60d368bd300f
+  rotg ::
+    (GHC.Float.Floating n, GHC.Classes.Ord n) => n -> n -> (n, n, n, n)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),C(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(U(C(C1(U)),C(C1(U))),A,A,A,C(C1(U)),C(C1(U)),A,A)><L,U><L,U>m,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ n
+                   (w :: GHC.Float.Floating n)
+                   (w1 :: GHC.Classes.Ord n)
+                   (w2 :: n)
+                   (w3 :: n) ->
+                 case HBLAS.Level1.$wrotg
+                        @ n
+                        w
+                        w1
+                        w2
+                        w3 of ww { (#,,,#) ww1 ww2 ww3 ww4 ->
+                 (ww1, ww2, ww3, ww4) }) -}
+643032585b3c17ed2ada3051690ee04c
+  rotg_c :: (GHC.Classes.Ord n, GHC.Float.Floating n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(1*U(1*C1(C1(U)),A),A,A,A,C(C1(U)),A,A,A)><L,U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),1*C1(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: (\ @ n
+                   ($dOrd :: GHC.Classes.Ord n)
+                   ($dFloating :: GHC.Float.Floating n)
+                   (eta :: n)
+                   (eta1 :: n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 case GHC.Classes.==
+                        @ n
+                        (GHC.Classes.$p1Ord @ n $dOrd)
+                        (HBLAS.Level1.$wrotg_r @ n $dOrd $dFloating eta eta1)
+                        (GHC.Num.fromInteger @ n $dNum HBLAS.Level1.asum1) of wild {
+                   GHC.Types.False
+                   -> GHC.Real./
+                        @ n
+                        $dFractional
+                        eta
+                        (HBLAS.Level1.$wrotg_r @ n $dOrd $dFloating eta eta1)
+                   GHC.Types.True
+                   -> GHC.Num.fromInteger @ n $dNum HBLAS.Level1.rotg_c1 }) -}
+93f17effef4c42ea3459f1301a06ed10
+  rotg_c1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+4efe6ec68d13c4552e5f0166c9663c42
+  rotg_r ::
+    (GHC.Num.Num n, GHC.Classes.Ord n, GHC.Float.Floating n) =>
+    n -> n -> n
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(A,A,A,A,1*C1(C1(U)),A,A,A)><S(S(S(LLC(C(S))LLLL)LLL)LLLLLLLLLLLLLLLLLLLLLL),U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),A),A,A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, True)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Classes.Ord n)
+                   (w2 :: GHC.Float.Floating n)
+                   (w3 :: n)
+                   (w4 :: n) ->
+                 HBLAS.Level1.$wrotg_r @ n w1 w2 w3 w4) -}
+b95675b661991b81663e909f0067a4e0
+  rotg_roe :: (GHC.Num.Num n, GHC.Classes.Ord n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><S(LLLLC(C(S))LLL),1*U(A,A,A,A,1*C1(C1(U)),A,A,A)><L,U><L,U>,
+     Unfolding: (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dOrd :: GHC.Classes.Ord n)
+                   (a :: n)
+                   (b :: n) ->
+                 case GHC.Classes.>
+                        @ n
+                        $dOrd
+                        (GHC.Num.abs @ n $dNum a)
+                        (GHC.Num.abs @ n $dNum b) of wild {
+                   GHC.Types.False -> b GHC.Types.True -> a }) -}
+c23b23b1fa37c7558ced7e5ae396c742
+  rotg_s :: (GHC.Classes.Ord n, GHC.Float.Floating n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLLLL),U(1*U(1*C1(C1(U)),A),A,A,A,C(C1(U)),A,A,A)><L,U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),1*C1(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: (\ @ n
+                   ($dOrd :: GHC.Classes.Ord n)
+                   ($dFloating :: GHC.Float.Floating n)
+                   (eta :: n)
+                   (eta1 :: n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 case GHC.Classes.==
+                        @ n
+                        (GHC.Classes.$p1Ord @ n $dOrd)
+                        (HBLAS.Level1.$wrotg_r @ n $dOrd $dFloating eta eta1)
+                        (GHC.Num.fromInteger @ n $dNum HBLAS.Level1.asum1) of wild {
+                   GHC.Types.False
+                   -> GHC.Real./
+                        @ n
+                        $dFractional
+                        eta1
+                        (HBLAS.Level1.$wrotg_r @ n $dOrd $dFloating eta eta1)
+                   GHC.Types.True
+                   -> GHC.Num.fromInteger @ n $dNum HBLAS.Level1.asum1 }) -}
+c9511bbf9f87e77d0c653b7ceb1f9384
+  rotg_z :: (GHC.Classes.Ord n, GHC.Float.Floating n) => n -> n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(SLLLC(C(S))LLL),U(U(C(C1(U)),C(C1(U))),A,A,A,C(C1(U)),C(C1(U)),A,A)><L,U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),C(U),C(U)),C(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U><L,U> -}
+0e9c1b82743d393a55c3650f700ebb20
+  rotm ::
+    (GHC.Num.Num n, GHC.Classes.Eq n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> (Data.Vector.Vector n, Data.Vector.Vector n)
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),C(U),A,A,C(U))><L,A><L,1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)><L,U(U,U,U)><L,U(U,U,U)><L,U(U,U,U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Classes.Eq n)
+                   (w2 :: GHC.Classes.Ord n)
+                   (w3 :: Data.Vector.Vector n)
+                   (w4 :: Data.Vector.Vector n)
+                   (w5 :: Data.Vector.Vector n) ->
+                 case HBLAS.Level1.$wrotm @ n w w2 w3 w4 w5 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+12452081a94aa3dff7f25ee84df0eff2
+  scal ::
+    GHC.Num.Num n => n -> Data.Vector.Vector n -> Data.Vector.Vector n
+  {- Arity: 2, Strictness: <L,1*U(A,A,1*C1(C(U)),A,A,A,A)><L,U>,
+     Unfolding: (\ @ n ($dNum :: GHC.Num.Num n) (alpha :: n) ->
+                 let {
+                   f :: n -> n = GHC.Num.* @ n $dNum alpha
+                 } in
+                 \ (x :: Data.Vector.Vector n) ->
+                 case x of v2 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector n #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newArray#
+                                @ n
+                                @ (Control.Monad.Primitive.PrimState
+                                     (GHC.ST.ST GHC.Prim.RealWorld))
+                                ipv1
+                                (Data.Vector.Mutable.uninitialised @ n)
+                                s1
+                                  `cast`
+                                (Nth:2
+                                     (Nth:2
+                                          (Trans
+                                               (<GHC.ST.STRep
+                                                   GHC.Prim.RealWorld
+                                                   (Data.Primitive.Array.MutableArray
+                                                      (Control.Monad.Primitive.PrimState
+                                                         (GHC.ST.ST GHC.Prim.RealWorld))
+                                                      n)>_R
+                                                ->_R Sym (GHC.ST.N:ST[0]
+                                                              <GHC.Prim.RealWorld>_N
+                                                              <Data.Primitive.Array.MutableArray
+                                                                 (Control.Monad.Primitive.PrimState
+                                                                    (GHC.ST.ST GHC.Prim.RealWorld))
+                                                                 n>_R))
+                                               (((GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R
+                                                 ->_R ((#,#)
+                                                         <'GHC.Types.TupleRep '[]>_R
+                                                         <'GHC.Types.LiftedRep>_R
+                                                         (GHC.Prim.State#
+                                                            (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                      <GHC.Prim.RealWorld>_N)))_R
+                                                         <Data.Primitive.Array.MutableArray
+                                                            (Control.Monad.Primitive.PrimState
+                                                               (GHC.ST.ST GHC.Prim.RealWorld))
+                                                            n>_R)_R)
+                                                ->_R <GHC.ST.ST
+                                                        GHC.Prim.RealWorld
+                                                        (Data.Primitive.Array.MutableArray
+                                                           (Control.Monad.Primitive.PrimState
+                                                              (GHC.ST.ST GHC.Prim.RealWorld))
+                                                           n)>_R)))) of ds2 { (#,#) ipv3 ipv4 ->
+                         letrec {
+                           $s$wfoldlM'_loop :: GHC.Prim.State# GHC.Prim.RealWorld
+                                               -> GHC.Prim.Int#
+                                               -> GHC.Prim.Int#
+                                               -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                     Data.Vector.Vector n #)
+                             <join 3> {- Arity: 3, Strictness: <S,U><S,U><L,U> -}
+                           = \ (sc :: GHC.Prim.State# GHC.Prim.RealWorld)
+                               (sc1 :: GHC.Prim.Int#)
+                               (sc2 :: GHC.Prim.Int#) ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# sc1 ipv1) of wild {
+                               GHC.Types.False
+                               -> case GHC.Prim.writeArray#
+                                         @ (Control.Monad.Primitive.PrimState
+                                              (GHC.ST.ST GHC.Prim.RealWorld))
+                                         @ n
+                                         ipv4
+                                         sc2
+                                         (case GHC.Prim.indexArray#
+                                                 @ n
+                                                 ipv2
+                                                 (GHC.Prim.+# ipv sc1) of ds3 { Unit# ipv5 ->
+                                          f ipv5 })
+                                         sc
+                                           `cast`
+                                         (Nth:2
+                                              (Nth:2
+                                                   (Trans
+                                                        (<GHC.ST.STRep GHC.Prim.RealWorld ()>_R
+                                                         ->_R Sym (GHC.ST.N:ST[0]
+                                                                       <GHC.Prim.RealWorld>_N
+                                                                       <()>_R))
+                                                        (((GHC.Prim.State#
+                                                             (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                       <GHC.Prim.RealWorld>_N)))_R
+                                                          ->_R ((#,#)
+                                                                  <'GHC.Types.TupleRep '[]>_R
+                                                                  <'GHC.Types.LiftedRep>_R
+                                                                  (GHC.Prim.State#
+                                                                     (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                               <GHC.Prim.RealWorld>_N)))_R
+                                                                  <()>_R)_R)
+                                                         ->_R <GHC.ST.ST
+                                                                 GHC.Prim.RealWorld
+                                                                 ()>_R)))) of s'# { DEFAULT ->
+                                  $s$wfoldlM'_loop
+                                    s'#
+                                      `cast`
+                                    (Nth:2
+                                         (Nth:3
+                                              (Nth:2
+                                                   (Trans
+                                                        (((GHC.Prim.State#
+                                                             (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                  <GHC.Prim.RealWorld>_N))_R
+                                                          ->_R ((#,#)
+                                                                  <'GHC.Types.TupleRep '[]>_R
+                                                                  <'GHC.Types.LiftedRep>_R
+                                                                  (GHC.Prim.State#
+                                                                     (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                          <GHC.Prim.RealWorld>_N))_R
+                                                                  <()>_R)_R)
+                                                         ->_R <GHC.ST.ST GHC.Prim.RealWorld ()>_R)
+                                                        (<GHC.ST.STRep GHC.Prim.RealWorld ()>_R
+                                                         ->_R GHC.ST.N:ST[0]
+                                                                  <GHC.Prim.RealWorld>_N <()>_R)))))
+                                    (GHC.Prim.+# sc1 1#)
+                                    (GHC.Prim.+# sc2 1#) }
+                               GHC.Types.True
+                               -> case GHC.Prim.unsafeFreezeArray#
+                                         @ (Control.Monad.Primitive.PrimState
+                                              (GHC.ST.ST GHC.Prim.RealWorld))
+                                         @ n
+                                         ipv4
+                                         sc
+                                           `cast`
+                                         (Nth:2
+                                              (Nth:2
+                                                   (Trans
+                                                        (<GHC.ST.STRep
+                                                            GHC.Prim.RealWorld
+                                                            (Data.Primitive.Array.Array n)>_R
+                                                         ->_R Sym (GHC.ST.N:ST[0]
+                                                                       <GHC.Prim.RealWorld>_N
+                                                                       <Data.Primitive.Array.Array
+                                                                          n>_R))
+                                                        (((GHC.Prim.State#
+                                                             (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                       <GHC.Prim.RealWorld>_N)))_R
+                                                          ->_R ((#,#)
+                                                                  <'GHC.Types.TupleRep '[]>_R
+                                                                  <'GHC.Types.LiftedRep>_R
+                                                                  (GHC.Prim.State#
+                                                                     (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                               <GHC.Prim.RealWorld>_N)))_R
+                                                                  <Data.Primitive.Array.Array
+                                                                     n>_R)_R)
+                                                         ->_R <GHC.ST.ST
+                                                                 GHC.Prim.RealWorld
+                                                                 (Data.Primitive.Array.Array
+                                                                    n)>_R)))) of ds1 { (#,#) ipv5 ipv6 ->
+                                  (# ipv5
+                                       `cast`
+                                     (Nth:2
+                                          (Nth:3
+                                               (Nth:2
+                                                    (Trans
+                                                         (((GHC.Prim.State#
+                                                              (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                   <GHC.Prim.RealWorld>_N))_R
+                                                           ->_R ((#,#)
+                                                                   <'GHC.Types.TupleRep '[]>_R
+                                                                   <'GHC.Types.LiftedRep>_R
+                                                                   (GHC.Prim.State#
+                                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                           <GHC.Prim.RealWorld>_N))_R
+                                                                   <Data.Primitive.Array.Array
+                                                                      n>_R)_R)
+                                                          ->_R <GHC.ST.ST
+                                                                  GHC.Prim.RealWorld
+                                                                  (Data.Primitive.Array.Array n)>_R)
+                                                         (<GHC.ST.STRep
+                                                             GHC.Prim.RealWorld
+                                                             (Data.Primitive.Array.Array n)>_R
+                                                          ->_R GHC.ST.N:ST[0]
+                                                                   <GHC.Prim.RealWorld>_N
+                                                                   <Data.Primitive.Array.Array
+                                                                      n>_R))))),
+                                     Data.Vector.Vector @ n 0# sc2 ipv6 #) } }
+                         } in
+                         $s$wfoldlM'_loop
+                           ipv3
+                             `cast`
+                           (Nth:2
+                                (Nth:3
+                                     (Nth:2
+                                          (Trans
+                                               (((GHC.Prim.State#
+                                                    (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                         <GHC.Prim.RealWorld>_N))_R
+                                                 ->_R ((#,#)
+                                                         <'GHC.Types.TupleRep '[]>_R
+                                                         <'GHC.Types.LiftedRep>_R
+                                                         (GHC.Prim.State#
+                                                            (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                 <GHC.Prim.RealWorld>_N))_R
+                                                         <Data.Primitive.Array.MutableArray
+                                                            (Control.Monad.Primitive.PrimState
+                                                               (GHC.ST.ST GHC.Prim.RealWorld))
+                                                            n>_R)_R)
+                                                ->_R <GHC.ST.ST
+                                                        GHC.Prim.RealWorld
+                                                        (Data.Primitive.Array.MutableArray
+                                                           (Control.Monad.Primitive.PrimState
+                                                              (GHC.ST.ST GHC.Prim.RealWorld))
+                                                           n)>_R)
+                                               (<GHC.ST.STRep
+                                                   GHC.Prim.RealWorld
+                                                   (Data.Primitive.Array.MutableArray
+                                                      (Control.Monad.Primitive.PrimState
+                                                         (GHC.ST.ST GHC.Prim.RealWorld))
+                                                      n)>_R
+                                                ->_R GHC.ST.N:ST[0]
+                                                         <GHC.Prim.RealWorld>_N
+                                                         <Data.Primitive.Array.MutableArray
+                                                            (Control.Monad.Primitive.PrimState
+                                                               (GHC.ST.ST GHC.Prim.RealWorld))
+                                                            n>_R)))))
+                           0#
+                           0# }) of ds1 { (#,#) ipv3 ipv4 ->
+                 ipv4 } }) -}
+201a5a623c7874b277e93e562f5418bf
+  swap :: (a, b) -> (b, a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b (ds :: (a, b)) ->
+                 case ds of wild { (,) x y -> (y, x) }) -}
+db13e64544536ca7e7862d8ae372f076
+  znrm2 ::
+    (GHC.Num.Num n, GHC.Float.Floating n, GHC.Classes.Ord n) =>
+    Data.Vector.Vector n -> n
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><S(S(S(LLC(C(S))LLLL)LLL)LLLLLLLLLLLLLLLLLLLLLL),U(U(U(C(C1(U)),A,C(C1(U)),A,C(U),A,C(U)),C(C1(U)),A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(A,A,C(C1(U)),A,A,A,A,A)><L,1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Float.Floating n)
+                   (w2 :: GHC.Classes.Ord n)
+                   (w3 :: Data.Vector.Vector n) ->
+                 HBLAS.Level1.$wznrm2 @ n w1 w2 w3) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

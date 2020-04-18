@@ -1,0 +1,586 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-26 05:36:29.626999 UTC
+
+interface hblas-0.0.0.0-9LbZGQM6wW53wyAIAU2rOm:Data.Vector.Fusion.Bundle.Size 8022
+  interface hash: 93dc47fa8b58940e464c56150735165a
+  ABI hash: 1a9cfba855267de6c8f5d073d1ff20d9
+  export-list hash: aab4d3c96ab217f5a9bc702ed5e653c1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3f17894cb1065146d98e6368816b6d4a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Vector.Fusion.Bundle.Size.larger
+  Data.Vector.Fusion.Bundle.Size.smaller
+  Data.Vector.Fusion.Bundle.Size.toMax
+  Data.Vector.Fusion.Bundle.Size.upperBound
+  Data.Vector.Fusion.Bundle.Size.Size{Data.Vector.Fusion.Bundle.Size.Exact Data.Vector.Fusion.Bundle.Size.Max Data.Vector.Fusion.Bundle.Size.Unknown}
+module dependencies: Data.Vector.Fusion.Util
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Data.Vector.Fusion.Util 99e3ee0fdac766f808f04e25e438e2ef
+  exports: 5f06be01cd922ea63e477b4cd0e4ceb5
+  delay_inline f2d834849e47abbae4106af5ee6e6b3f
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+10ced5576b75277f6cda2210c5f82859
+  $fEqSize :: GHC.Classes.Eq Data.Vector.Fusion.Bundle.Size.Size
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Bundle.Size.Size
+                  Data.Vector.Fusion.Bundle.Size.$fEqSize_$c==
+                  Data.Vector.Fusion.Bundle.Size.$fEqSize_$c/= -}
+10ced5576b75277f6cda2210c5f82859
+  $fEqSize_$c/= ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Data.Vector.Fusion.Bundle.Size.Size)
+                   (b :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case a of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.Vector.Fusion.Bundle.Size.Exact b1
+                        -> case a1 of wild2 { GHC.Types.I# x ->
+                           case b1 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } } }
+                   Data.Vector.Fusion.Bundle.Size.Max a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.Vector.Fusion.Bundle.Size.Max b1
+                        -> case a1 of wild2 { GHC.Types.I# x ->
+                           case b1 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } } }
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.Vector.Fusion.Bundle.Size.Unknown -> GHC.Types.False } }) -}
+10ced5576b75277f6cda2210c5f82859
+  $fEqSize_$c== ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Data.Vector.Fusion.Bundle.Size.Size)
+                   (ds1 :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.Vector.Fusion.Bundle.Size.Exact b1
+                        -> GHC.Classes.eqInt a1 b1 }
+                   Data.Vector.Fusion.Bundle.Size.Max a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.Vector.Fusion.Bundle.Size.Max b1 -> GHC.Classes.eqInt a1 b1 }
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.Vector.Fusion.Bundle.Size.Unknown -> GHC.Types.True } }) -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize :: GHC.Num.Num Data.Vector.Fusion.Bundle.Size.Size
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Bundle.Size.Size
+                  Data.Vector.Fusion.Bundle.Size.$fNumSize_$c+
+                  Data.Vector.Fusion.Bundle.Size.$fNumSize_$c-
+                  Data.Vector.Fusion.Bundle.Size.$fNumSize_$c*
+                  Data.Vector.Fusion.Bundle.Size.$fNumSize_$cnegate
+                  Data.Vector.Fusion.Bundle.Size.$fNumSize_$cabs
+                  Data.Vector.Fusion.Bundle.Size.$fNumSize_$csignum
+                  Data.Vector.Fusion.Bundle.Size.$fNumSize_$cfromInteger -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize_$c* ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Strictness: x -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize_$c+ ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (ds :: Data.Vector.Fusion.Bundle.Size.Size)
+                   (ds1 :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Exact (GHC.Num.$fNumInt_$c+ m n)
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> Data.Vector.Fusion.Bundle.Size.Max (GHC.Num.$fNumInt_$c+ m n)
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Unknown }
+                   Data.Vector.Fusion.Bundle.Size.Max m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Max (GHC.Num.$fNumInt_$c+ m n)
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> Data.Vector.Fusion.Bundle.Size.Max (GHC.Num.$fNumInt_$c+ m n)
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Unknown }
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> Data.Vector.Fusion.Bundle.Size.Unknown }) -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize_$c- ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (ds :: Data.Vector.Fusion.Bundle.Size.Size)
+                   (ds1 :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Exact (GHC.Num.$fNumInt_$c- m n)
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> Data.Vector.Fusion.Bundle.Size.Max m
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Unknown }
+                   Data.Vector.Fusion.Bundle.Size.Max m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Max (GHC.Num.$fNumInt_$c- m n)
+                        Data.Vector.Fusion.Bundle.Size.Max n -> wild
+                        Data.Vector.Fusion.Bundle.Size.Unknown -> wild }
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> Data.Vector.Fusion.Bundle.Size.Unknown }) -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize_$cabs ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Strictness: x -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize_$cfromInteger ::
+    GHC.Integer.Type.Integer -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>m1,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Integer.Type.Integer) ->
+                 Data.Vector.Fusion.Bundle.Size.Exact
+                   (GHC.Num.$fNumInt_$cfromInteger n)) -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize_$cnegate ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case x of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact n
+                   -> Data.Vector.Fusion.Bundle.Size.Exact
+                        (case n of wild1 { GHC.Types.I# y ->
+                         GHC.Types.I# (GHC.Prim.-# 0# y) })
+                   Data.Vector.Fusion.Bundle.Size.Max n
+                   -> Data.Vector.Fusion.Bundle.Size.Max (GHC.Types.I# 0#)
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> Data.Vector.Fusion.Bundle.Size.Unknown }) -}
+10ced5576b75277f6cda2210c5f82859
+  $fNumSize_$csignum ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Strictness: x -}
+10ced5576b75277f6cda2210c5f82859
+  $fShowSize :: GHC.Show.Show Data.Vector.Fusion.Bundle.Size.Size
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Vector.Fusion.Bundle.Size.Size
+                  Data.Vector.Fusion.Bundle.Size.$fShowSize_$cshowsPrec
+                  Data.Vector.Fusion.Bundle.Size.$fShowSize_$cshow
+                  Data.Vector.Fusion.Bundle.Size.$fShowSize_$cshowList -}
+10ced5576b75277f6cda2210c5f82859
+  $fShowSize1 ::
+    Data.Vector.Fusion.Bundle.Size.Size -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Data.Vector.Fusion.Bundle.Size.$fShowSize_$cshowsPrec
+                   Data.Vector.Fusion.Bundle.Size.$fShowSize2) -}
+a8a8b06532fddf80bc413fb85907752f
+  $fShowSize2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+ec60bed665e5b2a130b275a4b2f1ef48
+  $fShowSize3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.Vector.Fusion.Bundle.Size.$fShowSize4) -}
+d9b8fe6463aaa531287486cdcb695558
+  $fShowSize4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Unknown"#) -}
+4f998e2e54250cb721e8f1e7a0efef9d
+  $fShowSize5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Max "#) -}
+0b90d3579c754cded4ae25bf23bc97a5
+  $fShowSize6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Exact "#) -}
+10ced5576b75277f6cda2210c5f82859
+  $fShowSize_$cshow ::
+    Data.Vector.Fusion.Bundle.Size.Size -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case x of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact b1
+                   -> GHC.CString.unpackAppendCString#
+                        Data.Vector.Fusion.Bundle.Size.$fShowSize6
+                        (case b1 of ww2 { GHC.Types.I# ww3 ->
+                         case GHC.Show.$wshowSignedInt
+                                11#
+                                ww3
+                                (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                         GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                   Data.Vector.Fusion.Bundle.Size.Max b1
+                   -> GHC.CString.unpackAppendCString#
+                        Data.Vector.Fusion.Bundle.Size.$fShowSize5
+                        (case b1 of ww2 { GHC.Types.I# ww3 ->
+                         case GHC.Show.$wshowSignedInt
+                                11#
+                                ww3
+                                (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                         GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> Data.Vector.Fusion.Bundle.Size.$fShowSize3 }) -}
+10ced5576b75277f6cda2210c5f82859
+  $fShowSize_$cshowList ::
+    [Data.Vector.Fusion.Bundle.Size.Size] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Data.Vector.Fusion.Bundle.Size.Size
+                   Data.Vector.Fusion.Bundle.Size.$fShowSize1) -}
+10ced5576b75277f6cda2210c5f82859
+  $fShowSize_$cshowsPrec ::
+    GHC.Types.Int
+    -> Data.Vector.Fusion.Bundle.Size.Size -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (a :: GHC.Types.Int)
+                   (ds :: Data.Vector.Fusion.Bundle.Size.Size)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> GHC.CString.unpackAppendCString#
+                             Data.Vector.Fusion.Bundle.Size.$fShowSize6
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt 11# ww3 eta of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                Data.Vector.Fusion.Bundle.Size.$fShowSize6
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.$fShow(,)2
+                                           eta) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) } }
+                   Data.Vector.Fusion.Bundle.Size.Max b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> GHC.CString.unpackAppendCString#
+                             Data.Vector.Fusion.Bundle.Size.$fShowSize5
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt 11# ww3 eta of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                Data.Vector.Fusion.Bundle.Size.$fShowSize5
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.$fShow(,)2
+                                           eta) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) } }
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Data.Vector.Fusion.Bundle.Size.$fShowSize3
+                        eta }) -}
+7c7c934c1d04a33b7588f4e24ed48502
+  $tc'Exact :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5539227953856346624##
+                   2950022717671504892##
+                   Data.Vector.Fusion.Bundle.Size.$trModule
+                   Data.Vector.Fusion.Bundle.Size.$tc'Exact2
+                   0#
+                   Data.Vector.Fusion.Bundle.Size.$tc'Exact1) -}
+04bd01edd8b819378e79f1b303e7b489
+  $tc'Exact1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0a0f567ad1e0cd064dd535b216136533
+  $tc'Exact2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Bundle.Size.$tc'Exact3) -}
+f5068d5c3e0af4d526d95102f199b0e0
+  $tc'Exact3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exact"#) -}
+cc6c9f7de61b5be86dc207511715f19f
+  $tc'Max :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17064475542448236732##
+                   15986433733268005854##
+                   Data.Vector.Fusion.Bundle.Size.$trModule
+                   Data.Vector.Fusion.Bundle.Size.$tc'Max1
+                   0#
+                   Data.Vector.Fusion.Bundle.Size.$tc'Exact1) -}
+791eae292f7b8dda2b0808911cdc76e8
+  $tc'Max1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Bundle.Size.$tc'Max2) -}
+8da28be84697cd93fecbb586c948cc6b
+  $tc'Max2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Max"#) -}
+bb4233fef58a8e75df0cffea13881063
+  $tc'Unknown :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4002309848827593624##
+                   5506769604349912921##
+                   Data.Vector.Fusion.Bundle.Size.$trModule
+                   Data.Vector.Fusion.Bundle.Size.$tc'Unknown2
+                   0#
+                   Data.Vector.Fusion.Bundle.Size.$tc'Unknown1) -}
+63da3db6fbd2739cdae066ec222742f6
+  $tc'Unknown1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+06781ebe69fe3ac19642b3b83abde8d3
+  $tc'Unknown2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Bundle.Size.$tc'Unknown3) -}
+4ed44bc9a0d66bde3d7a3e6f98acc29d
+  $tc'Unknown3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Unknown"#) -}
+246dd373243bfa38e0ee43f46fd297f5
+  $tcSize :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11175441900412715203##
+                   5980060609993563260##
+                   Data.Vector.Fusion.Bundle.Size.$trModule
+                   Data.Vector.Fusion.Bundle.Size.$tcSize1
+                   0#
+                   GHC.Types.krep$*) -}
+573461ee3459bbba353fb9e37a8bf63f
+  $tcSize1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Bundle.Size.$tcSize2) -}
+a072b972441e18b27658b7ca8e0f92d6
+  $tcSize2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Size"#) -}
+811b399ff2af760130e8ffacf99355d5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Vector.Fusion.Bundle.Size.$trModule3
+                   Data.Vector.Fusion.Bundle.Size.$trModule1) -}
+a21ac10db444181c0bf29e2c60923f9b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Bundle.Size.$trModule2) -}
+7f849ad80f8887261f03f97a675bb1e1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Vector.Fusion.Bundle.Size"#) -}
+517ecd856f444fbcdf9196d06cb527f9
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Data.Vector.Fusion.Bundle.Size.$trModule4) -}
+d8fdcb0385dba6d892403260a8315c8a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-9LbZGQM6wW53wyAIAU2rOm"#) -}
+10ced5576b75277f6cda2210c5f82859
+  data Size = Exact GHC.Types.Int | Max GHC.Types.Int | Unknown
+186cc9ad21be1e3e263136deb82989ef
+  larger ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: Data.Vector.Fusion.Bundle.Size.Size)
+                   (ds1 :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Exact
+                             (Data.Vector.Fusion.Util.delay_inline
+                                @ GHC.Types.Int
+                                @ (GHC.Types.Int -> GHC.Types.Int)
+                                GHC.Classes.$fOrdInt_$cmax
+                                m
+                                n)
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> case GHC.Classes.geInt m n of wild2 {
+                             GHC.Types.False -> Data.Vector.Fusion.Bundle.Size.Max n
+                             GHC.Types.True -> Data.Vector.Fusion.Bundle.Size.Exact m }
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Unknown }
+                   Data.Vector.Fusion.Bundle.Size.Max m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> case GHC.Classes.geInt n m of wild2 {
+                             GHC.Types.False -> Data.Vector.Fusion.Bundle.Size.Max m
+                             GHC.Types.True -> Data.Vector.Fusion.Bundle.Size.Exact n }
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> Data.Vector.Fusion.Bundle.Size.Max
+                             (Data.Vector.Fusion.Util.delay_inline
+                                @ GHC.Types.Int
+                                @ (GHC.Types.Int -> GHC.Types.Int)
+                                GHC.Classes.$fOrdInt_$cmax
+                                m
+                                n)
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Unknown }
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> Data.Vector.Fusion.Bundle.Size.Unknown }) -}
+dbe618f9eb2c2ba3c5dfafb6308f5b4f
+  smaller ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: Data.Vector.Fusion.Bundle.Size.Size)
+                   (ds1 :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Exact
+                             (Data.Vector.Fusion.Util.delay_inline
+                                @ GHC.Types.Int
+                                @ (GHC.Types.Int -> GHC.Types.Int)
+                                GHC.Classes.$fOrdInt_$cmin
+                                m
+                                n)
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> Data.Vector.Fusion.Bundle.Size.Max
+                             (Data.Vector.Fusion.Util.delay_inline
+                                @ GHC.Types.Int
+                                @ (GHC.Types.Int -> GHC.Types.Int)
+                                GHC.Classes.$fOrdInt_$cmin
+                                m
+                                n)
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Max m }
+                   Data.Vector.Fusion.Bundle.Size.Max m
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Max
+                             (Data.Vector.Fusion.Util.delay_inline
+                                @ GHC.Types.Int
+                                @ (GHC.Types.Int -> GHC.Types.Int)
+                                GHC.Classes.$fOrdInt_$cmin
+                                m
+                                n)
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> Data.Vector.Fusion.Bundle.Size.Max
+                             (Data.Vector.Fusion.Util.delay_inline
+                                @ GHC.Types.Int
+                                @ (GHC.Types.Int -> GHC.Types.Int)
+                                GHC.Classes.$fOrdInt_$cmin
+                                m
+                                n)
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Max m }
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> case ds1 of wild1 {
+                        Data.Vector.Fusion.Bundle.Size.Exact n
+                        -> Data.Vector.Fusion.Bundle.Size.Max n
+                        Data.Vector.Fusion.Bundle.Size.Max n
+                        -> Data.Vector.Fusion.Bundle.Size.Max n
+                        Data.Vector.Fusion.Bundle.Size.Unknown
+                        -> Data.Vector.Fusion.Bundle.Size.Unknown } }) -}
+b3f9cdf57666b6f4f886af0cd64d0ec2
+  toMax ::
+    Data.Vector.Fusion.Bundle.Size.Size
+    -> Data.Vector.Fusion.Bundle.Size.Size
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact n
+                   -> Data.Vector.Fusion.Bundle.Size.Max n
+                   Data.Vector.Fusion.Bundle.Size.Max n
+                   -> Data.Vector.Fusion.Bundle.Size.Max n
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> Data.Vector.Fusion.Bundle.Size.Unknown }) -}
+fce7a34da73c4b19c96ab586c3b51441
+  upperBound ::
+    Data.Vector.Fusion.Bundle.Size.Size -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Vector.Fusion.Bundle.Size.Size) ->
+                 case ds of wild {
+                   Data.Vector.Fusion.Bundle.Size.Exact n
+                   -> GHC.Base.Just @ GHC.Types.Int n
+                   Data.Vector.Fusion.Bundle.Size.Max n
+                   -> GHC.Base.Just @ GHC.Types.Int n
+                   Data.Vector.Fusion.Bundle.Size.Unknown
+                   -> GHC.Base.Nothing @ GHC.Types.Int }) -}
+instance [safe] GHC.Classes.Eq [Data.Vector.Fusion.Bundle.Size.Size]
+  = Data.Vector.Fusion.Bundle.Size.$fEqSize
+instance [safe] GHC.Num.Num [Data.Vector.Fusion.Bundle.Size.Size]
+  = Data.Vector.Fusion.Bundle.Size.$fNumSize
+instance [safe] GHC.Show.Show [Data.Vector.Fusion.Bundle.Size.Size]
+  = Data.Vector.Fusion.Bundle.Size.$fShowSize
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,3 @@
+10000
+10000
+Matrix size: 10000X10000: 440999650s microsecond

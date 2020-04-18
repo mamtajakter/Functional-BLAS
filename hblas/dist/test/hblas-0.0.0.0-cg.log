@@ -1,0 +1,3 @@
+Test suite cg: RUNNING...
+Test suite cg: FAIL
+Test suite logged to: dist/test/hblas-0.0.0.0-cg.log
