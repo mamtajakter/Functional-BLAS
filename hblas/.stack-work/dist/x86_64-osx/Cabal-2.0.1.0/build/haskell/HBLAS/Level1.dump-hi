@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-10-16 23:39:42.579913 UTC
+2020-04-18 19:15:55.903229 UTC
 
 interface hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI:HBLAS.Level1 8022
-  interface hash: 75d1eda234d94d3e1c6c8459fcb3ea68
-  ABI hash: c721343fe773ce88d7ccfbf81ea94a57
-  export-list hash: bf736c87c683b3eb2621cef8f9001da8
+  interface hash: 515981d1c0115ffd726dd32204fa0683
+  ABI hash: 885535461a45b5313bb7e681608c9c35
+  export-list hash: 8ed0a3e7bbfe567000d8b8be8b00ea1d
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 2804918ffae816c69890ef0538da0f0c
   sig of: Nothing
@@ -16,6 +16,7 @@ exports:
   HBLAS.Level1.axpy
   HBLAS.Level1.axpy'
   HBLAS.Level1.axpyaxpy
+  HBLAS.Level1.axpyaxpy'
   HBLAS.Level1.copy
   HBLAS.Level1.dot
   HBLAS.Level1.hrotm
@@ -321,6 +322,89 @@ b7b387fddbe70c1438817b90c6a034b7
                             @ n
                             (Data.Vector.$fVectorVectora @ n)
                             x1))) } } } } }) -}
+d2ec8df4ed72981c11218edfee92c568
+  axpyaxpy' ::
+    GHC.Num.Num n =>
+    n
+    -> n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+    -> Data.Vector.Vector n
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><S,1*U><S,1*U><S(LSL),1*U(U,U,U)><S(LSL),1*U(U,U,U)><S,1*U(U,U,U)>,
+     Inline: (sat-args=5),
+     Unfolding: InlineRule (6, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (a :: n)
+                   (b :: n)
+                   (x :: Data.Vector.Vector n)
+                   (y :: Data.Vector.Vector n)
+                   (z :: Data.Vector.Vector n) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 case x of x1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 case y of y1 { Data.Vector.Vector ipv3 ipv4 ipv5 ->
+                 case z of z1 { Data.Vector.Vector ipv6 ipv7 ipv8 ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ n
+                        (Data.Vector.$fVectorVectora @ n)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ n
+                           (Data.Vector.$fVectorVectora @ n)
+                           (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                              @ Data.Vector.Fusion.Util.Id
+                              @ n
+                              @ n
+                              @ n
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum b2 (GHC.Num.* @ n $dNum a1 a2))
+                                `cast`
+                              (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 x1)
+                              (Data.Vector.Generic.stream
+                                 @ Data.Vector.Vector
+                                 @ n
+                                 (Data.Vector.$fVectorVectora @ n)
+                                 y1))) of t { Data.Vector.Vector ipv9 ipv10 ipv11 ->
+                 Data.Vector.Generic.new
+                   @ Data.Vector.Vector
+                   @ n
+                   (Data.Vector.$fVectorVectora @ n)
+                   (Data.Vector.Generic.New.unstream
+                      @ Data.Vector.Vector
+                      @ n
+                      (Data.Vector.$fVectorVectora @ n)
+                      (Data.Vector.Fusion.Bundle.Monadic.zipWithM
+                         @ Data.Vector.Fusion.Util.Id
+                         @ n
+                         @ n
+                         @ n
+                         @ Data.Vector.Vector
+                         Data.Vector.Fusion.Util.$fMonadId
+                         (\ (a2 :: n) (b2 :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum b2 (GHC.Num.* @ n $dNum b1 a2))
+                           `cast`
+                         (<n>_R ->_R <n>_R ->_R Sym (Data.Vector.Fusion.Util.N:Id[0] <n>_R))
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            t)
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Vector
+                            @ n
+                            (Data.Vector.$fVectorVectora @ n)
+                            z1))) } } } } } }) -}
 0d4e6724deb188a598a06835c13f93e0
   copy ::
     (GHC.Classes.Eq n, GHC.Num.Num n) =>

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-10-16 23:39:47.98044 UTC
+2020-04-18 19:16:00.831894 UTC
 
 interface hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI:HBLAS.Level2 8022
-  interface hash: 1edfa3b0282f858678d27017aa3a73c6
+  interface hash: 40b6664332c3bac01281b8df72d13978
   ABI hash: 1bead8235c63eeddde7bae93a9da51e6
   export-list hash: a7c9eff187054e0103c34a98cb117cba
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -70,8 +70,8 @@ import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
 import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
 import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
 import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
-import  -/  HBLAS.Level1 c721343fe773ce88d7ccfbf81ea94a57
-  exports: bf736c87c683b3eb2621cef8f9001da8
+import  -/  HBLAS.Level1 885535461a45b5313bb7e681608c9c35
+  exports: 8ed0a3e7bbfe567000d8b8be8b00ea1d
   axpy 6570fdd1b3556c79341672b08ad6de5c
   dot 0402886cdc4968169b624beeeb8fa157
   scal efb83521cdec2e2135c98ba1b7c75e64

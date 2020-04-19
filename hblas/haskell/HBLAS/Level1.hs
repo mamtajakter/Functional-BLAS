@@ -129,6 +129,10 @@ idamin !a = V.elemIndex (minimum (fmap abs a)) (fmap abs a)
 axpyaxpy ::  ( Num n) => n -> n -> V.Vector n -> V.Vector n -> V.Vector n
 axpyaxpy !a1 !a2 !x !y  = let !t1 = axpy a1 x y in axpy a2 t1 x
 
+{-# INLINE axpyaxpy' #-}
+axpyaxpy' ::  ( Num n) => n -> n -> V.Vector n -> V.Vector n -> V.Vector n -> V.Vector n
+axpyaxpy' !a !b !x !y !z  = let !t = axpy a x y in axpy b t z
+
 {-# INLINE axpy' #-}
 axpy' :: ( Num n) => n -> V.Vector n -> V.Vector n -> V.Vector n-> V.Vector n
 axpy' !alpha !x !y !vec0 =let x1 = axpy alpha x vec0 in axpy 1 x1 y

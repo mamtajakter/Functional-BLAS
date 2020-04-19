@@ -47,7 +47,7 @@ createVec0 !n =V.replicate n 0
 {-# INLINE createUnSymSq #-}
 createUnSymSq :: (Num n) => Int->Int  -> (Vector (Vector n ))
 createUnSymSq !i !n
-             | i<n  =  pure (createVecX 0 (i `mod` 4) n) <> (createUnSymSq (i+1) n)
+             | i<n  =  pure (createVecX 0 (i `mod` 2) n) <> (createUnSymSq (i+1) n)
              | otherwise = empty
 
 ---- commented on Octobre 16th

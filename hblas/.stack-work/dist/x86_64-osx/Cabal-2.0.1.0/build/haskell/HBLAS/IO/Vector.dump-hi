@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2020-04-11 05:14:45.103389 UTC
+2020-04-19 00:31:08.007576 UTC
 
 interface hblas-0.0.0.0-9O6ACSbliqkLuuWfQkbTjI:HBLAS.IO.Vector 8022
-  interface hash: e86d7b80c02833083846f8ada98867e2
-  ABI hash: 28ab8b35543564141bbadf91bad35252
+  interface hash: 29cbf8a5437b1ecb1fcc2a0e1ea5959a
+  ABI hash: 3f4c604d8832c2fe1d8cf2ed52536388
   export-list hash: 9decfaddebb4116ac63b265978a98dd3
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 89f0d5a71cd5b0871cf62fde90f7814f
@@ -2883,7 +2883,7 @@ b40a64e780881f270c392f183d9e0ce5
                                                                       (Data.Vector.Vector n) #)
                                                           of {} }) of ds1 { (#,#) ipv3 ipv4 ->
                                              ipv4 } } }) -}
-50d6b4d180e8c730b541f1d1121ff636
+b8a41d22897b78164e5f7e09c51de009
   $wcreateUnSymSq ::
     GHC.Num.Num n =>
     GHC.Prim.Int#
@@ -2906,7 +2906,7 @@ b40a64e780881f270c392f183d9e0ce5
                                                    @ n
                                                    w
                                                    0#
-                                                   (GHC.Prim.andI# ww 3#)
+                                                   (GHC.Prim.andI# ww 1#)
                                                    ww1
                                              } in
                                              case HBLAS.IO.Vector.$wcreateUnSymSq
@@ -6869,7 +6869,7 @@ b40a64e780881f270c392f183d9e0ce5
                  case w1 of ww { GHC.Types.I# ww1 ->
                  case w2 of ww2 { GHC.Types.I# ww3 ->
                  HBLAS.IO.Vector.$wcreateSymUpTri @ n w ww1 ww3 } }) -}
-e39cea8d9c9359573ba91b070ea91549
+13228c678034fca6a65a95ad46023f2c
   createUnSymSq ::
     GHC.Num.Num n =>
     GHC.Types.Int
